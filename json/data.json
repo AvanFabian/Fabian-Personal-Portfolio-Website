@@ -7,7 +7,7 @@
         "An e-commerce platform specializing in website template marketplace, built with a focus on user experience and secure transactions.",
         "Features include responsive design using Bootstrap, integrated payment gateway for secure transactions, and optimized product listing management."
       ],
-      "year": "2024",
+      "year": "2023",
       "preview": "",
       "code": "",
       "thumbnail": "/image/projects/web/exoria/exoria1.png",
@@ -32,12 +32,12 @@
         "A comprehensive healthcare platform focused on diabetes prediction and management.",
         "Built using Laravel and Flask frameworks, the platform leverages reliable medical datasets to provide accurate health insights and predictions."
       ],
-      "year": "2024",
+      "year": "2023",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/",
+      "thumbnail": "/image/projects/web/diacare/diacare2.png",
       "images": [
-        "/image/projects/"
+        "/image/projects/web/diacare/diacare2.png"
       ],
       "tech": [
         "Laravel",
@@ -45,7 +45,8 @@
       ],
       "slug": "diacare",
       "category": [
-        1,3
+        1,
+        3
       ]
     },
     {
@@ -58,9 +59,11 @@
       "year": "2024",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/",
+      "thumbnail": "/image/projects/web/schedu/schedu1.png",
       "images": [
-        "/image/projects/"
+        "/image/projects/web/schedu/schedu1.png",
+        "/image/projects/web/schedu/schedu2.png",
+        "/image/projects/web/schedu/schedu3.png"
       ],
       "tech": [
         "Next.js",
@@ -103,7 +106,7 @@
         "An immersive educational platform celebrating Indonesian cultural heritage.",
         "Developed with Laravel, featuring interactive elements and rich content delivery for an engaging user experience in cultural learning."
       ],
-      "year": "2024",
+      "year": "2023",
       "preview": "",
       "code": "",
       "thumbnail": "/image/projects/web/jentara/jentara1.png",
@@ -127,7 +130,7 @@
         "A specialized platform for GPT prompt management and sharing.",
         "Implements advanced features including intuitive search functionality, systematic prompt categorization, and secure user authentication for personalized experiences."
       ],
-      "year": "2024",
+      "year": "2023",
       "preview": "",
       "code": "",
       "thumbnail": "/image/projects/web/world/world1.png",
@@ -149,7 +152,7 @@
         "An advanced cryptocurrency price prediction platform utilizing machine learning technology.",
         "Implements the Naive Bayes algorithm for accurate price forecasting and market analysis."
       ],
-      "year": "2024",
+      "year": "2023",
       "preview": "",
       "code": "",
       "thumbnail": "/image/projects/",
@@ -162,7 +165,8 @@
       ],
       "slug": "cry-cast",
       "category": [
-        1,3
+        1,
+        3
       ]
     },
     {
