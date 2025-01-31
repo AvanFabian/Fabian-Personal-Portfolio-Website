@@ -66,7 +66,9 @@ export default function Page() {
 							List of my projects that I have done and{" "}
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 								{" "}
-								currently working on.
+								currently
+								<br />
+								working on.
 							</span>
 						</p>
 						<motion.div
