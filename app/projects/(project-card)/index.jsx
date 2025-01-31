@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-export default function projectCard({project, index, activeCategory}){
+export default function projectCard({ project, index, activeCategory }) {
 	console.log(project.category[0], activeCategory);
 	console.log(project.category.includes(activeCategory));
-  return (
+	return (
 		<>
 			{project.category.includes(parseInt(activeCategory)) && (
 				<Link href={"projects/" + project.slug} key={index}>
@@ -23,7 +23,7 @@ export default function projectCard({project, index, activeCategory}){
 						}}>
 						<Image
 							src={project.thumbnail}
-							alt="Alvalens"
+							alt="Fabian"
 							layout="fill"
 							objectFit="cover"
 							placeholder="blur"

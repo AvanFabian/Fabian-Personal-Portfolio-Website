@@ -99,7 +99,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 				type: "spring",
 				stiffness: 400,
 				damping: 40,
-		},
+			},
 		},
 	};
 
@@ -190,17 +190,15 @@ const Navbar = () => {
 		<>
 			<nav
 				ref={navRef}
-				className={`navbar px-5 md:px-24 w-screen fixed transition-colors ease duration-500 ${
-					isNavOpen
+				className={`navbar px-5 md:px-24 w-screen fixed transition-colors ease duration-500 ${isNavOpen
 						? "backdrop-filter backdrop-blur-md bg-gray-700 bg-opacity-50"
 						: "backdrop-filter backdrop-blur-md"
-				} inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
+					} inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
 				<div>
 					<h1
-						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${
-							isNavOpen ? "text-white" : ""
-						}`}>
-						Alvalens
+						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${isNavOpen ? "text-white" : ""
+							}`}>
+						Fabian
 					</h1>
 				</div>
 				<div className="flex flex-row items-center">
@@ -208,17 +206,15 @@ const Navbar = () => {
 						className="burger button flex flex-col justify-center items-center space-y-1.5 "
 						onClick={toggleNav}>
 						<div
-							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${
-								isNavOpen
+							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${isNavOpen
 									? "rotate-45   bg-white translate-y-[2px]"
 									: ""
-							}`}></div>
+								}`}></div>
 						<div
-							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${
-								isNavOpen
+							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${isNavOpen
 									? "-rotate-45 -translate-y-2 bg-white"
 									: ""
-							}`}></div>
+								}`}></div>
 					</button>
 				</div>
 			</nav>

@@ -24,12 +24,12 @@ This is my debut project utilizing Next.js, a portfolio website featuring four p
 2. Clone the repository:
 
    ```shell
-   git clone https://github.com/Alvalens/Alvalens-porto-2-nextJs.git
+   git clone https://github.com/Fabian/Fabian-porto-2-nextJs.git
    ```
 3. Navigate to the project directory:
 
    ```shell
-   cd Alvalens-porto-2-nextJs
+   cd Fabian-porto-2-nextJs
    ```
 4. Install dependencies:
 

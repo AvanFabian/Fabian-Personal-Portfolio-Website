@@ -6,9 +6,9 @@ import Button from "@/components/Button";
 import Image from "next/image";
 
 // images
-import ReactChat1 from "@/public/image/projects/web/trivia/trivia1.png";
-import ReactChat2 from "@/public/image/projects/web/trivia/trivia2.png";
-import ReactChat3 from "@/public/image/projects/web/trivia/trivia3.png";
+import MotherApp1 from "@/public/image/projects/mobile/motherapp/motherapp1.jpg";
+import MotherApp2 from "@/public/image/projects/mobile/motherapp/motherapp2.jpg";
+import MotherApp3 from "@/public/image/projects/mobile/motherapp/motherapp3.jpg";
 import ProjectAll from "@/public/image/projects.png";
 
 import Hr from "@/components/Hr";
@@ -20,13 +20,13 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const category = {
 	1: "Web Development",
-	2: "AI & Machine Learning",
-	9: "Other",
+	3: "AI & Machine Learning",
+	9: "Mobile Development",
 }
 
 export default function Page() {
 	const [activeCategory, setActiveCategory] = useState(1);
-	const projects = Projects.Projects.filter	((item) => item.show === true
+	const projects = Projects.Projects.filter((item) => item.show === true
 	);
 
 	useEffect(() => {
@@ -50,7 +50,7 @@ export default function Page() {
 							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
 							<Image
 								src={ProjectAll}
-								alt="Alvalens"
+								alt="Fabian"
 								layout="fill"
 								objectFit="cover"
 								placeholder="blur"
@@ -93,7 +93,7 @@ export default function Page() {
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
-							<div className="absolute top-28 left-10 h-[40%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">
+							<div className="absolute top-28 left-10 h-[60%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -103,16 +103,15 @@ export default function Page() {
 									}}
 									className="w-full h-full shadow-lg">
 									<Image
-										src={ReactChat1}
-										alt="Alvalens"
+										src={MotherApp1}
+										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
 										placeholder="blur"
-										className="rat"
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute top-16 right-28 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							<div className="absolute top-8 right-36 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -125,10 +124,10 @@ export default function Page() {
 										x: 0,
 									}}
 									transition={{ delay: 0.3 }}
-									className="w-full h-full shadow-lg ">
+									className="w-full h-full shadow-lg">
 									<Image
-										src={ReactChat3}
-										alt="Alvalens"
+										src={MotherApp3}
+										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
 										placeholder="blur"
@@ -136,7 +135,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute bottom-16 right-20 h-[35%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							<div className="absolute bottom-6 right-20 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -153,14 +152,15 @@ export default function Page() {
 									}}
 									className="w-full h-full shadow-lg">
 									<Image
-										src={ReactChat2}
-										alt="Alvalens"
+										src={MotherApp2}
+										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
 										placeholder="blur"
 									/>
 								</motion.div>
 							</div>
+
 						</div>
 					</div>
 					<motion.div
@@ -178,18 +178,13 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							Generative Trivia
+							MotherApps
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							A generative trivia website built with Next.js,
-							Firebase, NextAuth, Google OAuth, and TypeScript.
-							Users can generate trivia questions for predefined
-							school subjects and answer them with a unique
-							interactive input style. The application supports
-							user authentication with Google and stores data in
-							Firestore. You can see the source code of this
-							project on my github account or preview the project
-							by clicking the button below.
+							Android Apps built with Flutter, and Laravel.
+							This mobile application serves as a comprehensive digital journal designed to assist urban pregnant women in monitoring their
+							health throughout pregnancy while addressing the risks associated with obesity. By integrating personalized tracking features,
+							the app enables users to log essential health metrics such as weight gain, nutritional intake, physical activity, and prenatal check-up schedules.
 						</p>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
@@ -245,11 +240,10 @@ export default function Page() {
 					{Object.keys(category).map((key, index) => (
 						<button
 							key={index}
-							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 focus:bg-gray-300 focus:text-black focus:ring focus:ring-slate-500 ${
-								activeCategory === key
-									? "bg-gray-300 text-black hover:bg-gray-700 hover:text-white"
-									: "bg-gray-700 text-white hover:bg-gray-300 hover:text-black"
-							}`}
+							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 focus:bg-gray-300 focus:text-black focus:ring focus:ring-slate-500 ${activeCategory === key
+								? "bg-gray-300 text-black hover:bg-gray-700 hover:text-white"
+								: "bg-gray-700 text-white hover:bg-gray-300 hover:text-black"
+								}`}
 							onClick={() => setActiveCategory(key)}>
 							{category[key]}
 						</button>
