@@ -32,54 +32,56 @@ export default function Skills() {
 				<section className="grid gap-8 md:gap-12">
 					<div className="text-center space-y-2">
 						<h2 className="text-3xl font-bold mt-3 text-black">
-							Skills and Expertise
+							Core Competencies
 						</h2>
 						<p className="text-muted-foreground max-w-[800px] mx-auto">
-							Explore some skills I&apos;m proficient in to
-							deliver high-quality solutions.
+							My technical capabilities at a glance.
 						</p>
 					</div>
 					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-						<div className="flex flex-col items-center gap-2">
-							<CodepenIcon className="w-12 h-12" />
-							<div className="font-medium">Web Development</div>
+						{/* Skill 1: Backend Development */}
+						<div className="flex flex-col items-center text-center gap-2">
+							<ServerIcon className="w-12 h-12" />
+							<div className="font-medium">Backend Development</div>
 						</div>
-						<div className="flex flex-col items-center gap-2">
-							<WebhookIcon className="w-12 h-12" />
-							<div className="font-medium">REST API</div>
+						{/* Skill 2: Full-Stack Development */}
+						<div className="flex flex-col items-center text-center gap-2">
+							<LayersIcon className="w-12 h-12" />
+							<div className="font-medium">Full-Stack Development</div>
 						</div>
-						<div className="flex flex-col items-center gap-2">
-							<ActivityIcon className="w-12 h-12" />
-							<div className="font-medium">Machine Learning</div>
+						{/* Skill 3: Mobile App Development */}
+						<div className="flex flex-col items-center text-center gap-2">
+							<SmartphoneIcon className="w-12 h-12" />
+							<div className="font-medium">Mobile App Development</div>
 						</div>
-						<div className="flex flex-col items-center gap-2">
-							<MobileIcon className="w-12 h-12" />
-							<div className="font-medium">
-								Mobile Development
-							</div>
+						{/* Skill 4: Machine Learning */}
+						<div className="flex flex-col items-center text-center gap-2">
+							<BrainCircuitIcon className="w-12 h-12" />
+							<div className="font-medium">Generative AI</div>
 						</div>
-						{/* <div className="flex flex-col items-center gap-2">
-					<CloudIcon className="w-12 h-12" />
-					<div className="font-medium">Cloud Computing</div>
-				</div>
-				<div className="flex flex-col items-center gap-2">
-					<BarChartIcon className="w-12 h-12" />
-					<div className="font-medium">Data Analysis</div>
-				</div>
-				<div className="flex flex-col items-center gap-2">
-					<ComputerIcon className="w-12 h-12" />
-					<div className="font-medium">Cybersecurity</div>
-				</div>
-				<div className="flex flex-col items-center gap-2">
-					<PackageIcon className="w-12 h-12" />
-					<div className="font-medium">Product Management</div>
-				</div> */}
+						{/* Skill 5: Virtual Reality & IoT */}
+						<div className="flex flex-col items-center text-center gap-2">
+							<VrHeadsetIcon className="w-12 h-12" />
+							<div className="font-medium">Virtual Reality & IoT</div>
+						</div>
+						{/* Skill 6: Identity & Access Management */}
+						<div className="flex flex-col items-center text-center gap-2">
+							<ShieldCheckIcon className="w-12 h-12" />
+							<div className="font-medium">Identity & Access Management</div>
+						</div>
+						{/* Anda bisa menambahkan 2 lagi jika mau, misal: Database Design & Systems Integration */}
 					</div>
 				</section>
 			</Wrapper>
-			<div className=" mx-auto container gap-4 p-10 grid grid-cols-1 md:grid-cols-2 mt-10 mb-24">
-				<Stack />
-				<Tools />
+			<div className="mx-auto container gap-4 p-10 grid grid-cols-1 md:grid-cols-2 mt-10 mb-24">
+				<div className="flex flex-col justify-start items-center">
+					<h2 className="text-3xl font-bold text-center md:text-left mb-12">Technologies & Toolkit</h2>
+					<Stack />
+				</div>
+				<div className="flex flex-col justify-start items-center">
+					<h3 className="text-3xl font-bold text-center md:text-left mb-12">My Go-To Tools</h3>
+					<Tools />
+				</div>
 			</div>
 		</>
 	);
@@ -124,7 +126,10 @@ function CodepenIcon(props) {
 	);
 }
 
-function WebhookIcon(props) {
+// File: components/icons.js
+
+// 1. ServerIcon for "Backend Development"
+export function ServerIcon(props) {
 	return (
 		<svg
 			{...props}
@@ -136,15 +141,18 @@ function WebhookIcon(props) {
 			stroke="currentColor"
 			strokeWidth="2"
 			strokeLinecap="round"
-			strokeLinejoin="round">
-			<path d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2" />
-			<path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06" />
-			<path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8" />
+			strokeLinejoin="round"
+		>
+			<rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+			<rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+			<line x1="6" x2="6.01" y1="6" y2="6" />
+			<line x1="6" x2="6.01" y1="18" y2="18" />
 		</svg>
 	);
 }
 
-function MobileIcon(props) {
+// 2. LayersIcon for "Full-Stack Development"
+export function LayersIcon(props) {
 	return (
 		<svg
 			{...props}
@@ -156,9 +164,111 @@ function MobileIcon(props) {
 			stroke="currentColor"
 			strokeWidth="2"
 			strokeLinecap="round"
-			strokeLinejoin="round">
-			<rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-			<line x1="12" x2="12" y1="18" y2="18" />
+			strokeLinejoin="round"
+		>
+			<polygon points="12 2 2 7 12 12 22 7 12 2" />
+			<polyline points="2 17 12 22 22 17" />
+			<polyline points="2 12 12 17 22 12" />
+		</svg>
+	);
+}
+
+// 3. SmartphoneIcon for "Mobile App Development"
+export function SmartphoneIcon(props) {
+	return (
+		<svg
+			{...props}
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="2"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+		>
+			<rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+			<path d="M12 18h.01" />
+		</svg>
+	);
+}
+
+// 4. BrainCircuitIcon for "Machine Learning"
+export function BrainCircuitIcon(props) {
+	return (
+		<svg
+			{...props}
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="2"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+		>
+			<path d="M12 2a2.5 2.5 0 0 0-2.5 2.5c0 2.21 1.79 4 4 4s4-1.79 4-4a2.5 2.5 0 0 0-2.5-2.5" />
+			<path d="M12 2a2.5 2.5 0 0 1 2.5 2.5c0 2.21-1.79 4-4 4s-4-1.79-4-4A2.5 2.5 0 0 1 12 2Z" />
+			<path d="M12 12.5a2.5 2.5 0 0 0-2.5 2.5c0 2.21 1.79 4 4 4s4-1.79 4-4a2.5 2.5 0 0 0-2.5-2.5" />
+			<path d="M12 12.5a2.5 2.5 0 0 1 2.5 2.5c0 2.21-1.79 4-4 4s-4-1.79-4-4a2.5 2.5 0 0 1 2.5-2.5" />
+			<path d="M19.5 9.5a2.5 2.5 0 0 0-2.5 2.5c0 2.21 1.79 4 4 4s4-1.79 4-4a2.5 2.5 0 0 0-2.5-2.5" />
+			<path d="M19.5 9.5a2.5 2.5 0 0 1 2.5 2.5c0 2.21-1.79 4-4 4s-4-1.79-4-4a2.5 2.5 0 0 1 2.5-2.5" />
+			<path d="M4.5 9.5a2.5 2.5 0 0 0-2.5 2.5c0 2.21 1.79 4 4 4s4-1.79 4-4a2.5 2.5 0 0 0-2.5-2.5" />
+			<path d="M4.5 9.5a2.5 2.5 0 0 1 2.5 2.5c0 2.21-1.79 4-4 4s-4-1.79-4-4a2.5 2.5 0 0 1 2.5-2.5" />
+			<path d="M14 8.5a2.5 2.5 0 0 0-2.5 2.5c0 2.21 1.79 4 4 4s4-1.79 4-4a2.5 2.5 0 0 0-2.5-2.5" />
+			<path d="M14 8.5a2.5 2.5 0 0 1 2.5 2.5c0 2.21-1.79 4-4 4s-4-1.79-4-4a2.5 2.5 0 0 1 2.5-2.5" />
+			<path d="M10 8.5a2.5 2.5 0 0 0-2.5 2.5c0 2.21 1.79 4 4 4s4-1.79 4-4a2.5 2.5 0 0 0-2.5-2.5" />
+			<path d="M10 8.5a2.5 2.5 0 0 1 2.5 2.5c0 2.21-1.79 4-4 4s-4-1.79-4-4a2.5 2.5 0 0 1 2.5-2.5" />
+		</svg>
+	);
+}
+
+// 5. VrHeadsetIcon for "Virtual Reality & IoT"
+export function VrHeadsetIcon(props) {
+	return (
+		<svg
+			{...props}
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="2"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+		>
+			<path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.73 2.73" />
+			<path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.73-2.73" />
+			<path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.73-2.73" />
+			<path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.73 2.73" />
+			<path d="M15.5 20a.5.5 0 0 0 0-1 .5.5 0 0 0 0 1z" />
+			<path d="M8.5 20a.5.5 0 0 0 0-1 .5.5 0 0 0 0 1z" />
+			<path d="M12 16a2.5 2.5 0 0 0-2.5 2.5c0 1.5 1 2.5 2.5 2.5" />
+			<path d="M12 16a2.5 2.5 0 0 1 2.5 2.5c0 1.5-1 2.5-2.5 2.5" />
+		</svg>
+	);
+}
+
+// 6. ShieldCheckIcon for "Identity & Access Management"
+export function ShieldCheckIcon(props) {
+	return (
+		<svg
+			{...props}
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="2"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+		>
+			<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+			<path d="m9 12 2 2 4-4" />
 		</svg>
 	);
 }

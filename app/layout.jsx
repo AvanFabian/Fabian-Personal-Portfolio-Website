@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -42,20 +41,12 @@ export const metadata = {
 	},
 };
 
-
 // import Chat from "@/components/Chat";
-
-const TopProgressBar = dynamic(() => import("@/components/TopProgressbar"), {
-	ssr: false,
-});
-
-
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body>
-				<TopProgressBar />
 				<Navbar />
 				{children}
 				{/* <Chat /> */}

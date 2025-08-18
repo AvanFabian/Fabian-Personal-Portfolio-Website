@@ -2,75 +2,195 @@
   "Projects": [
     {
       "show": true,
-      "title": "Exoria Data Store",
+      "title": "Dashboard Ekraf",
       "desc": [
-        "An e-commerce platform specializing in website template marketplace, built with a focus on user experience and secure transactions.",
-        "Features include responsive design using Bootstrap, integrated payment gateway for secure transactions, and optimized product listing management."
+        "Architected and developed the backend system for a digital platform to support creative economy actors, focusing on a custom questionnaire and data recapitulation module.",
+        "Implemented a secure RESTful API using AdonisJS and designed a normalized PostgreSQL schema, which automated data processing and improved data accuracy for stakeholders."
       ],
-      "year": "2023",
+      "year": "2025",
       "preview": "",
-      "code": "https://github.com/AvanFabian/ExoriaDataStore",
-      "thumbnail": "/image/projects/web/exoria/exoria1.png",
-      "images": [
-        "/image/projects/web/exoria/exoria1.png",
-        "/image/projects/web/exoria/exoria2.png",
-        "/image/projects/web/exoria/exoria3.png"
-      ],
+      "code": "",
+      "thumbnail": "",
+      "images": [],
       "tech": [
-        "Bootstrap",
-        "JavaScript"
+        "Node.js",
+        "AdonisJS",
+        "PostgreSQL",
+        "RESTful API",
+        "Postman",
+        "Git",
+        "Agile Methodology"
       ],
-      "slug": "exoria-data-store",
+      "slug": "dashboard-ekraf",
       "category": [
         1
       ]
     },
     {
       "show": true,
-      "title": "DiaCare",
+      "title": "Sincosmile",
       "desc": [
-        "A comprehensive healthcare platform focused on diabetes prediction and management.",
-        "Built using Laravel and Flask frameworks, the platform leverages reliable medical datasets to provide accurate health insights and predictions."
+        "Architected and developed the platform's core features, including the automated scoring engine and a Role-Based Access Control system to manage user permissions.",
+        "Leveraged Supabase as a Backend-as-a-Service to accelerate development, and optimized PostgreSQL queries, resulting in a significant improvement in data retrieval efficiency for the assessment feature."
       ],
-      "year": "2023",
+      "year": "2025",
       "preview": "",
-      "code": "https://github.com/AvanFabian/diacare.id",
-      "thumbnail": "/image/projects/web/diacare/diacare2.png",
-      "images": [
-        "/image/projects/web/diacare/diacare2.png"
-      ],
+      "code": "",
+      "thumbnail": "",
+      "images": [],
       "tech": [
-        "Laravel",
-        "Flask"
+        "Next.js",
+        "Supabase",
+        "PostgreSQL",
+        "Vercel",
+        "Git"
       ],
-      "slug": "diacare",
+      "slug": "sincosmile",
       "category": [
-        1,
-        3
+        1
       ]
     },
     {
       "show": true,
-      "title": "SchEdu",
+      "title": "Mother Apps",
       "desc": [
-        "A sophisticated Virtual Learning Environment that revolutionizes online education through modern web technologies.",
-        "Features include interactive quizzes, comprehensive progress tracking, and an innovative level-based learning system built with Next.js, Prisma, and NextAuth."
+        "Architected and developed the entire end-to-end system, featuring a cross-platform mobile application in Flutter and a robust RESTful API in Laravel.",
+        "Engineered a custom business logic engine on the backend for dynamic calorie calculation and exercise tracking, tailored to individual user health conditions to ensure data accuracy and safety."
+      ],
+      "year": "2025",
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [
+        "Flutter",
+        "Dart",
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "REST APIs",
+        "Git"
+      ],
+      "slug": "mother",
+      "category": [
+        1
+      ]
+    },
+    {
+      "show": true,
+      "title": "Denkmeister",
+      "desc": [
+        "Developed a cross-platform mobile application from concept to completion using Flutter, focusing on an offline-first architecture to ensure seamless user access without an internet connection.",
+        "Implemented an efficient local data structure using JSON Assets and managed the application's state with Provider resulting in a responsive and stable user experience."
+      ],
+      "year": "2025",
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [
+        "Flutter",
+        "Dart",
+        "SQLite",
+        "Provider",
+        "Git"
+      ],
+      "slug": "denkmeister",
+      "category": [
+        1
+      ]
+    },
+    {
+      "show": true,
+      "title": "Neurehab",
+      "desc": [
+        "Develop integrated system combining an immersive Virtual Reality (VR) simulation, an IoT-enabled exoskeleton, and a Kotlin-based mobile app for patient monitoring.",
+        "Engineered the communication protocol between Unity 3D, Arduino microcontrollers, and the mobile app to create a low-latency, real-time feedback loop, enabling accurate monitoring and gamified physical therapy."
+      ],
+      "year": "2025",
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [
+        "Unity 3D",
+        "C#",
+        "Kotlin",
+        "Arduino (Nano, ESP32)",
+        "Blender",
+        "Git"
+      ],
+      "slug": "neurehab",
+      "category": [
+        1
+      ]
+    },
+    {
+      "show": true,
+      "title": "Credit Risk Prediction & Scoring System",
+      "desc": [
+        "Developed an end-to-end machine learning model to predict credit risk, achieving 85% accuracy in identifying high-risk loan applications.",
+        "Engineered predictive features from historical lending data and utilized XGBoost and Scikit-learn to build and evaluate the classification model, forming the core of the scoring system."
       ],
       "year": "2024",
       "preview": "",
-      "code": "https://github.com/AvanFabian/SchEducation",
-      "thumbnail": "/image/projects/web/schedu/schedu1.png",
-      "images": [
-        "/image/projects/web/schedu/schedu1.png",
-        "/image/projects/web/schedu/schedu2.png",
-        "/image/projects/web/schedu/schedu3.png"
-      ],
+      "code": "",
+      "thumbnail": "",
+      "images": [],
       "tech": [
-        "Next.js",
-        "Prisma",
-        "NextAuth"
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "XGBoost",
+        "Matplotlib",
+        "Seaborn",
+        "Git"
       ],
-      "slug": "schedu",
+      "slug": "credit-risk-prediction",
+      "category": [
+        1
+      ]
+    },
+    {
+      "show": true,
+      "title": "F&B MSME Information System",
+      "desc": [
+        "Designed and developed a web application to digitize core business operations such as order management, customer data and inventory tracking. resulting in productivity boost for the business owner."
+      ],
+      "year": "2024",
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [
+        "Laravel",
+        "MySQL",
+        "Tailwind",
+        "Git"
+      ],
+      "slug": "fnb-msme-info-system",
+      "category": [
+        1
+      ]
+    },
+    {
+      "show": true,
+      "title": "F&B MSME Invoice Management System",
+      "desc": [
+        "Integrating Gemini API for a product recommendation feature."
+      ],
+      "year": "2024",
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [
+        "Laravel",
+        "MySQL",
+        "Tailwind",
+        "Git"
+      ],
+      "slug": "fnb-msme-invoice-system",
       "category": [
         1
       ]
@@ -125,28 +245,6 @@
     },
     {
       "show": true,
-      "title": "PromptWorld",
-      "desc": [
-        "A specialized platform for GPT prompt management and sharing.",
-        "Implements advanced features including intuitive search functionality, systematic prompt categorization, and secure user authentication for personalized experiences."
-      ],
-      "year": "2023",
-      "preview": "",
-      "code": "https://github.com/AvanFabian/PromptWorld",
-      "thumbnail": "/image/projects/web/world/world1.png",
-      "images": [
-        "/image/projects/web/world/world1.png"
-      ],
-      "tech": [
-        "Web Technologies"
-      ],
-      "slug": "prompt-world",
-      "category": [
-        1
-      ]
-    },
-    {
-      "show": true,
       "title": "CryCast",
       "desc": [
         "An advanced cryptocurrency price prediction platform utilizing machine learning technology.",
@@ -167,84 +265,6 @@
       "category": [
         1,
         3
-      ]
-    },
-    {
-      "show": true,
-      "title": "NeuRehab",
-      "desc": [
-        "An innovative post-stroke rehabilitation system combining mobile technology with IoT capabilities.",
-        "Features real-time vital signs monitoring through integrated IoT sensors (Arduino Nano, ESP32) and a Kotlin-based mobile application."
-      ],
-      "year": "2024",
-      "preview": "",
-      "code": "https://github.com/AvanFabian/NeuRehab-Apps",
-      "thumbnail": "/image/projects/mobile/neurehab/neurehab1.jpg",
-      "images": [
-        "/image/projects/mobile/neurehab/neurehab1.jpg",
-        "/image/projects/mobile/neurehab/neurehab2.jpg",
-        "/image/projects/mobile/neurehab/neurehab3.jpg"
-      ],
-      "tech": [
-        "Kotlin",
-        "Arduino",
-        "ESP32",
-        "IoT"
-      ],
-      "slug": "neu-rehab",
-      "category": [
-        9
-      ]
-    },
-    {
-      "show": true,
-      "title": "MotherApp",
-      "desc": [
-        "A comprehensive pregnancy exercise monitoring system with both backend and mobile components.",
-        "Features include secure REST API endpoints, real-time exercise tracking, and pregnancy-specific calorie calculations, implemented with Laravel backend and Flutter frontend."
-      ],
-      "year": "2024",
-      "preview": "",
-      "code": "https://github.com/AvanFabian/MotherApps",
-      "thumbnail": "/image/projects/mobile/motherapp/motherapp1.jpg",
-      "images": [
-        "/image/projects/mobile/motherapp/motherapp1.jpg",
-        "/image/projects/mobile/motherapp/motherapp2.jpg",
-        "/image/projects/mobile/motherapp/motherapp3.jpg"
-      ],
-      "tech": [
-        "Laravel",
-        "Flutter",
-        "REST API"
-      ],
-      "slug": "mother-app",
-      "category": [
-        9
-      ]
-    },
-    {
-      "show": true,
-      "title": "Denkmeister",
-      "desc": [
-        "An offline-first German language learning application designed for mobile users.",
-        "Built with Flutter, featuring comprehensive learning tools including vocabulary exercises, grammar lessons, and pronunciation practice, all functioning without internet connectivity."
-      ],
-      "year": "2024",
-      "preview": "",
-      "code": "https://github.com/AvanFabian/DenkMeister-Apps",
-      "thumbnail": "/image/projects/mobile/denkmeister/denkmeister1.png",
-      "images": [
-        "/image/projects/denkmeister/denkmeister1.png",
-        "/image/projects/denkmeister/denkmeister2.png",
-        "/image/projects/denkmeister/denkmeister3.png"
-      ],
-      "tech": [
-        "Flutter",
-        "JSON"
-      ],
-      "slug": "denkmeister",
-      "category": [
-        9
       ]
     }
   ]

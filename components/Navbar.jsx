@@ -191,15 +191,10 @@ const Navbar = () => {
 			<nav
 				ref={navRef}
 				className={`navbar px-5 md:px-24 w-screen fixed transition-colors ease duration-500 ${isNavOpen
-						? "backdrop-filter backdrop-blur-md bg-gray-700 bg-opacity-50"
-						: "backdrop-filter backdrop-blur-md"
+					? "backdrop-filter backdrop-blur-md bg-gray-700 bg-opacity-50"
+					: "backdrop-filter backdrop-blur-md"
 					} inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
 				<div>
-					<h1
-						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${isNavOpen ? "text-white" : ""
-							}`}>
-						Fabian
-					</h1>
 				</div>
 				<div className="flex flex-row items-center">
 					<button
@@ -207,13 +202,13 @@ const Navbar = () => {
 						onClick={toggleNav}>
 						<div
 							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${isNavOpen
-									? "rotate-45   bg-white translate-y-[2px]"
-									: ""
+								? "rotate-45   bg-white translate-y-[2px]"
+								: ""
 								}`}></div>
 						<div
 							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${isNavOpen
-									? "-rotate-45 -translate-y-2 bg-white"
-									: ""
+								? "-rotate-45 -translate-y-2 bg-white"
+								: ""
 								}`}></div>
 					</button>
 				</div>

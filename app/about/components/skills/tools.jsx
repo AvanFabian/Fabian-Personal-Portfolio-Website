@@ -17,26 +17,45 @@ export default function Tools() {
 
 				type: "spring",
 			}}>
-			<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.3rem] lg:tracking-[.5rem] uppercase">
-				Tools
-			</h2>
-			<p className="text-gray-500 text-center tracking-wider md:px-">
-				<span className="text-black font-bold">Visual Studio Code</span>{" "}
-				| <span className="text-black font-medium">Jet Brains</span> |{" "}
-				<span className="text-black font-bold">Git</span> |{" "}
-				<span className="text-black font-bold">Github</span> |{" "}
-				<span className="text-black font-medium">Figma</span> |{" "}
-				<span className="text-black font-medium">Adobe Photoshop</span>{" "}
-				|{" "}
-				<span className="text-black font-medium">
-					Adobe Premiere Pro
-				</span>{" "}
-				|{" "}
-				<span className="text-black font-medium">
-					Adobe After Effect
-				</span>{" "}
-				|{" "}
-			</p>
+
+			{/* Section container */}
+			<div className="w-full max-w-4xl mx-auto px-4 py-16">
+
+				{/* Grid container for the list */}
+				<div className="space-y-4">
+
+					{/* Row 1: Development & IDEs */}
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 items-center">
+						<div className="font-bold text-gray-800 md:text-right">
+							Development & IDEs:
+						</div>
+						<div className="md:col-span-2 text-gray-600">
+							Visual Studio Code, JetBrains IDEs, Jupyter Notebook, Unity 3D
+						</div>
+					</div>
+
+					{/* Row 2: Version Control & API Tools */}
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 items-center">
+						<div className="font-bold text-gray-800 md:text-right">
+							Version Control & API Tools:
+						</div>
+						<div className="md:col-span-2 text-gray-600">
+							Git, GitHub, Postman
+						</div>
+					</div>
+
+					{/* Row 3: Design & Prototyping */}
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 items-center">
+						<div className="font-bold text-gray-800 md:text-right">
+							Design & Prototyping:
+						</div>
+						<div className="md:col-span-2 text-gray-600">
+							Figma, Blender, Arduino IDE
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</motion.div>
 	);
 }

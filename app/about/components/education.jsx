@@ -2,7 +2,9 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMedal } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-import Me4 from "@/public/image/me4.jpg";
+import Rektorat from "@/public/image/educations/Rektorat.jpg";
+import GerbangSmg from "@/public/image/educations/GerbangSmg.jpeg";
+import Doktoral from "@/public/image/educations/Doktoral.jpeg";
 
 function Wrapper({ children }) {
 	return (
@@ -56,7 +58,7 @@ export default function Education() {
 								<div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[400px]">
 									<div className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group">
 										<Image
-											src={Me4}
+											src={Doktoral}
 											width={400}
 											height={225}
 											alt="University"
@@ -65,7 +67,7 @@ export default function Education() {
 									</div>
 									<div className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group">
 										<Image
-											src={Me4}
+											src={Rektorat}
 											width={400}
 											height={225}
 											alt="University"
@@ -74,7 +76,7 @@ export default function Education() {
 									</div>
 									<div className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group">
 										<Image
-											src={Me4}
+											src={GerbangSmg}
 											width={400}
 											height={225}
 											alt="University"
@@ -96,101 +98,31 @@ export default function Education() {
 								{/* add gpa in a style */}
 								<div className="flex flex-wrap gap-2 mt-4 text-sm">
 									<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-										GPA: 3.9 out of 4
+										GPA: 3.7 out of 4
 									</div>
 								</div>
 							</div>
 						</div>
 						<div className="flex flex-col justify-start px-5 md:px-0">
-							<h2 className="font-semibold text-xl mt-7">
-								Achievements
-							</h2>
-							<p className="text-md font-normal mb-3 md:mb-12">
-								Some of my achievements during my study.
-							</p>
-							<div className="flex items-center gap-4 mb-4">
-								<div className="aspect-square w-10 rounded-full bg-black flex items-center justify-center text-primary-foreground">
-									<FontAwesomeIcon
-										icon={faMedal}
-										className="text-white h-5 w-5"
-									/>
-								</div>
-								<div>
-									<h3 className="font-medium">
-										Special Award | Gold Medal | Incubation
-										Opportunity
-									</h3>
-									<p className="text-sm">
-										Indonesia Inventor Day 2024 (IID) | Aug
-										2024
-									</p>
-								</div>
-							</div>
-							<div className="flex items-center gap-4 mb-4">
-								<div className="aspect-square w-10 rounded-full bg-black flex items-center justify-center text-primary-foreground">
-									<FontAwesomeIcon
-										icon={faMedal}
-										className="text-white h-5 w-5"
-									/>
-								</div>
-								<div>
-									<h3 className="font-medium">
-										3rd place (Bronze Medal)
-									</h3>
-									<p className="text-sm">
-										Student Digital Innovation Competition
-										(LIDM) | Jun 2024
-									</p>
-								</div>
-							</div>
-							<div className="flex items-center gap-4 mb-4">
-								<div className="aspect-square w-10 rounded-full bg-black flex items-center justify-center text-primary-foreground">
-									<FontAwesomeIcon
-										icon={faMedal}
-										className="text-white h-5 w-5"
-									/>
-								</div>
-								<div>
-									<h3 className="font-medium">
-										3rd place (Bronze Medal)
-									</h3>
-									<p className="text-sm">
-										Fesmaro UI/UX Design | Jun 2024
-									</p>
-								</div>
-							</div>
-							<div className="flex items-center gap-4 mb-5">
-								<div className="aspect-square w-10 rounded-full bg-black flex items-center justify-center text-primary-foreground">
-									<FontAwesomeIcon
-										icon={faMedal}
-										className="text-white h-5 w-5"
-									/>
-								</div>
-								<div>
-									<h3 className="font-medium">Finalist</h3>
-									<p className="text-sm">
-										36th National Student Science Week
-										(PIMNAS) | Nov 2023
-									</p>
-								</div>
-							</div>
-							<div className="flex items-center gap-4 mb-5">
-								<div className="aspect-square w-10 rounded-full bg-black flex items-center justify-center text-primary-foreground">
-									<FontAwesomeIcon
-										icon={faMedal}
-										className="text-white h-5 w-5"
-									/>
-								</div>
-								<div>
-									<h3 className="font-medium">
-										3rd place (Bronze Medal)
-									</h3>
-									<p className="text-sm">
-										FORKAFEST 3.0 Web Development
-										competition | Jan 2023
-									</p>
-								</div>
-							</div>
+							<h2 className="font-semibold text-xl mt-7">Achievements</h2>
+							<ul className="list-disc pl-4 space-y-6">
+								<li>
+									<span className="font-semibold">UM Gold Medal Tech & Trade Expo 2024</span> <span className="block text-sm text-gray-600">January 2024 – April 2024</span>
+									<p className="text-md text-justify mt-1">Architected a web-based invoicing platform to digitize MSME financial processes, integrating Gemini API for a smart suggestion feature to improve business product development.</p>
+								</li>
+								<li>
+									<span className="font-semibold">Silver Medal, 37th National Scientific Week (PIMNAS)</span> <span className="block text-sm text-gray-600">October 2024 – November 2024</span>
+									<p className="text-md text-justify mt-1">Architected an innovative rehabilitation system and successfully presented its technical framework and user benefits to a national panel of judges.</p>
+								</li>
+								<li>
+									<span className="font-semibold">Funding Recipient, National Student Creativity Program (PKM-KC)</span> <span className="block text-sm text-gray-600">February 2024 – September 2024</span>
+									<p className="text-md text-justify mt-1">Secured national R&D funding by designing and proposing an innovative system for post-stroke rehabilitation using Virtual Reality (VR) and IoT.</p>
+								</li>
+								<li>
+									<span className="font-semibold">Certificate of English Proficiency (CEFR B2 Equivalent)</span> <span className="block text-sm text-gray-600">November 2022 – December 2022</span>
+									<p className="text-md text-justify mt-1">Issued by the State University of Malang with a PBT-equivalent score of 487.</p>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>

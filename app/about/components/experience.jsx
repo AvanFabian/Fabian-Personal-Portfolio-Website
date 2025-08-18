@@ -59,101 +59,106 @@ function Wrapper({ children }) {
 export default function Experience() {
 	return (
 		<>
-			<Title/>
+			<Title />
 			<Wrapper>
-				<div className="grid gap-4 relative">
-					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">2023 - Present</div>
-					<div>
-						<h3 className="font-semibold text-xl text-black">
-							PT Hafdzamedia Teknologi Aplikasi
-						</h3>
-						<h4 className=" font-light text-md mb-4">
-							Fullstack Web Developer | Part-time
-						</h4>
-						<p className="text-justify">
-							Responsible for building and maintaining scalable
-							web applications using the latest technologies.
-							Collaborated with cross-functional teams to deliver
-							high-quality solutions that meet business
-							requirements.
-						</p>
-						<div className="flex flex-wrap gap-2 mt-4 text-sm">
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								React
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Next.js
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Laravel
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								MySql
+				<div className="grid gap-8">
+					{/* Example Experience Card - repeat for each experience */}
+					<div className="grid gap-4 relative">
+						<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
+						<div className="font-medium text-lg">February 2025 – June 2025 · Hybrid</div>
+						<div>
+							<h3 className="font-semibold text-xl text-black">Profile Image Studio</h3>
+							<h4 className="font-light text-md mb-4">Backend Developer Intern</h4>
+							<p className="text-justify">
+								Digital company, providing ERP system and custom software development for business. Implemented customized business logic using AdonisJS for creative economy actors, automated questionnaire assessment data recapitulation, designed normalized PostgreSQL schema, wrote API docs in Postman, collaborated with DevOps, and implemented RBAC authorization.
+							</p>
+							<div className="flex flex-wrap gap-2 mt-4 text-sm">
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">AdonisJS</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">PostgreSQL</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Postman</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">RBAC</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="grid gap-4 relative">
-					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">2024 - Present</div>
-					<div>
-						<h3 className="font-semibold text-xl text-black">
-							Outlier
-						</h3>
-						<h4 className=" font-light text-md mb-4">
-							AI Trainer | Freelance
-						</h4>
-						<p className="text-justify">
-							Crafted and refined chatbot prompts using prompt
-							engineering and RLHF techniques to improve the AI
-							responses in English and Indonesian, leading to more
-							accurate and contextually relevant interactions.
-						</p>
-
-						<div className="flex flex-wrap gap-2 mt-4 text-sm">
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Generative AI
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Prompt Engineering
-							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Problem Solving
+					<div className="grid gap-4 relative">
+						<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
+						<div className="font-medium text-lg">April 2025 – June 2025 · Offline</div>
+						<div>
+							<h3 className="font-semibold text-xl text-black">Social Economic Accelerator Lab</h3>
+							<h4 className="font-light text-md mb-4">Identity and Access Management Intern</h4>
+							<p className="text-justify">
+								Digital company, providing ERP system and custom software development for business. Windows Server setup, LDAP &amp; AD configuration, IAM &amp; CIAM implementation, Okta IdP for SSO, and data security for business continuity.
+							</p>
+							<div className="flex flex-wrap gap-2 mt-4 text-sm">
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Windows Server</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">LDAP</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Active Directory</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Okta</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">IAM</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="grid gap-4 relative">
-					<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-					<div className="font-medium text-lg">2023 - Present</div>
-					<div>
-						<h3 className="font-semibold text-xl text-black">
-							Self-Employed
-						</h3>
-						<h4 className=" font-light text-md mb-4">
-							Web Developer | Freelance
-						</h4>
-						<p className="text-justify">
-							Specialized in crafting innovative solutions using
-							Laravel and Next.js, enhancing client satisfaction
-							and project efficiency. Contributed expertise in
-							both frontend and backend development during
-							collaborative team projects, leading to successful
-							project completions
-						</p>
-						<div className="flex flex-wrap gap-2 mt-4 text-sm">
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								React
+					<div className="grid gap-4 relative">
+						<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
+						<div className="font-medium text-lg">October 2024 – Present</div>
+						<div>
+							<h3 className="font-semibold text-xl text-black">Student Creativity Program UM</h3>
+							<h4 className="font-light text-md mb-4">Mentor</h4>
+							<p className="text-justify">
+								Student innovation and research program funded by the Indonesian Ministry of Education. Mentored teams, oversaw proposal writing, research, and presentations, and provided strategic input for project feasibility and impact.
+							</p>
+							<div className="flex flex-wrap gap-2 mt-4 text-sm">
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Mentorship</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Innovation</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Research</div>
 							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Next.js
+						</div>
+					</div>
+					<div className="grid gap-4 relative">
+						<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
+						<div className="font-medium text-lg">October 2024 – July 2025</div>
+						<div>
+							<h3 className="font-semibold text-xl text-black">Tech Community GDGOC UM</h3>
+							<h4 className="font-light text-md mb-4">ML/AI Core Team</h4>
+							<p className="text-justify">
+								University based Technology Community Program supported by Google. Led final projects, collaborated across technical divisions, and delivered ML/AI learning materials in Study Jam sessions.
+							</p>
+							<div className="flex flex-wrap gap-2 mt-4 text-sm">
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">ML/AI</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Google</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Study Jam</div>
 							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								Laravel
+						</div>
+					</div>
+					<div className="grid gap-4 relative">
+						<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
+						<div className="font-medium text-lg">February 2024 – March 2024</div>
+						<div>
+							<h3 className="font-semibold text-xl text-black">ID/X Partner</h3>
+							<h4 className="font-light text-md mb-4">Data Scientist</h4>
+							<p className="text-justify">
+								Project Based Internship program by Rakamin Academy with industry partner ID/X Partners. Developed ML model for loan default risk prediction, performed feature engineering, and implemented XGBoost with Scikit-learn.
+							</p>
+							<div className="flex flex-wrap gap-2 mt-4 text-sm">
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Data Science</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">XGBoost</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Scikit-learn</div>
 							</div>
-							<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								MySql
+						</div>
+					</div>
+					<div className="grid gap-4 relative">
+						<div className="aspect-square w-5 bg-black rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
+						<div className="font-medium text-lg">October 2023 – October 2024</div>
+						<div>
+							<h3 className="font-semibold text-xl text-black">Tech Community GDSC UM</h3>
+							<h4 className="font-light text-md mb-4">ML/AI Core Team</h4>
+							<p className="text-justify">
+								University based Community Program supported by Google. Delivered ML/AI learning materials in Study Jam sessions and guided students in practical ML/AI applications.
+							</p>
+							<div className="flex flex-wrap gap-2 mt-4 text-sm">
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">ML/AI</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Google</div>
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">Study Jam</div>
 							</div>
 						</div>
 					</div>

@@ -53,8 +53,8 @@ export default function Page() {
 								alt="Fabian"
 								layout="fill"
 								objectFit="cover"
-								placeholder="blur"
-							/>
+								// placeholder removed for Next.js 15+ compatibility
+								/>
 						</motion.div>
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
@@ -109,8 +109,8 @@ export default function Page() {
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
-										placeholder="blur"
-									/>
+										// placeholder removed for Next.js 15+ compatibility
+										/>
 								</motion.div>
 							</div>
 							<div className="absolute top-8 right-36 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
@@ -132,9 +132,10 @@ export default function Page() {
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
-										placeholder="blur"
+										// placeholder removed for Next.js 15+ compatibility
 										objectPosition="0% 0%"
-									/>
+										// blurDataURL is not needed for imported static images
+										/>
 								</motion.div>
 							</div>
 							<div className="absolute bottom-6 right-20 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
@@ -158,8 +159,8 @@ export default function Page() {
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
-										placeholder="blur"
-									/>
+										// placeholder removed for Next.js 15+ compatibility
+										/>
 								</motion.div>
 							</div>
 

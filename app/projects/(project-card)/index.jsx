@@ -22,13 +22,12 @@ export default function projectCard({ project, index, activeCategory }) {
 							type: "spring",
 						}}>
 						<Image
-							src={project.thumbnail}
+							src={project.thumbnail || "/image/projects.png"}
 							alt="Fabian"
 							layout="fill"
 							objectFit="cover"
-							placeholder="blur"
 							className="bg-slate-950 opacity-10  group-hover/tes:opacity-100 transition-all ease duration-500"
-							blurDataURL={project.thumbnail}
+							// placeholder removed for Next.js 15+ compatibility
 						/>
 						<div className="absolute top-0 left-0 bg-gray-600 px-4 py-2">
 							<h4 className="text-white">{project.year}</h4>

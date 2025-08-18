@@ -111,38 +111,9 @@ export default function About() {
 						Avan Fabian Daniswara
 					</h2>
 					<p className="text-gray-600 text-justify title text-lg">
-						Hey there, I&rsquo;m Avan Fabian Daniswara, a
-						<span className="text-black font-medium">
-							{" "}
-							tech enthusiast
-						</span>{" "}
-						and
-						<span className="text-black font-medium">
-							{" "}
-							aspiring Web Developer.
-						</span>{" "}
-						Originating from Probolinggo, East Java, Indonesia,
-						I&rsquo;m currently embarking on a fascinating journey
-						at{" "}
-						<span className="text-black font-medium">
-							Universitas Negeri Malang,
-						</span>{" "}
-						where I&rsquo;m pursuing my degree in{" "}
-						<span className="text-black font-medium">
-							Informatics Engineering.
-						</span>{" "}
-						My passion for technology and coding knows no bounds.
-						Beyond the world of coding, I find myself deeply
-						immersed in the realms of design, Game Development, and
-						the fascinating universe of AI. I believe that in
-						today&rsquo;s fast-paced digital landscape, being a
-						<span className="text-black font-medium">
-							{" "}
-							lifelong learner
-						</span>{" "}
-						is not just a choice, but a necessity. Let&rsquo;s
-						connect and explore this ever-evolving world of tech
-						together!
+						Hello! I&apos;m Avan Fabian Daniswara, a software engineer and a problem-solver at heart. <br /><br />
+						My journey into technology is driven by a simple belief: the most impactful solutions are born from a deep curiosity about the world around us. Originally from Probolinggo and now an Informatics Engineering student at the State University of Malang, I&apos;ve always been fascinated by the hidden inefficiencies in everyday life—the challenges people accept simply because &quot;that&apos;s how it&apos;s always been done.&quot; This perspective is my starting point for every project: to look beyond the surface and ask, &quot;How can technology make this fundamentally better?&quot; <br /><br />
+						This drive to innovate has led me on an incredible journey. It has guided me in architecting a full-stack platform for a real-world client, developing an award-winning VR/IoT rehabilitation system for a national competition, and building a predictive machine learning model with 85% accuracy. From backend systems in Laravel and AdonisJS to cross-platform mobile apps in Flutter, each project is a testament to my belief in using the right tool for the right problem.
 					</p>
 					<Card />
 				</motion.div>

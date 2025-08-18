@@ -8,7 +8,7 @@ import Link from "next/link";
 // components
 import Button from "@/components/Button";
 import Me from "@/public/image/me.jpg";
-import MeAbout from "@/public/image/me2.jpg";
+import MeAbout from "@/public/image/me4.jpg";
 import Setup from "@/public/image/setup.jpg";
 import ProjectAll from "@/public/image/projects.png";
 import Hr from "@/components/Hr";
@@ -77,19 +77,11 @@ const MyPage = () => {
 										Full Stack Developer
 									</motion.h1>
 									<motion.p
-										className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
+										className="title text-md 2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
 										initial={{ x: -100, opacity: 0 }}
 										whileInView={{ x: 0, opacity: 1 }}
-										transition={{
-											delay: 0.4,
-											type: "spring",
-										}}>
-										A junior fullstack developer who
-										currently focused on Mobile and Website Development.
-										Other than that, I also interested in
-										Data Analyst, and UX/UI Design.
-										I always love to learn new things and always
-										open to new opportunities.
+										transition={{ delay: 0.4, type: "spring" }}>
+										An innovative Software Engineer with a strong foundation in full-stack development and a passion for solving complex, real-world problems. My experience spans from architecting backend systems and developing cross-platform mobile apps, to winning national awards for integrated VR/IoT solutions and building predictive machine learning models. I am actively seeking challenging internship opportunities where I can contribute to impactful projects and continue to grow as a technology professional.
 									</motion.p>
 									<motion.div
 										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
