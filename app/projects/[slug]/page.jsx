@@ -12,6 +12,7 @@ import FixedButon from "@/components/FixedButton";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 function ScrollDownButton() {
   const [isAtBottom, setIsAtBottom] = useState(false);
@@ -140,7 +141,7 @@ function Page({ params }) {
 									Preview
 								</h2>
 								<p className="text-2xl font-normal text-neutral-900">
-									<a
+									<Link
 										href={data.preview}
 										target="_blank"
 										rel="noopener noreferrer">
@@ -149,7 +150,7 @@ function Page({ params }) {
 											icon={faArrowUpRightFromSquare}
 											className="ml-3"
 										/>
-									</a>
+									</Link>
 								</p>
 							</div>
 						)}
@@ -159,7 +160,7 @@ function Page({ params }) {
 									Source Code
 								</h2>
 								<p className="text-2xl font-normal text-neutral-900">
-									<a
+									<Link
 										href={data.code}
 										target="_blank"
 										rel="noopener noreferrer">
@@ -168,7 +169,7 @@ function Page({ params }) {
 											icon={faGithub}
 											className="ml-3"
 										/>
-									</a>
+									</Link>
 								</p>
 							</div>
 						)}

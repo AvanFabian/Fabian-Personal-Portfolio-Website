@@ -102,7 +102,7 @@ const MyPage = () => {
 											</Link>
 										</Button>
 										<Button variation="secondary">
-											<a href="#contact">Contact Me</a>
+											<Link href="#contact">Contact Me</Link>
 										</Button>
 									</motion.div>
 								</motion.div>
@@ -308,7 +308,7 @@ const MyPage = () => {
 											delay: 0.1,
 											type: "spring",
 										}}>
-										Get In Touch
+										My Contact
 									</motion.h1>
 									<Hr />
 									<motion.p
@@ -332,9 +332,9 @@ const MyPage = () => {
 											delay: 0.3,
 											type: "spring",
 										}}>
-										<a href="mailto:avanfabiand@gmail.com?subject=Hello&body=Hello Fabian,">
+										<Link href="mailto:avanfabiand@gmail.com?subject=Hello&body=Hello Fabian,">
 											avanfabiand@gmail.com
-										</a>
+										</Link>
 									</motion.p>
 									{/* icons */}
 									<div className="flex justify-center items-center space-x-4">

@@ -194,12 +194,12 @@ export default function Page() {
 								<Link href="projects/ekrafdash">More</Link>
 							</Button>
 							<Button variation="secondary">
-								<a
+								<Link
 									href="https://ekraf.pisdev.my.id/"
 									target="_blank"
 									rel="noopener noreferrer">
 									Preview
-								</a>
+								</Link>
 							</Button>
 						</div>
 					</motion.div>
@@ -307,12 +307,12 @@ export default function Page() {
 								<Link href="projects/trivia">More</Link>
 							</Button>
 							<Button variation="secondary">
-								<a
+								<Link
 									href="https://generative-trivia.vercel.app/"
 									target="_blank"
 									rel="noopener noreferrer">
 									Preview
-								</a>
+								</Link>
 							</Button>
 						</div>
 					</motion.div>

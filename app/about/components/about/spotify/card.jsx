@@ -4,6 +4,7 @@ import PlayingAnimation from "./animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 const Card = () => {
 	const [loading, setLoading] = useState(true);
@@ -57,12 +58,12 @@ useEffect(() => {
 						<div className="z-10 rounded-lg ms-5">
 							<div className="flex items-center space-x-4">
 								<div className="overflow-hidden">
-									<a
+									<Link
 										href={result.songUrl}
 										target="_blank"
 										className="block font-semibold w-full truncate text-blue-500">
 										{result.title}
-									</a>
+									</Link>
 									<p className="truncate text-gray-500">
 										{result.artist}
 									</p>

@@ -7,6 +7,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import FixedButon from "@/components/FixedButton";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import Projects from "@/json/data.json"
+import Link from "next/link";
 
 export default function Page () {
 	const projects = Projects.Projects
@@ -94,17 +95,17 @@ export default function Page () {
 										<td>
 											<div className="flex flex-row justify-center items-center">
 												{project.code && (
-													<a
+													<Link
 														href={project.code}
 														title="Link to GitHub">
 														<FontAwesomeIcon
 															icon={faGithub}
 															className="text-xl mr-2"
 														/>
-													</a>
+													</Link>
 												)}
 												{project.preview && (
-													<a
+													<Link
 														href={project.preview}
 														title="Link to project preview">
 														<FontAwesomeIcon
@@ -113,7 +114,7 @@ export default function Page () {
 															}
 															className="text-xl"
 														/>
-													</a>
+													</Link>
 												)}
 											</div>
 										</td>

@@ -119,7 +119,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 							className="text-6xl font-bold text-white ">
 							Menu
 						</motion.h1>
-						<a href="/#home">
+						<Link href="/#home">
 							<div
 								className="text-2xl font-bold text-white"
 								onClick={handleItemClick}>
@@ -131,7 +131,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 									Home
 								</motion.h2>
 							</div>
-						</a>
+						</Link>
 						<Link href="/about">
 							<div
 								onClick={handleItemClick}
@@ -158,7 +158,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 								</motion.h2>
 							</div>
 						</Link>
-						<a href="/#contact">
+						<Link href="/#contact">
 							<div
 								onClick={handleItemClick}
 								className="text-2xl font-bold text-white">
@@ -170,7 +170,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 									Contact
 								</motion.h2>
 							</div>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</motion.div>
