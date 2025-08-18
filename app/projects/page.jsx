@@ -9,6 +9,9 @@ import Image from "next/image";
 import MotherApp1 from "@/public/image/projects/mobile/motherapp/motherapp1.jpg";
 import MotherApp2 from "@/public/image/projects/mobile/motherapp/motherapp2.jpg";
 import MotherApp3 from "@/public/image/projects/mobile/motherapp/motherapp3.jpg";
+import DashEkraf1 from "@/public/image/projects/web/dashekraf/dashekraf1.png";
+import DashEkraf2 from "@/public/image/projects/web/dashekraf/dashekraf2.png";
+import DashEkraf3 from "@/public/image/projects/web/dashekraf/dashekraf3.png";
 import ProjectAll from "@/public/image/projects.png";
 
 import Hr from "@/components/Hr";
@@ -19,9 +22,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const category = {
-	1: "Web Development",
-	3: "AI & Machine Learning",
-	9: "Mobile Development",
+	1: "Fullstack Development",
+	3: "Mobile Development",
 }
 
 export default function Page() {
@@ -53,8 +55,8 @@ export default function Page() {
 								alt="Fabian"
 								layout="fill"
 								objectFit="cover"
-								// placeholder removed for Next.js 15+ compatibility
-								/>
+							// placeholder removed for Next.js 15+ compatibility
+							/>
 						</motion.div>
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
@@ -89,9 +91,120 @@ export default function Page() {
 				<div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
 						<Hr variant="long"></Hr>
-						<h1 className="text-3xl font-bold mt-3">Hightlight</h1>
+						<h1 className="text-3xl font-bold mt-3">Featured Project</h1>
 					</div>
 				</div>
+				{/* Project 1 */}
+				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
+					<div className="flex justify-center items-start flex-col mb-5 ">
+						<div className="images relative w-full  aspect-square">
+							<div className="absolute top-28 left-10 h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">
+								<motion.div
+									initial={{ opacity: 0, scale: 0.5, x: 100 }}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={DashEkraf1}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+									// placeholder removed for Next.js 15+ compatibility
+									/>
+								</motion.div>
+							</div>
+							<div className="absolute top-8 right-36 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+								<motion.div
+									initial={{
+										opacity: 0,
+										scale: 0.5,
+										x: -100,
+									}}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									transition={{ delay: 0.3 }}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={DashEkraf3}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+										// placeholder removed for Next.js 15+ compatibility
+										objectPosition="0% 0%"
+									// blurDataURL is not needed for imported static images
+									/>
+								</motion.div>
+							</div>
+							<div className="absolute bottom-6 right-20 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+								<motion.div
+									initial={{
+										opacity: 0,
+										scale: 0.5,
+										x: -100,
+									}}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									transition={{
+										delay: 0.5,
+									}}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={DashEkraf2}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+									// placeholder removed for Next.js 15+ compatibility
+									/>
+								</motion.div>
+							</div>
+						</div>
+					</div>
+					<motion.div
+						className="flex justify-center items-start flex-col mb-5 md:px-10"
+						initial={{
+							opacity: 0,
+							x: 200,
+						}}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+						}}
+						transition={{
+							delay: 0.5,
+							type: "spring",
+						}}>
+						<h2 className="text-2xl font-bold tracking-wider mb-3">
+							Dashboard Ekraf : Southeast Sulawesi Creative Economy Platform
+						</h2>
+						<p className="text-gray-600 text-justify title text-lg">
+							Architected and developed the backend system for a digital platform to support creative economy actors, focusing on a custom questionnaire and data recapitulation module.
+        					Implemented a secure RESTful API using AdonisJS and designed a normalized PostgreSQL schema, which automated data processing and improved data accuracy for stakeholders.
+						</p>{" "}
+						<div className="mt-3">
+							<Button variation="primary">
+								<Link href="projects/ekrafdash">More</Link>
+							</Button>
+							<Button variation="secondary">
+								<a
+									href="https://ekraf.pisdev.my.id/"
+									target="_blank"
+									rel="noopener noreferrer">
+									Preview
+								</a>
+							</Button>
+						</div>
+					</motion.div>
+				</div>
+				{/* Project 2 */}
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
@@ -109,8 +222,8 @@ export default function Page() {
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
-										// placeholder removed for Next.js 15+ compatibility
-										/>
+									// placeholder removed for Next.js 15+ compatibility
+									/>
 								</motion.div>
 							</div>
 							<div className="absolute top-8 right-36 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
@@ -134,8 +247,8 @@ export default function Page() {
 										objectFit="cover"
 										// placeholder removed for Next.js 15+ compatibility
 										objectPosition="0% 0%"
-										// blurDataURL is not needed for imported static images
-										/>
+									// blurDataURL is not needed for imported static images
+									/>
 								</motion.div>
 							</div>
 							<div className="absolute bottom-6 right-20 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
@@ -159,8 +272,8 @@ export default function Page() {
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
-										// placeholder removed for Next.js 15+ compatibility
-										/>
+									// placeholder removed for Next.js 15+ compatibility
+									/>
 								</motion.div>
 							</div>
 
@@ -181,7 +294,7 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							MotherApps
+							Mother : Pregnancy Wellness & Fitness Monitoring App
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
 							Android Apps built with Flutter, and Laravel.
@@ -204,6 +317,7 @@ export default function Page() {
 						</div>
 					</motion.div>
 				</div>
+				
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start">
 						<Hr variant="long"></Hr>
@@ -221,7 +335,7 @@ export default function Page() {
 								delay: 0.7,
 								type: "spring",
 							}}>
-							Other Note Worthy Projects
+							My Project Gallery
 						</motion.h1>
 					</div>
 				</div>

@@ -10,7 +10,7 @@
       "year": "2025",
       "preview": "",
       "code": "",
-      "thumbnail": "",
+      "thumbnail": "/image/projects/web/dashekraf/dashekraf1.png",
       "images": [],
       "tech": [
         "Node.js",
@@ -36,7 +36,7 @@
       "year": "2025",
       "preview": "",
       "code": "",
-      "thumbnail": "",
+      "thumbnail": "/image/projects/web/sincosmile/sinco3.png",
       "images": [],
       "tech": [
         "Next.js",
@@ -110,7 +110,7 @@
       "year": "2025",
       "preview": "",
       "code": "",
-      "thumbnail": "",
+      "thumbnail": "/image/projects/mobile/neurehab/neurehab4.png",
       "images": [],
       "tech": [
         "Unity 3D",
@@ -153,54 +153,9 @@
     },
     {
       "show": true,
-      "title": "F&B MSME Information System",
+      "title": "RumahSaladFaqiha: MSME F&B Information System",
       "desc": [
         "Designed and developed a web application to digitize core business operations such as order management, customer data and inventory tracking. resulting in productivity boost for the business owner."
-      ],
-      "year": "2024",
-      "preview": "",
-      "code": "",
-      "thumbnail": "",
-      "images": [],
-      "tech": [
-        "Laravel",
-        "MySQL",
-        "Tailwind",
-        "Git"
-      ],
-      "slug": "fnb-msme-info-system",
-      "category": [
-        1
-      ]
-    },
-    {
-      "show": true,
-      "title": "F&B MSME Invoice Management System",
-      "desc": [
-        "Integrating Gemini API for a product recommendation feature."
-      ],
-      "year": "2024",
-      "preview": "",
-      "code": "",
-      "thumbnail": "",
-      "images": [],
-      "tech": [
-        "Laravel",
-        "MySQL",
-        "Tailwind",
-        "Git"
-      ],
-      "slug": "fnb-msme-invoice-system",
-      "category": [
-        1
-      ]
-    },
-    {
-      "show": true,
-      "title": "RumahSaladFaqiha",
-      "desc": [
-        "A tailored e-commerce solution designed specifically for a local MSME partner in the food industry.",
-        "Built with Laravel, the platform streamlines product sales and payment management in a localized market context."
       ],
       "year": "2024",
       "preview": "",
@@ -229,7 +184,7 @@
       "year": "2023",
       "preview": "",
       "code": "https://github.com/AvanFabian/Jelajah-Nusantara",
-      "thumbnail": "/image/projects/web/jentara/jentara1.png",
+      "thumbnail": "/image/projects/web/jentara/jentara2.png",
       "images": [
         "/image/projects/web/jentara/jentara1.png",
         "/image/projects/web/jentara/jentara2.png",
@@ -241,30 +196,6 @@
       "slug": "jelajah-nusantara",
       "category": [
         1
-      ]
-    },
-    {
-      "show": true,
-      "title": "CryCast",
-      "desc": [
-        "An advanced cryptocurrency price prediction platform utilizing machine learning technology.",
-        "Implements the Naive Bayes algorithm for accurate price forecasting and market analysis."
-      ],
-      "year": "2023",
-      "preview": "",
-      "code": "https://github.com/AvanFabian/cry-cast",
-      "thumbnail": "/image/projects/",
-      "images": [
-        "/image/projects/"
-      ],
-      "tech": [
-        "Machine Learning",
-        "Naive Bayes"
-      ],
-      "slug": "cry-cast",
-      "category": [
-        1,
-        3
       ]
     }
   ]
