@@ -11,6 +11,8 @@
         "editor.tabSize": 2
     },
     "prettier.singleAttributePerLine": false,
+    "terminal.integrated.fontSize": 12,
+    "editor.fontSize": 12,
     
     
 }

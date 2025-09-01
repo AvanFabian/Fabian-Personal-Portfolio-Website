@@ -17,6 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 // import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -74,14 +75,14 @@ const MyPage = () => {
 											delay: 0.3,
 											type: "spring",
 										}}>
-										Full Stack Developer
+										IT Specialist
 									</motion.h1>
 									<motion.p
 										className="title text-md 2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
 										initial={{ x: -100, opacity: 0 }}
 										whileInView={{ x: 0, opacity: 1 }}
 										transition={{ delay: 0.4, type: "spring" }}>
-										An innovative Software Engineer with a strong foundation in full-stack development and a passion for solving complex, real-world problems. My experience spans from architecting backend systems and developing cross-platform mobile apps, to winning national awards for integrated VR/IoT solutions and building predictive machine learning models. I am actively seeking challenging internship opportunities where I can contribute to impactful projects and continue to grow as a technology professional.
+										A versatile IT Specialist with expertise spanning full-stack development, data analysis, and scientific writing. I have designed and optimized backend systems, built cross-platform applications, and developed predictive machine learning models. Beyond engineering, I actively engage in research and academic publication, leveraging data-driven insights to solve real-world problems. I am seeking opportunities to contribute to impactful projects where I can integrate technical innovation with analytical and scholarly excellence.
 									</motion.p>
 									<motion.div
 										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
@@ -235,7 +236,7 @@ const MyPage = () => {
 											delay: 0.1,
 											type: "spring",
 										}}>
-										My Projects
+										My Portfolio
 									</motion.h1>
 									<Hr />
 									<motion.p
@@ -246,12 +247,7 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										This is some of my projects that I have
-										done{" "}
-										<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
-											{" "}
-											and currently working on.
-										</span>
+										A glimpse into my journey in IT and research.
 									</motion.p>
 									<motion.div
 										initial={{ y: 40, opacity: 0 }}
@@ -308,7 +304,7 @@ const MyPage = () => {
 											delay: 0.1,
 											type: "spring",
 										}}>
-										My Contact
+										Contact Me
 									</motion.h1>
 									<Hr />
 									<motion.p
@@ -319,9 +315,9 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										Feel free to contact me if you have any{" "}
+										I&apos;m open to collaborations, questions,{" "}
 										<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
-											questions or just want to say hi.
+											or simply a friendly chat.
 										</span>
 									</motion.p>
 									<motion.p
@@ -401,8 +397,8 @@ const MyPage = () => {
 												className="text-3xl"
 											/>
 										</motion.a>
-										{/* <motion.a
-											href="https://discordapp.com/users/bloody#6118"
+										<motion.a
+											href="https://wa.me/6281234566046"
 											target="_blank"
 											rel="noopener noreferrer"
 											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
@@ -413,10 +409,11 @@ const MyPage = () => {
 												opacity: { delay: 0.6 },
 											}}>
 											<FontAwesomeIcon
-												icon={faDiscord}
+												icon={faWhatsapp}
 												className="text-3xl"
 											/>
-										</motion.a> */}
+										</motion.a>
+
 									</div>
 								</div>
 							</div>

@@ -22,8 +22,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const category = {
-	1: "Fullstack Development",
-	3: "Mobile Development",
+	1: "Website",
+	2: "Scientific Research & Document",
+	3: "Mobile Apps",
 }
 
 export default function Page() {
@@ -183,15 +184,22 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							Dashboard Ekraf : Southeast Sulawesi Creative Economy Platform
+							Neurehab: A Nationally-Funded Student Research Project (PKM-KC)
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							Architected and developed the backend system for a digital platform to support creative economy actors, focusing on a custom questionnaire and data recapitulation module.
-        					Implemented a secure RESTful API using AdonisJS and designed a normalized PostgreSQL schema, which automated data processing and improved data accuracy for stakeholders.
+							Neurehab is a Karsa Cipta (KC) research and development project that successfully obtained national funding from the Ministry of Education, Culture, Research, and Technology through the Student Creativity Program (PKM). This project focuses on the design and development of an integrated post-stroke rehabilitation system that combines Virtual Reality (VR), Internet of Things (IoT), and mobile applications. The project was further developed and won a Silver Medal at the 37th PIMNAS.
 						</p>{" "}
+						<div className="text-gray-600 text-justify title text-lg mt-1">
+							<p className="mb-2">As the  Researcher & Developer, I was responsible for:</p>
+							<ol className="space-y-2 ml-4" style={{ listStyleType: 'decimal', paddingLeft: '1rem' }}>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Research</strong> & Proposal Development.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>System Architecture</strong> & Prototyping.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}>Integration & <strong>Final Presentation</strong></li>
+							</ol>
+						</div>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/ekrafdash">More</Link>
+								<Link href="projects/web/ekrafdash">More</Link>
 							</Button>
 							<Button variation="secondary">
 								<Link
@@ -205,6 +213,125 @@ export default function Page() {
 					</motion.div>
 				</div>
 				{/* Project 2 */}
+				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
+					<div className="flex justify-center items-start flex-col mb-5 ">
+						<div className="images relative w-full  aspect-square">
+							<div className="absolute top-28 left-10 h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">
+								<motion.div
+									initial={{ opacity: 0, scale: 0.5, x: 100 }}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={DashEkraf1}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+									// placeholder removed for Next.js 15+ compatibility
+									/>
+								</motion.div>
+							</div>
+							<div className="absolute top-8 right-36 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+								<motion.div
+									initial={{
+										opacity: 0,
+										scale: 0.5,
+										x: -100,
+									}}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									transition={{ delay: 0.3 }}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={DashEkraf3}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+										// placeholder removed for Next.js 15+ compatibility
+										objectPosition="0% 0%"
+									// blurDataURL is not needed for imported static images
+									/>
+								</motion.div>
+							</div>
+							<div className="absolute bottom-6 right-20 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+								<motion.div
+									initial={{
+										opacity: 0,
+										scale: 0.5,
+										x: -100,
+									}}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									transition={{
+										delay: 0.5,
+									}}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={DashEkraf2}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+									// placeholder removed for Next.js 15+ compatibility
+									/>
+								</motion.div>
+							</div>
+						</div>
+					</div>
+					<motion.div
+						className="flex justify-center items-start flex-col mb-5 md:px-10"
+						initial={{
+							opacity: 0,
+							x: 200,
+						}}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+						}}
+						transition={{
+							delay: 0.5,
+							type: "spring",
+						}}>
+						<h2 className="text-2xl font-bold tracking-wider mb-3">
+							Dashboard Ekraf : Southeast Sulawesi Creative Economy Platform
+						</h2>
+						<p className="text-gray-600 text-justify title text-lg">
+							Architected and developed a comprehensive backend system for Southeast Sulawesi&apos;s creative economy platform using AdonisJS and PostgreSQL. 
+							Built secure RESTful APIs and implemented automated data processing workflows to support digital transformation initiatives for local creative businesses.
+						</p>{" "}
+						<div className="text-gray-600 text-justify title text-lg mt-1">
+							<p className="mb-2">Key development responsibilities included:</p>
+							<ol className="space-y-2 ml-4" style={{ listStyleType: 'decimal', paddingLeft: '1rem' }}>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Custom questionnaire module</strong> with dynamic form generation and validation for collecting business data from creative economy actors.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Automated reporting dashboard</strong> that transforms raw survey data into comprehensive stakeholder reports with data visualization.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>User management system</strong> with role-based access control for administrators, surveyors, and business owners.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Real-time analytics dashboard</strong> providing insights on survey completion rates, response patterns, and business distribution.</li>
+							</ol>
+						</div>{" "}
+						<div className="mt-3">
+							<Button variation="primary">
+								<Link href="projects/web/ekrafdash">More</Link>
+							</Button>
+							<Button variation="secondary">
+								<Link
+									href="https://ekraf.pisdev.my.id/"
+									target="_blank"
+									rel="noopener noreferrer">
+									Preview
+								</Link>
+							</Button>
+						</div>
+					</motion.div>
+				</div>
+				{/* Project 3 */}
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
@@ -297,14 +424,21 @@ export default function Page() {
 							Mother : Pregnancy Wellness & Fitness Monitoring App
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							Android Apps built with Flutter, and Laravel.
-							This mobile application serves as a comprehensive digital journal designed to assist urban pregnant women in monitoring their
-							health throughout pregnancy while addressing the risks associated with obesity. By integrating personalized tracking features,
-							the app enables users to log essential health metrics such as weight gain, nutritional intake, physical activity, and prenatal check-up schedules.
+							A comprehensive pregnancy wellness mobile application built with Flutter and Laravel, designed to support urban pregnant women 
+							in managing their health journey while addressing obesity-related risks during pregnancy.
 						</p>{" "}
+						<div className="text-gray-600 text-justify title text-lg mt-1">
+							<p className="mb-2">Key technical implementations included:</p>
+							<ol className="space-y-2 ml-4" style={{ listStyleType: 'decimal', paddingLeft: '1rem' }}>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Laravel backend API</strong> with secure authentication and data encryption for handling sensitive health information.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Flutter mobile interface</strong> with intuitive forms for daily health logging, weight tracking, and appointment scheduling.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Personalized dashboard</strong> featuring progress charts, health insights, and customized recommendations based on user data.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Notification system</strong> for medication reminders, appointment alerts, and milestone celebrations throughout pregnancy.</li>
+							</ol>
+						</div>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/trivia">More</Link>
+								<Link href="projects/mobile/motherapp">More</Link>
 							</Button>
 							<Button variation="secondary">
 								<Link
@@ -317,7 +451,7 @@ export default function Page() {
 						</div>
 					</motion.div>
 				</div>
-				
+
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start">
 						<Hr variant="long"></Hr>

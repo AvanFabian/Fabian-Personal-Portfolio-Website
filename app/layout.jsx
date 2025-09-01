@@ -7,6 +7,7 @@ import "./nprogress.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
+	metadataBase: new URL("https://www.fabiandaniswara.my.id"),
 	title: "Fabian | Portofolio",
 	description:
 		"My name is Fabian, I'm a web developer and I'm passionate about it. I'm currently studying at State University of Malang.",
