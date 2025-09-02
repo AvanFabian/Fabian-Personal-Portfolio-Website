@@ -21,7 +21,7 @@
         "Git",
         "Agile Methodology"
       ],
-      "slug": "dashboard-ekraf",
+      "slug": "ekrafdash",
       "category": [
         1
       ]
@@ -71,7 +71,7 @@
         "REST APIs",
         "Git"
       ],
-      "slug": "mother",
+      "slug": "motherapp",
       "category": [
         3
       ]

@@ -15,6 +15,8 @@ import DashEkraf3 from "@/public/image/projects/web/dashekraf/dashekraf3.webp";
 import Neurehab1 from "@/public/image/projects/scientific/neurehab/neurehab1.jpg";
 import Neurehab3 from "@/public/image/projects/scientific/neurehab/neurehab3.jpg";
 import Neurehab4 from "@/public/image/projects/scientific/neurehab/neurehab4.png";
+import Neurehab5 from "@/public/image/projects/scientific/neurehab/neurehab6.jpg";
+import Neurehab7 from "@/public/image/projects/scientific/neurehab/neurehab7.jpg";
 import ProjectAll from "@/public/image/projects.webp";
 
 import Hr from "@/components/Hr";
@@ -131,7 +133,7 @@ export default function Page() {
 								</motion.div>
 							</div>
 							{/* Image 2 */}
-							<div className="absolute top-40 left-10 h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute top-40 left-20 h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -209,7 +211,7 @@ export default function Page() {
 						</div>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/web/ekrafdash">More</Link>
+								<Link href="projects/ekrafdash">More</Link>
 							</Button>
 							<Button variation="secondary">
 								<Link
@@ -244,6 +246,58 @@ export default function Page() {
 									className="w-full h-full shadow-lg">
 									<Image
 										src={Neurehab3}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+										// placeholder removed for Next.js 15+ compatibility
+										objectPosition="0% 0%"
+									// blurDataURL is not needed for imported static images
+									/>
+								</motion.div>
+							</div>
+							{/* Image 2.1 Portrait */}
+							<div className="absolute top-24 right-2 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+								<motion.div
+									initial={{
+										opacity: 0,
+										scale: 0.5,
+										x: -100,
+									}}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									transition={{ delay: 0.3 }}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={Neurehab7}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+										// placeholder removed for Next.js 15+ compatibility
+										objectPosition="0% 0%"
+									// blurDataURL is not needed for imported static images
+									/>
+								</motion.div>
+							</div>
+							{/* Image 2.2 Portrait */}
+							<div className="absolute bottom-2 left-2 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+								<motion.div
+									initial={{
+										opacity: 0,
+										scale: 0.5,
+										x: -100,
+									}}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									transition={{ delay: 0.3 }}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={Neurehab7}
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
@@ -330,11 +384,11 @@ export default function Page() {
 						</div>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/web/ekrafdash">More</Link>
+								<Link href="projects/neurehab">More</Link>
 							</Button>
 							<Button variation="secondary">
 								<Link
-									href="https://ekraf.pisdev.my.id/"
+									href=""
 									target="_blank"
 									rel="noopener noreferrer">
 									Preview
@@ -453,7 +507,7 @@ export default function Page() {
 						</div>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/mobile/motherapp">More</Link>
+								<Link href="projects/motherapp">More</Link>
 							</Button>
 							<Button variation="secondary">
 								<Link
