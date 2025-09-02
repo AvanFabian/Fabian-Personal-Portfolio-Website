@@ -11,7 +11,11 @@
       "preview": "",
       "code": "",
       "thumbnail": "/image/projects/web/dashekraf/dashekraf1.png",
-      "images": [],
+      "images": [
+        "/image/projects/web/dashekraf/dashekraf1.webp",
+        "/image/projects/web/dashekraf/dashekraf2.webp",
+        "/image/projects/web/dashekraf/dashekraf3.webp"
+      ],
       "tech": [
         "Node.js",
         "AdonisJS",
