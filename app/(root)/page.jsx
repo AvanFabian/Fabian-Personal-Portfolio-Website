@@ -9,8 +9,8 @@ import Link from "next/link";
 import Button from "@/components/Button";
 import Me from "@/public/image/me.jpg";
 import MeAbout from "@/public/image/me4.jpg";
-import Setup from "@/public/image/setup.jpg";
-import ProjectAll from "@/public/image/projects.png";
+import Setup from "@/public/image/setup.webp";
+import ProjectAll from "@/public/image/projects.webp";
 import Hr from "@/components/Hr";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

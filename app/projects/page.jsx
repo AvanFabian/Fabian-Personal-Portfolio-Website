@@ -9,10 +9,13 @@ import Image from "next/image";
 import MotherApp1 from "@/public/image/projects/mobile/motherapp/motherapp1.jpg";
 import MotherApp2 from "@/public/image/projects/mobile/motherapp/motherapp2.jpg";
 import MotherApp3 from "@/public/image/projects/mobile/motherapp/motherapp3.jpg";
-import DashEkraf1 from "@/public/image/projects/web/dashekraf/dashekraf1.png";
-import DashEkraf2 from "@/public/image/projects/web/dashekraf/dashekraf2.png";
-import DashEkraf3 from "@/public/image/projects/web/dashekraf/dashekraf3.png";
-import ProjectAll from "@/public/image/projects.png";
+import DashEkraf1 from "@/public/image/projects/web/dashekraf/dashekraf1.webp";
+import DashEkraf2 from "@/public/image/projects/web/dashekraf/dashekraf2.webp";
+import DashEkraf3 from "@/public/image/projects/web/dashekraf/dashekraf3.webp";
+import Neurehab1 from "@/public/image/projects/scientific/neurehab1.jpg";
+import Neurehab2 from "@/public/image/projects/scientific/neurehab2.jpg";
+import Neurehab3 from "@/public/image/projects/scientific/neurehab3.jpg";
+import ProjectAll from "@/public/image/projects.webp";
 
 import Hr from "@/components/Hr";
 import ProjectCard from "./(project-card)";
@@ -29,6 +32,7 @@ const category = {
 
 export default function Page() {
 	const [activeCategory, setActiveCategory] = useState(1);
+	const [expandedCaseStudy, setExpandedCaseStudy] = useState(null);
 	const projects = Projects.Projects.filter((item) => item.show === true
 	);
 
@@ -92,7 +96,7 @@ export default function Page() {
 				<div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
 						<Hr variant="long"></Hr>
-						<h1 className="text-3xl font-bold mt-3">Featured Project</h1>
+						<h1 className="text-3xl font-bold mt-3">Featured Portfolio</h1>
 					</div>
 				</div>
 				{/* Project 1 */}
@@ -109,7 +113,7 @@ export default function Page() {
 									}}
 									className="w-full h-full shadow-lg">
 									<Image
-										src={DashEkraf1}
+										src={Neurehab1}
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
@@ -132,7 +136,7 @@ export default function Page() {
 									transition={{ delay: 0.3 }}
 									className="w-full h-full shadow-lg">
 									<Image
-										src={DashEkraf3}
+										src={Neurehab3}
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
@@ -159,7 +163,7 @@ export default function Page() {
 									}}
 									className="w-full h-full shadow-lg">
 									<Image
-										src={DashEkraf2}
+										src={Neurehab2}
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
@@ -469,7 +473,7 @@ export default function Page() {
 								delay: 0.7,
 								type: "spring",
 							}}>
-							My Project Gallery
+							My Portfolio Gallery
 						</motion.h1>
 					</div>
 				</div>
@@ -525,6 +529,124 @@ export default function Page() {
 						<Link href="projects/archive">View In Archive</Link>
 					</Button>
 				</motion.div>
+
+				{/* Scientific Research & Documents Section */}
+				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
+					<div className="flex justify-center items-center flex-col my-5 self-start">
+						<Hr variant="long"></Hr>
+						<motion.h1
+							className="text-3xl font-bold mt-3"
+							initial={{
+								opacity: 0,
+								x: -200,
+							}}
+							whileInView={{
+								opacity: 1,
+								x: 0,
+							}}
+							transition={{
+								delay: 0.7,
+								type: "spring",
+							}}>
+							Scientific Research & Documents
+						</motion.h1>
+					</div>
+				</div>
+
+				{/* Research & Documents List */}
+				<div className="w-screen mx-auto container px-10 mb-16">
+					<div className="max-w-4xl mx-auto space-y-4">
+						{/* Research Item 1 */}
+						<motion.div
+							initial={{ opacity: 0, x: -50 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ delay: 0.2 }}
+							className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:border-gray-300">
+							<div className="flex flex-col md:flex-row md:items-center md:justify-between">
+								<div className="flex-1">
+									<div className="flex items-center gap-3 mb-2">
+										<span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Competition</span>
+										<span className="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Silver Medal</span>
+									</div>
+									<h3 className="text-lg font-bold text-gray-900 mb-2">37th PIMNAS - Neurehab: VR-Based Post-Stroke Rehabilitation System</h3>
+									<p className="text-gray-600 text-sm mb-3">Innovative rehabilitation system combining Virtual Reality, IoT sensors, and mobile applications for post-stroke patient recovery. Awarded Silver Medal at the National Student Scientific Week.</p>
+									<div className="flex items-center text-xs text-gray-500">
+										<span>Published: October 2024</span>
+										<span className="mx-2">•</span>
+										<span>Category: Healthcare Technology</span>
+									</div>
+								</div>
+								<div className="mt-4 md:mt-0 md:ml-6">
+									<Button variation="secondary">
+										<Link href="#" target="_blank" rel="noopener noreferrer">
+											View Research
+										</Link>
+									</Button>
+								</div>
+							</div>
+						</motion.div>
+
+						{/* Document Item 1 */}
+						<motion.div
+							initial={{ opacity: 0, x: -50 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ delay: 0.6 }}
+							className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:border-gray-300">
+							<div className="flex flex-col md:flex-row md:items-center md:justify-between">
+								<div className="flex-1">
+									<div className="flex items-center gap-3 mb-2">
+										<span className="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Legal Document</span>
+										<span className="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Professional</span>
+									</div>
+									<h3 className="text-lg font-bold text-gray-900 mb-2">Software Development Contract Template</h3>
+									<p className="text-gray-600 text-sm mb-3">Comprehensive legal framework for software development projects including intellectual property rights, deliverables, payment terms, and liability clauses. Used for multiple client engagements.</p>
+									<div className="flex items-center text-xs text-gray-500">
+										<span>Created: June 2024</span>
+										<span className="mx-2">•</span>
+										<span>Category: Legal Framework</span>
+									</div>
+								</div>
+								<div className="mt-4 md:mt-0 md:ml-6">
+									<Button variation="secondary">
+										<Link href="#" target="_blank" rel="noopener noreferrer">
+											View Template
+										</Link>
+									</Button>
+								</div>
+							</div>
+						</motion.div>
+
+						{/* Competition Item */}
+						<motion.div
+							initial={{ opacity: 0, x: -50 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ delay: 1.0 }}
+							className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:border-gray-300">
+							<div className="flex flex-col md:flex-row md:items-center md:justify-between">
+								<div className="flex-1">
+									<div className="flex items-center gap-3 mb-2">
+										<span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Competition</span>
+										<span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Funded</span>
+									</div>
+									<h3 className="text-lg font-bold text-gray-900 mb-2">PKM-KC: Student Creativity Program - Research & Development</h3>
+									<p className="text-gray-600 text-sm mb-3">Successfully secured national funding from the Ministry of Education for innovative post-stroke rehabilitation technology research. Project proposal and implementation documentation available.</p>
+									<div className="flex items-center text-xs text-gray-500">
+										<span>Awarded: March 2024</span>
+										<span className="mx-2">•</span>
+										<span>Category: Research Grant</span>
+									</div>
+								</div>
+								<div className="mt-4 md:mt-0 md:ml-6">
+									<Button variation="secondary">
+										<Link href="#" target="_blank" rel="noopener noreferrer">
+											View Proposal
+										</Link>
+									</Button>
+								</div>
+							</div>
+						</motion.div>
+					</div>
+				</div>
 			</main>
 		</>
 	);
