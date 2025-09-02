@@ -73,7 +73,7 @@
       ],
       "slug": "mother",
       "category": [
-        1
+        3
       ]
     },
     {
@@ -97,7 +97,7 @@
       ],
       "slug": "denkmeister",
       "category": [
-        1
+        3
       ]
     },
     {
@@ -110,7 +110,7 @@
       "year": "2025",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/mobile/neurehab/neurehab4.png",
+      "thumbnail": "/image/projects/scientific/neurehab/neurehab4.png",
       "images": [],
       "tech": [
         "Unity 3D",
@@ -122,7 +122,29 @@
       ],
       "slug": "neurehab",
       "category": [
-        1
+        2,3
+      ]
+    },
+    {
+      "show": true,
+      "title": "BUNYA: Buat Senyawa",
+      "desc": [
+        "BUNYA is an award-winning educational game. As a 3rd Place Winner at the Electrical & Informatics Engineering Student Research Festival held by Universitas Negeri Malang, this project teaches players about chemical elements, compounds, and laboratory equipment by blending engaging fantasy elements with real-world scientific principles."
+      
+      ],
+      "year": "2024",
+      "preview": "",
+      "code": "",
+      "thumbnail": "/image/projects/scientific/bunya/bunya1.png",
+      "images": [],
+      "tech": [
+        "Unity 3D",
+        "C#",
+        "Blender"
+      ],
+      "slug": "bunya",
+      "category": [
+        2
       ]
     },
     {
@@ -148,7 +170,7 @@
       ],
       "slug": "credit-risk-prediction",
       "category": [
-        1
+        2
       ]
     },
     {

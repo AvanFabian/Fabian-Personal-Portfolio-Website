@@ -12,9 +12,9 @@ import MotherApp3 from "@/public/image/projects/mobile/motherapp/motherapp3.jpg"
 import DashEkraf1 from "@/public/image/projects/web/dashekraf/dashekraf1.webp";
 import DashEkraf2 from "@/public/image/projects/web/dashekraf/dashekraf2.webp";
 import DashEkraf3 from "@/public/image/projects/web/dashekraf/dashekraf3.webp";
-import Neurehab1 from "@/public/image/projects/scientific/neurehab1.jpg";
-import Neurehab2 from "@/public/image/projects/scientific/neurehab2.jpg";
-import Neurehab3 from "@/public/image/projects/scientific/neurehab3.jpg";
+import Neurehab1 from "@/public/image/projects/scientific/neurehab/neurehab1.jpg";
+import Neurehab3 from "@/public/image/projects/scientific/neurehab/neurehab3.jpg";
+import Neurehab4 from "@/public/image/projects/scientific/neurehab/neurehab4.png";
 import ProjectAll from "@/public/image/projects.webp";
 
 import Hr from "@/components/Hr";
@@ -26,8 +26,8 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const category = {
 	1: "Website",
-	2: "Scientific Research & Document",
-	3: "Mobile Apps",
+	2: "Scientific Research & Data",
+	3: "Mobile Application",
 }
 
 export default function Page() {
@@ -99,11 +99,39 @@ export default function Page() {
 						<h1 className="text-3xl font-bold mt-3">Featured Portfolio</h1>
 					</div>
 				</div>
+
 				{/* Project 1 */}
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
-							<div className="absolute top-28 left-10 h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">
+							{/* Image 1 */}
+							<div className="absolute top-8 right-36 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+								<motion.div
+									initial={{
+										opacity: 0,
+										scale: 0.5,
+										x: -100,
+									}}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									transition={{ delay: 0.3 }}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={DashEkraf3}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+										// placeholder removed for Next.js 15+ compatibility
+										objectPosition="0% 0%"
+									// blurDataURL is not needed for imported static images
+									/>
+								</motion.div>
+							</div>
+							{/* Image 2 */}
+							<div className="absolute top-40 left-10 h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -113,7 +141,7 @@ export default function Page() {
 									}}
 									className="w-full h-full shadow-lg">
 									<Image
-										src={Neurehab1}
+										src={DashEkraf1}
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
@@ -121,7 +149,86 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute top-8 right-36 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							{/* Image 3 */}
+							<div className="absolute bottom-6 right-20 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+								<motion.div
+									initial={{
+										opacity: 0,
+										scale: 0.5,
+										x: -100,
+									}}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									transition={{
+										delay: 0.5,
+									}}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={DashEkraf2}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+									// placeholder removed for Next.js 15+ compatibility
+									/>
+								</motion.div>
+							</div>
+						</div>
+					</div>
+					<motion.div
+						className="flex justify-center items-start flex-col mb-5 md:px-10"
+						initial={{
+							opacity: 0,
+							x: 200,
+						}}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+						}}
+						transition={{
+							delay: 0.5,
+							type: "spring",
+						}}>
+						<h2 className="text-2xl font-bold tracking-wider mb-3">
+							Dashboard Ekraf : Southeast Sulawesi Creative Economy Platform
+						</h2>
+						<p className="text-gray-600 text-justify title text-lg">
+							Architected and developed a comprehensive backend system for Southeast Sulawesi&apos;s creative economy platform using AdonisJS and PostgreSQL.
+							Built secure RESTful APIs and implemented automated data processing workflows to support digital transformation initiatives for local creative businesses.
+						</p>{" "}
+						<div className="text-gray-600 text-justify title text-lg mt-1">
+							<p className="mb-2">Key development responsibilities included:</p>
+							<ol className="space-y-2 ml-4" style={{ listStyleType: 'decimal', paddingLeft: '1rem' }}>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Custom questionnaire module</strong> with dynamic form generation and validation for collecting business data from creative economy actors.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Automated reporting dashboard</strong> that transforms raw survey data into comprehensive stakeholder reports with data visualization.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>User management system</strong> with role-based access control for administrators, surveyors, and business owners.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Real-time analytics dashboard</strong> providing insights on survey completion rates, response patterns, and business distribution.</li>
+							</ol>
+						</div>{" "}
+						<div className="mt-3">
+							<Button variation="primary">
+								<Link href="projects/web/ekrafdash">More</Link>
+							</Button>
+							<Button variation="secondary">
+								<Link
+									href="https://ekraf.pisdev.my.id/"
+									target="_blank"
+									rel="noopener noreferrer">
+									Preview
+								</Link>
+							</Button>
+						</div>
+					</motion.div>
+				</div>
+
+				{/* Project 2 */}
+				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
+					<div className="flex justify-center items-start flex-col mb-5 ">
+						<div className="images relative w-full  aspect-square">
+							{/* Image 1 */}
+							<div className="absolute top-8 right-36 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -146,7 +253,27 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute bottom-6 right-20 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							{/* Image 2 */}
+							<div className="absolute top-40 left-10 h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+								<motion.div
+									initial={{ opacity: 0, scale: 0.5, x: 100 }}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									className="w-full h-full shadow-lg">
+									<Image
+										src={Neurehab1}
+										alt="Fabian"
+										layout="fill"
+										objectFit="cover"
+									// placeholder removed for Next.js 15+ compatibility
+									/>
+								</motion.div>
+							</div>
+							{/* Image 3 */}
+							<div className="absolute bottom-6 right-20 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -163,7 +290,7 @@ export default function Page() {
 									}}
 									className="w-full h-full shadow-lg">
 									<Image
-										src={Neurehab2}
+										src={Neurehab4}
 										alt="Fabian"
 										layout="fill"
 										objectFit="cover"
@@ -216,130 +343,13 @@ export default function Page() {
 						</div>
 					</motion.div>
 				</div>
-				{/* Project 2 */}
-				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
-					<div className="flex justify-center items-start flex-col mb-5 ">
-						<div className="images relative w-full  aspect-square">
-							<div className="absolute top-28 left-10 h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">
-								<motion.div
-									initial={{ opacity: 0, scale: 0.5, x: 100 }}
-									whileInView={{
-										opacity: 1,
-										scale: 1,
-										x: 0,
-									}}
-									className="w-full h-full shadow-lg">
-									<Image
-										src={DashEkraf1}
-										alt="Fabian"
-										layout="fill"
-										objectFit="cover"
-									// placeholder removed for Next.js 15+ compatibility
-									/>
-								</motion.div>
-							</div>
-							<div className="absolute top-8 right-36 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
-								<motion.div
-									initial={{
-										opacity: 0,
-										scale: 0.5,
-										x: -100,
-									}}
-									whileInView={{
-										opacity: 1,
-										scale: 1,
-										x: 0,
-									}}
-									transition={{ delay: 0.3 }}
-									className="w-full h-full shadow-lg">
-									<Image
-										src={DashEkraf3}
-										alt="Fabian"
-										layout="fill"
-										objectFit="cover"
-										// placeholder removed for Next.js 15+ compatibility
-										objectPosition="0% 0%"
-									// blurDataURL is not needed for imported static images
-									/>
-								</motion.div>
-							</div>
-							<div className="absolute bottom-6 right-20 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
-								<motion.div
-									initial={{
-										opacity: 0,
-										scale: 0.5,
-										x: -100,
-									}}
-									whileInView={{
-										opacity: 1,
-										scale: 1,
-										x: 0,
-									}}
-									transition={{
-										delay: 0.5,
-									}}
-									className="w-full h-full shadow-lg">
-									<Image
-										src={DashEkraf2}
-										alt="Fabian"
-										layout="fill"
-										objectFit="cover"
-									// placeholder removed for Next.js 15+ compatibility
-									/>
-								</motion.div>
-							</div>
-						</div>
-					</div>
-					<motion.div
-						className="flex justify-center items-start flex-col mb-5 md:px-10"
-						initial={{
-							opacity: 0,
-							x: 200,
-						}}
-						whileInView={{
-							opacity: 1,
-							x: 0,
-						}}
-						transition={{
-							delay: 0.5,
-							type: "spring",
-						}}>
-						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							Dashboard Ekraf : Southeast Sulawesi Creative Economy Platform
-						</h2>
-						<p className="text-gray-600 text-justify title text-lg">
-							Architected and developed a comprehensive backend system for Southeast Sulawesi&apos;s creative economy platform using AdonisJS and PostgreSQL. 
-							Built secure RESTful APIs and implemented automated data processing workflows to support digital transformation initiatives for local creative businesses.
-						</p>{" "}
-						<div className="text-gray-600 text-justify title text-lg mt-1">
-							<p className="mb-2">Key development responsibilities included:</p>
-							<ol className="space-y-2 ml-4" style={{ listStyleType: 'decimal', paddingLeft: '1rem' }}>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Custom questionnaire module</strong> with dynamic form generation and validation for collecting business data from creative economy actors.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Automated reporting dashboard</strong> that transforms raw survey data into comprehensive stakeholder reports with data visualization.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>User management system</strong> with role-based access control for administrators, surveyors, and business owners.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Real-time analytics dashboard</strong> providing insights on survey completion rates, response patterns, and business distribution.</li>
-							</ol>
-						</div>{" "}
-						<div className="mt-3">
-							<Button variation="primary">
-								<Link href="projects/web/ekrafdash">More</Link>
-							</Button>
-							<Button variation="secondary">
-								<Link
-									href="https://ekraf.pisdev.my.id/"
-									target="_blank"
-									rel="noopener noreferrer">
-									Preview
-								</Link>
-							</Button>
-						</div>
-					</motion.div>
-				</div>
+
 				{/* Project 3 */}
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
-							<div className="absolute top-28 left-10 h-[60%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">
+							{/* Image 1 */}
+							<div className="absolute top-28 left-24 h-[60%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -357,7 +367,8 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute top-8 right-36 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							{/* Image 2 */}
+							<div className="absolute top-8 right-36 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -382,7 +393,8 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute bottom-6 right-20 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							{/* Image 3 */}
+							<div className="absolute bottom-6 right-20 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -407,7 +419,6 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-
 						</div>
 					</div>
 					<motion.div
@@ -428,7 +439,7 @@ export default function Page() {
 							Mother : Pregnancy Wellness & Fitness Monitoring App
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							A comprehensive pregnancy wellness mobile application built with Flutter and Laravel, designed to support urban pregnant women 
+							A comprehensive pregnancy wellness mobile application built with Flutter and Laravel, designed to support urban pregnant women
 							in managing their health journey while addressing obesity-related risks during pregnancy.
 						</p>{" "}
 						<div className="text-gray-600 text-justify title text-lg mt-1">
@@ -529,124 +540,6 @@ export default function Page() {
 						<Link href="projects/archive">View In Archive</Link>
 					</Button>
 				</motion.div>
-
-				{/* Scientific Research & Documents Section */}
-				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
-					<div className="flex justify-center items-center flex-col my-5 self-start">
-						<Hr variant="long"></Hr>
-						<motion.h1
-							className="text-3xl font-bold mt-3"
-							initial={{
-								opacity: 0,
-								x: -200,
-							}}
-							whileInView={{
-								opacity: 1,
-								x: 0,
-							}}
-							transition={{
-								delay: 0.7,
-								type: "spring",
-							}}>
-							Scientific Research & Documents
-						</motion.h1>
-					</div>
-				</div>
-
-				{/* Research & Documents List */}
-				<div className="w-screen mx-auto container px-10 mb-16">
-					<div className="max-w-4xl mx-auto space-y-4">
-						{/* Research Item 1 */}
-						<motion.div
-							initial={{ opacity: 0, x: -50 }}
-							whileInView={{ opacity: 1, x: 0 }}
-							transition={{ delay: 0.2 }}
-							className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:border-gray-300">
-							<div className="flex flex-col md:flex-row md:items-center md:justify-between">
-								<div className="flex-1">
-									<div className="flex items-center gap-3 mb-2">
-										<span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Competition</span>
-										<span className="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Silver Medal</span>
-									</div>
-									<h3 className="text-lg font-bold text-gray-900 mb-2">37th PIMNAS - Neurehab: VR-Based Post-Stroke Rehabilitation System</h3>
-									<p className="text-gray-600 text-sm mb-3">Innovative rehabilitation system combining Virtual Reality, IoT sensors, and mobile applications for post-stroke patient recovery. Awarded Silver Medal at the National Student Scientific Week.</p>
-									<div className="flex items-center text-xs text-gray-500">
-										<span>Published: October 2024</span>
-										<span className="mx-2">•</span>
-										<span>Category: Healthcare Technology</span>
-									</div>
-								</div>
-								<div className="mt-4 md:mt-0 md:ml-6">
-									<Button variation="secondary">
-										<Link href="#" target="_blank" rel="noopener noreferrer">
-											View Research
-										</Link>
-									</Button>
-								</div>
-							</div>
-						</motion.div>
-
-						{/* Document Item 1 */}
-						<motion.div
-							initial={{ opacity: 0, x: -50 }}
-							whileInView={{ opacity: 1, x: 0 }}
-							transition={{ delay: 0.6 }}
-							className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:border-gray-300">
-							<div className="flex flex-col md:flex-row md:items-center md:justify-between">
-								<div className="flex-1">
-									<div className="flex items-center gap-3 mb-2">
-										<span className="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Legal Document</span>
-										<span className="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Professional</span>
-									</div>
-									<h3 className="text-lg font-bold text-gray-900 mb-2">Software Development Contract Template</h3>
-									<p className="text-gray-600 text-sm mb-3">Comprehensive legal framework for software development projects including intellectual property rights, deliverables, payment terms, and liability clauses. Used for multiple client engagements.</p>
-									<div className="flex items-center text-xs text-gray-500">
-										<span>Created: June 2024</span>
-										<span className="mx-2">•</span>
-										<span>Category: Legal Framework</span>
-									</div>
-								</div>
-								<div className="mt-4 md:mt-0 md:ml-6">
-									<Button variation="secondary">
-										<Link href="#" target="_blank" rel="noopener noreferrer">
-											View Template
-										</Link>
-									</Button>
-								</div>
-							</div>
-						</motion.div>
-
-						{/* Competition Item */}
-						<motion.div
-							initial={{ opacity: 0, x: -50 }}
-							whileInView={{ opacity: 1, x: 0 }}
-							transition={{ delay: 1.0 }}
-							className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:border-gray-300">
-							<div className="flex flex-col md:flex-row md:items-center md:justify-between">
-								<div className="flex-1">
-									<div className="flex items-center gap-3 mb-2">
-										<span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Competition</span>
-										<span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Funded</span>
-									</div>
-									<h3 className="text-lg font-bold text-gray-900 mb-2">PKM-KC: Student Creativity Program - Research & Development</h3>
-									<p className="text-gray-600 text-sm mb-3">Successfully secured national funding from the Ministry of Education for innovative post-stroke rehabilitation technology research. Project proposal and implementation documentation available.</p>
-									<div className="flex items-center text-xs text-gray-500">
-										<span>Awarded: March 2024</span>
-										<span className="mx-2">•</span>
-										<span>Category: Research Grant</span>
-									</div>
-								</div>
-								<div className="mt-4 md:mt-0 md:ml-6">
-									<Button variation="secondary">
-										<Link href="#" target="_blank" rel="noopener noreferrer">
-											View Proposal
-										</Link>
-									</Button>
-								</div>
-							</div>
-						</motion.div>
-					</div>
-				</div>
 			</main>
 		</>
 	);

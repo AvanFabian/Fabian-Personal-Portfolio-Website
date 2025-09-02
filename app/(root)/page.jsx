@@ -94,7 +94,7 @@ const MyPage = () => {
 										}}>
 										<Button variation="primary">
 											<Link
-												href={"/docs/CV_Avan Fabian Daniswara.pdf"}
+												href={"/docs/Avan_CurriculumVitae.pdf"}
 												target="_blank"
 												rel="noopener noreferrer"
 												locale={false}
