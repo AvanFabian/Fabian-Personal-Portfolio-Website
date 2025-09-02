@@ -10,7 +10,7 @@
       "year": "2025",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/web/dashekraf/dashekraf1.png",
+      "thumbnail": "/image/projects/web/dashekraf/dashekraf1.webp",
       "images": [
         "/image/projects/web/dashekraf/dashekraf1.webp",
         "/image/projects/web/dashekraf/dashekraf2.webp",
@@ -41,7 +41,11 @@
       "preview": "",
       "code": "",
       "thumbnail": "/image/projects/web/sincosmile/sinco3.png",
-      "images": [],
+      "images": [
+        "/image/projects/web/sincosmile/sinco1.png",
+        "/image/projects/web/sincosmile/sinco2.png",
+        "/image/projects/web/sincosmile/sinco3.png"
+      ],
       "tech": [
         "Next.js",
         "Supabase",
@@ -64,8 +68,12 @@
       "year": "2025",
       "preview": "",
       "code": "",
-      "thumbnail": "",
-      "images": [],
+      "thumbnail": "/image/projects/mobile/motherapp/motherapp4.webp",
+      "images": [
+        "/image/projects/mobile/motherapp/motherapp1.webp",
+        "/image/projects/mobile/motherapp/motherapp2.webp",
+        "/image/projects/mobile/motherapp/motherapp3.webp"
+      ],
       "tech": [
         "Flutter",
         "Dart",
@@ -90,8 +98,12 @@
       "year": "2025",
       "preview": "",
       "code": "",
-      "thumbnail": "",
-      "images": [],
+      "thumbnail": "/image/projects/mobile/denkmeister/denkmeister4.png",
+      "images": [
+        "/image/projects/mobile/denkmeister/denkmeister1.png",
+        "/image/projects/mobile/denkmeister/denkmeister2.png",
+        "/image/projects/mobile/denkmeister/denkmeister3.png"
+      ],
       "tech": [
         "Flutter",
         "Dart",
@@ -114,8 +126,16 @@
       "year": "2025",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/scientific/neurehab/neurehab4.png",
-      "images": [],
+      "thumbnail": "/image/projects/scientific/neurehab/neurehab1.webp",
+      "images": [
+        "/image/projects/scientific/neurehab/neurehab1.webp",
+        "/image/projects/scientific/neurehab/neurehab2.webp",
+        "/image/projects/scientific/neurehab/neurehab3.webp",
+        "/image/projects/scientific/neurehab/neurehab4.webp",
+        "/image/projects/scientific/neurehab/neurehab5.webp",
+        "/image/projects/scientific/neurehab/neurehab6.webp",
+        "/image/projects/scientific/neurehab/neurehab7.webp"
+      ],
       "tech": [
         "Unity 3D",
         "C#",
@@ -140,7 +160,13 @@
       "preview": "",
       "code": "",
       "thumbnail": "/image/projects/scientific/bunya/bunya1.png",
-      "images": [],
+      "images": [
+        "/image/projects/scientific/bunya/bunya1.png",
+        "/image/projects/scientific/bunya/bunya2.png",
+        "/image/projects/scientific/bunya/bunya3.png",
+        "/image/projects/scientific/bunya/bunya4.png",
+        "/image/projects/scientific/bunya/bunya5.png"
+      ],
       "tech": [
         "Unity 3D",
         "C#",
@@ -161,8 +187,10 @@
       "year": "2024",
       "preview": "",
       "code": "",
-      "thumbnail": "",
-      "images": [],
+      "thumbnail": "/image/projects/scientific/creditrisk/creditrisk1.jpg",
+      "images": [
+        "/image/projects/scientific/creditrisk/creditrisk1.jpg"
+      ],
       "tech": [
         "Python",
         "Pandas",
@@ -210,11 +238,11 @@
       "year": "2023",
       "preview": "",
       "code": "https://github.com/AvanFabian/Jelajah-Nusantara",
-      "thumbnail": "/image/projects/web/jentara/jentara2.png",
+      "thumbnail": "/image/projects/web/jentara/jentara2.webp",
       "images": [
-        "/image/projects/web/jentara/jentara1.png",
-        "/image/projects/web/jentara/jentara2.png",
-        "/image/projects/web/jentara/jentara3.png"
+        "/image/projects/web/jentara/jentara1.webp",
+        "/image/projects/web/jentara/jentara2.webp",
+        "/image/projects/web/jentara/jentara3.webp"
       ],
       "tech": [
         "Laravel"

@@ -6,17 +6,17 @@ import Button from "@/components/Button";
 import Image from "next/image";
 
 // images
-import MotherApp1 from "@/public/image/projects/mobile/motherapp/motherapp1.jpg";
-import MotherApp2 from "@/public/image/projects/mobile/motherapp/motherapp2.jpg";
-import MotherApp3 from "@/public/image/projects/mobile/motherapp/motherapp3.jpg";
+import MotherApp1 from "@/public/image/projects/mobile/motherapp/motherapp1.webp";
+import MotherApp2 from "@/public/image/projects/mobile/motherapp/motherapp2.webp";
+import MotherApp3 from "@/public/image/projects/mobile/motherapp/motherapp3.webp";
 import DashEkraf1 from "@/public/image/projects/web/dashekraf/dashekraf1.webp";
 import DashEkraf2 from "@/public/image/projects/web/dashekraf/dashekraf2.webp";
 import DashEkraf3 from "@/public/image/projects/web/dashekraf/dashekraf3.webp";
-import Neurehab1 from "@/public/image/projects/scientific/neurehab/neurehab1.jpg";
-import Neurehab3 from "@/public/image/projects/scientific/neurehab/neurehab3.jpg";
-import Neurehab4 from "@/public/image/projects/scientific/neurehab/neurehab4.png";
-import Neurehab5 from "@/public/image/projects/scientific/neurehab/neurehab6.jpg";
-import Neurehab7 from "@/public/image/projects/scientific/neurehab/neurehab7.jpg";
+import Neurehab1 from "@/public/image/projects/scientific/neurehab/neurehab1.webp";
+import Neurehab3 from "@/public/image/projects/scientific/neurehab/neurehab3.webp";
+import Neurehab4 from "@/public/image/projects/scientific/neurehab/neurehab4.webp";
+import Neurehab5 from "@/public/image/projects/scientific/neurehab/neurehab6.webp";
+import Neurehab7 from "@/public/image/projects/scientific/neurehab/neurehab7.webp";
 import ProjectAll from "@/public/image/projects.webp";
 
 import Hr from "@/components/Hr";

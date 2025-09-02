@@ -15,42 +15,42 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 function ScrollDownButton() {
-  const [isAtBottom, setIsAtBottom] = useState(false);
+	const [isAtBottom, setIsAtBottom] = useState(false);
 
-  const handleScroll = () => {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollTop < document.documentElement.scrollHeight - document.documentElement.clientHeight) {
+	const handleScroll = () => {
+		const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		if (scrollTop < document.documentElement.scrollHeight - document.documentElement.clientHeight) {
 
-      window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: "smooth",
-      });
-				setIsAtBottom(true);
-			
-    } else {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+			window.scrollTo({
+				top: document.documentElement.scrollHeight,
+				behavior: "smooth",
+			});
+			setIsAtBottom(true);
+
+		} else {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
 			setIsAtBottom(false);
-    }
-  };
+		}
+	};
 
-  return (
-    <div className="fixed bottom-5 left-0 right-0 flex justify-center items-center mb-10">
-      <motion.div
-        className="h-10 w-10 bg-neutral-900 rounded-full flex justify-center items-center cursor-pointer"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        onClick={handleScroll}
-      >
-        <FontAwesomeIcon
-          icon={isAtBottom ? faChevronUp : faChevronDown}
-          className="text-white text-2xl"
-        />
-      </motion.div>
-    </div>
-  );
+	return (
+		<div className="fixed bottom-5 left-0 right-0 flex justify-center items-center mb-10">
+			<motion.div
+				className="h-10 w-10 bg-neutral-900 rounded-full flex justify-center items-center cursor-pointer"
+				whileHover={{ scale: 1.1 }}
+				whileTap={{ scale: 0.9 }}
+				onClick={handleScroll}
+			>
+				<FontAwesomeIcon
+					icon={isAtBottom ? faChevronUp : faChevronDown}
+					className="text-white text-2xl"
+				/>
+			</motion.div>
+		</div>
+	);
 }
 
 
@@ -197,36 +197,36 @@ function Page({ params }) {
 					{/* {console.log('Project data:', data)}
 					{console.log('Images array:', data.images)}
 					{console.log('Images length:', data.images?.length)} */}
-					
+
 					{/* Check if images exist and have content */}
 					{data.images && data.images.length > 0 ? (
 						data.images.map((image, index) => {
 							// console.log(`Rendering image ${index + 1}:`, image);
 							return (
-								<Image
-									key={index}
-									src={image}
-									alt={`Project Image ${index + 1}`}
-									className="mb-5 h-auto max-h-screen max-w-7xl mx-auto"
-									width={1920}
-									height={1080}
-									blurDataURL={image}
-									layout="responsive"
-									objectFit="contain"
-									onError={(e) => {
-										console.error(`Failed to load image ${index + 1}:`, image, e);
-									}}
-									onLoad={() => {
-										console.log(`Successfully loaded image ${index + 1}:`, image);
-									}}
-								/>
+								<div key={index} className="mb-5 flex justify-center">
+									<Image
+										src={image}
+										alt={`Project Image ${index + 1}`}
+										className="h-auto max-w-full object-contain max-h-[70vh] md:max-h-[60vh]"
+										width={0}
+										height={0}
+										sizes="100vw"
+										style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+										onError={(e) => {
+											console.error(`Failed to load image ${index + 1}:`, image, e);
+										}}
+										onLoad={() => {
+											console.log(`Successfully loaded image ${index + 1}:`, image);
+										}}
+									/>
+								</div>
 							);
 						})
 					) : (
 						<div className="text-center py-10">
 							<p className="text-gray-500 text-lg">
-								{data.images ? 
-									'No images available for this project.' : 
+								{data.images ?
+									'No images available for this project.' :
 									'Images data is missing.'
 								}
 							</p>
