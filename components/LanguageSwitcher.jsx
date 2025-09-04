@@ -17,19 +17,19 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div>
+    <div className="flex items-center">
       <button
         onClick={() => switchLocale('en')}
         disabled={locale === 'en'}
-        className="p-2 disabled:opacity-50"
+        className="px-2 py-1 text-sm font-medium text-black hover:text-gray-600 disabled:opacity-50 disabled:text-gray-800 transition-colors"
       >
         EN
       </button>
-      <span className="p-2">|</span>
+      <span className="px-1 text-black">|</span>
       <button
         onClick={() => switchLocale('id')}
         disabled={locale === 'id'}
-        className="p-2 disabled:opacity-50"
+        className="px-2 py-1 text-sm font-medium text-black hover:text-gray-600 disabled:opacity-50 disabled:text-gray-800 transition-colors"
       >
         ID
       </button>

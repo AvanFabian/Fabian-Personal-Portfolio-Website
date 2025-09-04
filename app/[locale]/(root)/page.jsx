@@ -8,7 +8,6 @@ import { useTranslations } from 'next-intl';
 
 // components
 import Button from "@/components/Button";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Me from "@/public/image/me.jpg";
 import MeAbout from "@/public/image/me4.jpg";
 import Setup from "@/public/image/setup.webp";
@@ -41,10 +40,6 @@ const MyPage = () => {
 				render={({ state, fullpageApi }) => (
 					<ReactFullpage.Wrapper>
 						<div className="section">
-							{/* Language Switcher */}
-							<div className="absolute top-4 right-4 z-50">
-								<LanguageSwitcher />
-							</div>
 							<div className="mx-auto container grid grid-cols-1 md:grid-cols-3 gap-4 p-10 overflow-hidden md:px-20">
 								<motion.div
 									className="col-span-2 flex flex-col justify-center items-center md:items-start text-center md:text-start"

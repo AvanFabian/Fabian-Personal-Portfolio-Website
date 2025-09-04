@@ -2,6 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 	const [isMobile, setIsMobile] = useState(false);
@@ -194,7 +195,8 @@ const Navbar = () => {
 					? "backdrop-filter backdrop-blur-md bg-gray-700 bg-opacity-50"
 					: "backdrop-filter backdrop-blur-md"
 					} inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
-				<div>
+				<div className="flex flex-row items-center">
+					<LanguageSwitcher />
 				</div>
 				<div className="flex flex-row items-center">
 					<button
