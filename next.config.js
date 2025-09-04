@@ -1,7 +1,9 @@
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
 	enabled: process.env.ANALYZE === "true",
 });
-module.exports = withBundleAnalyzer({
+const withNextIntl = require('next-intl/plugin')('./i18n.ts');
+
+module.exports = withNextIntl(withBundleAnalyzer({
 	// your Next.js configuration
 	images: {
 		domains: ["i.scdn.co"],
@@ -27,4 +29,4 @@ module.exports = withBundleAnalyzer({
 			},
 		];
 	},
-});
+}));

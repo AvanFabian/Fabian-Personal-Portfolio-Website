@@ -1,0 +1,16 @@
+{
+  "Navbar": {
+    "home": "Beranda",
+    "about": "Tentang Saya",
+    "projects": "Proyek"
+  },
+  "Hero": {
+    "title": "Hai, saya [Your Name]",
+    "subtitle": "Seorang developer yang bersemangat membangun aplikasi web.",
+    "button": "Lihat Karya Saya"
+  },
+  "HomePage": {
+    "title": "Spesialis IT",
+    "description": "Seorang Spesialis IT yang serbaguna dengan keahlian yang mencakup pengembangan full-stack, analisis data, dan penulisan ilmiah. Saya telah merancang dan mengoptimalkan sistem backend, membangun aplikasi lintas platform, dan mengembangkan model machine learning prediktif. Selain teknik, saya aktif terlibat dalam penelitian dan publikasi akademik, memanfaatkan wawasan berbasis data untuk memecahkan masalah dunia nyata. Saya mencari kesempatan untuk berkontribusi pada proyek-proyek berdampak di mana saya dapat mengintegrasikan inovasi teknis dengan keunggulan analitis dan ilmiah."
+  }
+}

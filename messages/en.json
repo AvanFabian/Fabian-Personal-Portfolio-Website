@@ -1,0 +1,16 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects"
+  },
+  "Hero": {
+    "title": "Hi, I'm [Your Name]",
+    "subtitle": "A passionate developer building web applications.",
+    "button": "View My Work"
+  },
+  "HomePage": {
+    "title": "IT Specialist",
+    "description": "A versatile IT Specialist with expertise spanning full-stack development, data analysis, and scientific writing. I have designed and optimized backend systems, built cross-platform applications, and developed predictive machine learning models. Beyond engineering, I actively engage in research and academic publication, leveraging data-driven insights to solve real-world problems. I am seeking opportunities to contribute to impactful projects where I can integrate technical innovation with analytical and scholarly excellence."
+  }
+}

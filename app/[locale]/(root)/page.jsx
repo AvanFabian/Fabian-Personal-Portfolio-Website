@@ -4,9 +4,11 @@ import Image from "next/legacy/image";
 // import "../globals.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 
 // components
 import Button from "@/components/Button";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Me from "@/public/image/me.jpg";
 import MeAbout from "@/public/image/me4.jpg";
 import Setup from "@/public/image/setup.webp";
@@ -22,6 +24,8 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const MyPage = () => {
+	const t = useTranslations('HomePage');
+	
 	const fullpageOptions = {
 		anchors: ["home", "about", "projects", "contact"],
 		scrollingSpeed: 1000,
@@ -37,6 +41,10 @@ const MyPage = () => {
 				render={({ state, fullpageApi }) => (
 					<ReactFullpage.Wrapper>
 						<div className="section">
+							{/* Language Switcher */}
+							<div className="absolute top-4 right-4 z-50">
+								<LanguageSwitcher />
+							</div>
 							<div className="mx-auto container grid grid-cols-1 md:grid-cols-3 gap-4 p-10 overflow-hidden md:px-20">
 								<motion.div
 									className="col-span-2 flex flex-col justify-center items-center md:items-start text-center md:text-start"
@@ -75,14 +83,14 @@ const MyPage = () => {
 											delay: 0.3,
 											type: "spring",
 										}}>
-										IT Specialist
+										{t('title')}
 									</motion.h1>
 									<motion.p
 										className="title text-md 2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
 										initial={{ x: -100, opacity: 0 }}
 										whileInView={{ x: 0, opacity: 1 }}
 										transition={{ delay: 0.4, type: "spring" }}>
-										A versatile IT Specialist with expertise spanning full-stack development, data analysis, and scientific writing. I have designed and optimized backend systems, built cross-platform applications, and developed predictive machine learning models. Beyond engineering, I actively engage in research and academic publication, leveraging data-driven insights to solve real-world problems. I am seeking opportunities to contribute to impactful projects where I can integrate technical innovation with analytical and scholarly excellence.
+										{t('description')}
 									</motion.p>
 									<motion.div
 										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
