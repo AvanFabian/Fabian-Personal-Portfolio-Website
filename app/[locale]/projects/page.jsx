@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Button from "@/components/Button";
 import Image from "next/image";
 
@@ -26,15 +27,18 @@ import FixedButon from "@/components/FixedButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
-const category = {
-	1: "Website",
-	2: "Scientific Research & Data",
-	3: "Mobile Application",
-}
+// Category object will be handled inside the component to use translations
 
 export default function Page() {
+	const t = useTranslations('ProjectsPage');
 	const [activeCategory, setActiveCategory] = useState(1);
 	const [expandedCaseStudy, setExpandedCaseStudy] = useState(null);
+	
+	const category = {
+		1: t('categories.website'),
+		2: t('categories.scientific'),
+		3: t('categories.mobile'),
+	};
 	const projects = Projects.Projects.filter((item) => item.show === true
 	);
 
@@ -68,17 +72,11 @@ export default function Page() {
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
 						<h1 className="md:bg-white bg-transparent lg:bg-transparent bg-opacity-50 md-px-0 text-black text-5xl md:text-8xl font-bold">
-							My Projects
+							{t('title')}
 						</h1>
 						<Hr />
 						<p className="title  text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5">
-							List of my projects that I have done and{" "}
-							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
-								{" "}
-								currently
-								<br />
-								working on.
-							</span>
+							{t('description')}
 						</p>
 						<motion.div
 							initial={{ opacity: 0, y: 100 }}
@@ -91,14 +89,14 @@ export default function Page() {
 								});
 							}}
 							className="mb-3">
-							<Button variation="primary">Scroll Down</Button>
+							<Button variation="primary">{t('scrollDown')}</Button>
 						</motion.div>
 					</div>
 				</div>
 				<div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
 						<Hr variant="long"></Hr>
-						<h1 className="text-3xl font-bold mt-3">Featured Portfolio</h1>
+						<h1 className="text-3xl font-bold mt-3">{t('featuredPortfolio')}</h1>
 					</div>
 				</div>
 
@@ -194,31 +192,30 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							Dashboard Ekraf : Southeast Sulawesi Creative Economy Platform
+							{t('dashboardEkraf.title')}
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							Architected and developed a comprehensive backend system for Southeast Sulawesi&apos;s creative economy platform using AdonisJS and PostgreSQL.
-							Built secure RESTful APIs and implemented automated data processing workflows to support digital transformation initiatives for local creative businesses.
+							{t('dashboardEkraf.description')}
 						</p>{" "}
 						<div className="text-gray-600 text-justify title text-lg mt-1">
-							<p className="mb-2">Key development responsibilities included:</p>
+							<p className="mb-2">{t('dashboardEkraf.keyResponsibilities')}:</p>
 							<ol className="space-y-2 ml-4" style={{ listStyleType: 'decimal', paddingLeft: '1rem' }}>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Custom questionnaire module</strong> with dynamic form generation and validation for collecting business data from creative economy actors.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Automated reporting dashboard</strong> that transforms raw survey data into comprehensive stakeholder reports with data visualization.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>User management system</strong> with role-based access control for administrators, surveyors, and business owners.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Real-time analytics dashboard</strong> providing insights on survey completion rates, response patterns, and business distribution.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }} dangerouslySetInnerHTML={{ __html: t('dashboardEkraf.responsibility1') }} />
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }} dangerouslySetInnerHTML={{ __html: t('dashboardEkraf.responsibility2') }} />
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }} dangerouslySetInnerHTML={{ __html: t('dashboardEkraf.responsibility3') }} />
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }} dangerouslySetInnerHTML={{ __html: t('dashboardEkraf.responsibility4') }} />
 							</ol>
 						</div>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/ekrafdash">More</Link>
+								<Link href="projects/ekrafdash">{t('more')}</Link>
 							</Button>
 							<Button variation="secondary">
 								<Link
 									href="https://ekraf.pisdev.my.id/"
 									target="_blank"
 									rel="noopener noreferrer">
-									Preview
+									{t('preview')}
 								</Link>
 							</Button>
 						</div>
@@ -591,7 +588,7 @@ export default function Page() {
 					}}
 					className="flex justify-center items-center flex-col my-5 self-start ">
 					<Button variation="primary">
-						<Link href="projects/archive">View In Archive</Link>
+						<Link href="projects/archive">{t('viewInArchive')}</Link>
 					</Button>
 				</motion.div>
 			</main>

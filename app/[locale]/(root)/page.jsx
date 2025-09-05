@@ -4,7 +4,7 @@ import Image from "next/legacy/image";
 // import "../globals.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 // components
 import Button from "@/components/Button";
@@ -24,7 +24,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const MyPage = () => {
 	const t = useTranslations('HomePage');
-	
+	const locale = useLocale();
+
 	const fullpageOptions = {
 		anchors: ["home", "about", "projects", "contact"],
 		scrollingSpeed: 1000,
@@ -96,17 +97,16 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										<Button variation="primary">
-											<Link
+											<a
 												href={"/docs/Avan_CurriculumVitae.pdf"}
 												target="_blank"
 												rel="noopener noreferrer"
-												locale={false}
 												download>
 												Download CV
-											</Link>
+											</a>
 										</Button>
 										<Button variation="secondary">
-											<Link href="#contact">Contact Me</Link>
+											<a href="#contact">Contact Me</a>
 										</Button>
 									</motion.div>
 								</motion.div>
@@ -192,9 +192,9 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										<Button variation="primary">
-											<Link href="/about">
-												Learn More
-											</Link>
+											<Link href={`/${locale}/about`}>
+											Learn More
+										</Link>
 										</Button>
 									</motion.div>
 								</div>
@@ -260,9 +260,9 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										<Button variation="primary">
-											<Link href="/projects">
-												Learn More
-											</Link>
+											<Link href={`/${locale}/projects`}>
+											Learn More
+										</Link>
 										</Button>
 									</motion.div>
 								</div>
@@ -331,9 +331,9 @@ const MyPage = () => {
 											delay: 0.3,
 											type: "spring",
 										}}>
-										<Link href="mailto:avanfabiand@gmail.com?subject=Hello&body=Hello Fabian,">
+										<a href="mailto:avanfabiand@gmail.com?subject=Hello&body=Hello Fabian,">
 											avanfabiand@gmail.com
-										</Link>
+										</a>
 									</motion.p>
 									{/* icons */}
 									<div className="flex justify-center items-center space-x-4">

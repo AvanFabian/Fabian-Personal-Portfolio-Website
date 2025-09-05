@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMedal } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Rektorat from "@/public/image/educations/Rektorat.jpg";
 import GerbangSmg from "@/public/image/educations/GerbangSmg.jpeg";
 import Doktoral from "@/public/image/educations/Doktoral.jpeg";
@@ -36,10 +38,10 @@ export default function Education() {
 			<section className="grid gap-8 md:gap-12">
 				<div className="text-center space-y-2">
 					<h1 className="text-3xl md:text-4xl font-bold tracking-tighter">
-						Education
+						{useTranslations('Education')('title')}
 					</h1>
 					<p className="text-muted-foreground max-w-[800px] mx-auto">
-						Get to know more about my educational background.
+						{useTranslations('Education')('description')}
 					</p>
 				</div>
 				<div className="grid gap-8 md:gap-12">

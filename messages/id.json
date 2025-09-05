@@ -12,5 +12,124 @@
   "HomePage": {
     "title": "Spesialis IT",
     "description": "Seorang Spesialis IT yang serbaguna dengan keahlian yang mencakup pengembangan full-stack, analisis data, dan penulisan ilmiah. Saya telah merancang dan mengoptimalkan sistem backend, membangun aplikasi lintas platform, dan mengembangkan model machine learning prediktif. Selain teknik, saya aktif terlibat dalam penelitian dan publikasi akademik, memanfaatkan wawasan berbasis data untuk memecahkan masalah dunia nyata. Saya mencari kesempatan untuk berkontribusi pada proyek-proyek berdampak di mana saya dapat mengintegrasikan inovasi teknis dengan keunggulan analitis dan ilmiah."
+  },
+  "AboutPage": {
+    "title": "Tentang Saya",
+    "description": "Pengenalan singkat tentang saya dan minat saya.",
+    "scrollDown": "Gulir ke Bawah",
+    "back": "Kembali"
+  },
+  "About": {
+    "title": "Siapa Saya?",
+    "name": "Avan Fabian Daniswara",
+    "description": "Halo! Saya Avan Fabian Daniswara, seorang software engineer dan pemecah masalah sejati. Perjalanan saya ke dunia teknologi didorong oleh keyakinan sederhana: solusi paling berdampak lahir dari rasa ingin tahu yang mendalam tentang dunia di sekitar kita. Berasal dari Probolinggo dan sekarang mahasiswa Teknik Informatika di Universitas Negeri Malang, saya selalu terpesona oleh ketidakefisienan tersembunyi dalam kehidupan sehari-hari—tantangan yang diterima orang hanya karena \"begitulah cara yang selalu dilakukan.\" Perspektif ini adalah titik awal saya untuk setiap proyek: melihat melampaui permukaan dan bertanya, \"Bagaimana teknologi dapat membuat ini secara fundamental lebih baik?\" Dorongan untuk berinovasi ini telah membawa saya pada perjalanan yang luar biasa. Ini telah memandu saya dalam merancang platform full-stack untuk klien dunia nyata, mengembangkan sistem rehabilitasi VR/IoT yang memenangkan penghargaan untuk kompetisi nasional, dan membangun model machine learning prediktif dengan akurasi 85%. Dari sistem backend di Laravel dan AdonisJS hingga aplikasi mobile lintas platform di Flutter, setiap proyek adalah bukti keyakinan saya dalam menggunakan alat yang tepat untuk masalah yang tepat."
+  },
+  "Skills": {
+    "title": "Kompetensi Inti",
+    "subtitle": "Kemampuan teknis saya secara sekilas.",
+    "backendDevelopment": "Pengembangan Backend",
+    "fullStackDevelopment": "Pengembangan Full-Stack",
+    "mobileDevelopment": "Pengembangan Mobile",
+    "machineLearning": "Machine Learning & AI",
+    "vrDevelopment": "Pengembangan VR",
+    "cybersecurity": "Keamanan Siber"
+  },
+  "Experience": {
+    "title": "Pengalaman Profesional",
+    "profileImageStudio": {
+      "period": "Februari 2025 – Juni 2025 · Hybrid",
+      "company": "Profile Image Studio",
+      "position": "Magang Backend Developer",
+      "description": "Perusahaan digital yang menyediakan sistem ERP dan pengembangan perangkat lunak khusus untuk bisnis. Mengimplementasikan logika bisnis yang disesuaikan menggunakan AdonisJS untuk pelaku ekonomi kreatif, mengotomatisasi rekapitulasi data penilaian kuesioner, merancang skema PostgreSQL yang dinormalisasi, menulis dokumentasi API di Postman, berkolaborasi dengan DevOps, dan mengimplementasikan otorisasi RBAC."
+    },
+    "sealab": {
+      "period": "April 2025 – Juni 2025 · Offline",
+      "company": "Social Economic Accelerator Lab",
+      "position": "Magang Identity and Access Management",
+      "description": "Perusahaan digital yang menyediakan sistem ERP dan pengembangan perangkat lunak khusus untuk bisnis. Setup Windows Server, konfigurasi LDAP & AD, implementasi IAM & CIAM, Okta IdP untuk SSO, dan keamanan data untuk kontinuitas bisnis."
+    },
+    "scpMentor": {
+      "period": "Oktober 2024 – Sekarang",
+      "company": "Program Kreativitas Mahasiswa UM",
+      "position": "Mentor",
+      "description": "Program inovasi dan penelitian mahasiswa yang didanai oleh Kementerian Pendidikan Indonesia. Membimbing tim, mengawasi penulisan proposal, penelitian, dan presentasi, serta memberikan masukan strategis untuk kelayakan dan dampak proyek."
+    },
+    "gdgocMl": {
+      "period": "Oktober 2024 – Juli 2025",
+      "company": "Komunitas Teknologi GDGOC UM",
+      "position": "Tim Inti ML/AI",
+      "description": "Program Komunitas Teknologi berbasis universitas yang didukung oleh Google. Memimpin proyek akhir, berkolaborasi lintas divisi teknis, dan menyampaikan materi pembelajaran ML/AI dalam sesi Study Jam."
+    },
+    "idxPartner": {
+      "period": "Februari 2024 – Maret 2024",
+      "company": "ID/X Partner",
+      "position": "Data Scientist",
+      "description": "Program magang berbasis proyek oleh Rakamin Academy dengan mitra industri ID/X Partners. Mengembangkan model ML untuk prediksi risiko gagal bayar pinjaman, melakukan feature engineering, dan mengimplementasikan XGBoost dengan Scikit-learn."
+    },
+    "gdscMl": {
+      "period": "Oktober 2023 – Oktober 2024",
+      "company": "Komunitas Teknologi GDSC UM",
+      "position": "Tim Inti ML/AI",
+      "description": "Program Komunitas berbasis universitas yang didukung oleh Google. Menyampaikan materi pembelajaran ML/AI dalam sesi Study Jam dan membimbing mahasiswa dalam aplikasi praktis ML/AI."
+    }
+  },
+  "Education": {
+    "title": "Pendidikan",
+    "subtitle": "Ketahui lebih lanjut tentang latar belakang pendidikan saya.",
+    "period": "2022 - Sekarang",
+    "university": "Universitas Negeri Malang",
+    "degree": "S1 Teknik Informatika | Ilmu Komputer",
+    "description": "Bercita-cita menjadi software engineer, saya saat ini sedang menempuh gelar sarjana ilmu komputer di Universitas Negeri Malang. Terpesona oleh dunia teknologi, saya bersemangat untuk belajar dan mengeksplorasi hal-hal baru di bidang ilmu komputer.",
+    "gpa": "IPK: 3.7 dari 4",
+    "achievementsTitle": "Prestasi",
+    "achievements": {
+      "goldMedal": {
+        "title": "Medali Emas UM Tech & Trade Expo 2024",
+        "period": "Januari 2024 – April 2024",
+        "description": "Merancang platform invoicing berbasis web untuk mendigitalkan proses keuangan UMKM, mengintegrasikan API Gemini untuk fitur saran cerdas guna meningkatkan pengembangan produk bisnis."
+      },
+      "silverMedal": {
+        "title": "Medali Perak, Pekan Ilmiah Nasional ke-37 (PIMNAS)",
+        "period": "Oktober 2024 – November 2024",
+        "description": "Merancang sistem rehabilitasi inovatif dan berhasil mempresentasikan kerangka teknis dan manfaat pengguna kepada panel juri nasional."
+      },
+      "funding": {
+        "title": "Penerima Pendanaan, Program Kreativitas Mahasiswa Nasional (PKM-KC)",
+        "period": "Februari 2024 – September 2024",
+        "description": "Mengamankan pendanaan R&D nasional dengan merancang dan mengusulkan sistem inovatif untuk rehabilitasi pasca stroke menggunakan Virtual Reality (VR) dan IoT."
+      },
+      "english": {
+        "title": "Sertifikat Kemahiran Bahasa Inggris (Setara CEFR B2)",
+        "period": "November 2022 – Desember 2022",
+        "description": "Diterbitkan oleh Universitas Negeri Malang dengan skor setara PBT 487."
+      }
+    }
+  },
+  "Quote": {
+    "text1": "Tidak ada batasan untuk apa yang bisa kamu capai",
+    "text2": "kecuali batasan yang kamu berikan pada pemikiranmu sendiri."
+  },
+  "ProjectsPage": {
+    "title": "Proyek Saya",
+    "description": "Daftar proyek yang telah saya kerjakan dan sedang saya kerjakan saat ini.",
+    "scrollDown": "Gulir ke Bawah",
+    "featuredPortfolio": "Portofolio Unggulan",
+    "viewInArchive": "Lihat di Arsip",
+    "moreButton": "Selengkapnya",
+    "previewButton": "Pratinjau",
+    "categories": {
+      "website": "Website",
+      "scientific": "Penelitian Ilmiah & Data",
+      "mobile": "Aplikasi Mobile"
+    },
+    "dashboardEkraf": {
+      "title": "Dashboard Ekraf : Platform Ekonomi Kreatif Sulawesi Tenggara",
+      "description": "Merancang dan mengembangkan sistem backend komprehensif untuk platform ekonomi kreatif Sulawesi Tenggara menggunakan AdonisJS dan PostgreSQL. Membangun RESTful API yang aman dan mengimplementasikan alur kerja pemrosesan data otomatis untuk mendukung inisiatif transformasi digital bagi bisnis kreatif lokal.",
+      "keyResponsibilities": "Tanggung jawab pengembangan utama meliputi",
+      "responsibility1": "Modul kuesioner khusus dengan pembuatan formulir dinamis dan validasi untuk mengumpulkan data bisnis dari pelaku ekonomi kreatif.",
+      "responsibility2": "Dashboard pelaporan otomatis yang mengubah data survei mentah menjadi laporan stakeholder komprehensif dengan visualisasi data.",
+      "responsibility3": "Sistem manajemen pengguna dengan kontrol akses berbasis peran untuk administrator, surveyor, dan pemilik bisnis.",
+      "responsibility4": "Dashboard analitik real-time yang memberikan wawasan tentang tingkat penyelesaian survei, pola respons, dan distribusi bisnis."
+    }
   }
 }

@@ -1,4 +1,6 @@
+"use client";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Stack from "./stack";
 import Tools from "./tools";
 
@@ -26,16 +28,18 @@ function Wrapper({ children }) {
 }
 
 export default function Skills() {
+	const t = useTranslations('Skills');
+	
 	return (
 		<>
 			<Wrapper>
 				<section className="grid gap-8 md:gap-12">
 					<div className="text-center space-y-2">
 						<h2 className="text-3xl font-bold mt-3 text-black">
-							Core Competencies
+							{t('title')}
 						</h2>
 						<p className="text-muted-foreground max-w-[800px] mx-auto">
-							My technical capabilities at a glance.
+							{t('description')}
 						</p>
 					</div>
 					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">

@@ -12,5 +12,124 @@
   "HomePage": {
     "title": "IT Specialist",
     "description": "A versatile IT Specialist with expertise spanning full-stack development, data analysis, and scientific writing. I have designed and optimized backend systems, built cross-platform applications, and developed predictive machine learning models. Beyond engineering, I actively engage in research and academic publication, leveraging data-driven insights to solve real-world problems. I am seeking opportunities to contribute to impactful projects where I can integrate technical innovation with analytical and scholarly excellence."
+  },
+  "AboutPage": {
+    "title": "About Me",
+    "description": "A brief introduction about me and my interest.",
+    "scrollDown": "Scroll Down",
+    "back": "Back"
+  },
+  "About": {
+    "title": "Who Am I?",
+    "name": "Avan Fabian Daniswara",
+    "description": "Hello! I'm Avan Fabian Daniswara, a software engineer and a problem-solver at heart. My journey into technology is driven by a simple belief: the most impactful solutions are born from a deep curiosity about the world around us. Originally from Probolinggo and now an Informatics Engineering student at the State University of Malang, I've always been fascinated by the hidden inefficiencies in everyday life—the challenges people accept simply because \"that's how it's always been done.\" This perspective is my starting point for every project: to look beyond the surface and ask, \"How can technology make this fundamentally better?\" This drive to innovate has led me on an incredible journey. It has guided me in architecting a full-stack platform for a real-world client, developing an award-winning VR/IoT rehabilitation system for a national competition, and building a predictive machine learning model with 85% accuracy. From backend systems in Laravel and AdonisJS to cross-platform mobile apps in Flutter, each project is a testament to my belief in using the right tool for the right problem."
+  },
+  "Skills": {
+    "title": "Core Competencies",
+    "subtitle": "My technical capabilities at a glance.",
+    "backendDevelopment": "Backend Development",
+    "fullStackDevelopment": "Full-Stack Development",
+    "mobileDevelopment": "Mobile Development",
+    "machineLearning": "Machine Learning & AI",
+    "vrDevelopment": "VR Development",
+    "cybersecurity": "Cybersecurity"
+  },
+  "Experience": {
+    "title": "Professional Experience",
+    "profileImageStudio": {
+      "period": "February 2025 – June 2025 · Hybrid",
+      "company": "Profile Image Studio",
+      "position": "Backend Developer Intern",
+      "description": "Digital company, providing ERP system and custom software development for business. Implemented customized business logic using AdonisJS for creative economy actors, automated questionnaire assessment data recapitulation, designed normalized PostgreSQL schema, wrote API docs in Postman, collaborated with DevOps, and implemented RBAC authorization."
+    },
+    "sealab": {
+      "period": "April 2025 – June 2025 · Offline",
+      "company": "Social Economic Accelerator Lab",
+      "position": "Identity and Access Management Intern",
+      "description": "Digital company, providing ERP system and custom software development for business. Windows Server setup, LDAP & AD configuration, IAM & CIAM implementation, Okta IdP for SSO, and data security for business continuity."
+    },
+    "scpMentor": {
+      "period": "October 2024 – Present",
+      "company": "Student Creativity Program UM",
+      "position": "Mentor",
+      "description": "Student innovation and research program funded by the Indonesian Ministry of Education. Mentored teams, oversaw proposal writing, research, and presentations, and provided strategic input for project feasibility and impact."
+    },
+    "gdgocMl": {
+      "period": "October 2024 – July 2025",
+      "company": "Tech Community GDGOC UM",
+      "position": "ML/AI Core Team",
+      "description": "University based Technology Community Program supported by Google. Led final projects, collaborated across technical divisions, and delivered ML/AI learning materials in Study Jam sessions."
+    },
+    "idxPartner": {
+      "period": "February 2024 – March 2024",
+      "company": "ID/X Partner",
+      "position": "Data Scientist",
+      "description": "Project Based Internship program by Rakamin Academy with industry partner ID/X Partners. Developed ML model for loan default risk prediction, performed feature engineering, and implemented XGBoost with Scikit-learn."
+    },
+    "gdscMl": {
+      "period": "October 2023 – October 2024",
+      "company": "Tech Community GDSC UM",
+      "position": "ML/AI Core Team",
+      "description": "University based Community Program supported by Google. Delivered ML/AI learning materials in Study Jam sessions and guided students in practical ML/AI applications."
+    }
+  },
+  "Education": {
+    "title": "Education",
+    "subtitle": "Get to know more about my educational background.",
+    "period": "2022 - Present",
+    "university": "Universitas Negeri Malang",
+    "degree": "S1 Teknik Informatika | Computer Science",
+    "description": "Aspiring to be a software engineer, I am currently pursuing a bachelor's degree in computer science at Universitas Negeri Malang. Fascinated by the world of technology, I am eager to learn and explore new things in the field of computer science.",
+    "gpa": "GPA: 3.7 out of 4",
+    "achievementsTitle": "Achievements",
+    "achievements": {
+      "goldMedal": {
+        "title": "UM Gold Medal Tech & Trade Expo 2024",
+        "period": "January 2024 – April 2024",
+        "description": "Architected a web-based invoicing platform to digitize MSME financial processes, integrating Gemini API for a smart suggestion feature to improve business product development."
+      },
+      "silverMedal": {
+        "title": "Silver Medal, 37th National Scientific Week (PIMNAS)",
+        "period": "October 2024 – November 2024",
+        "description": "Architected an innovative rehabilitation system and successfully presented its technical framework and user benefits to a national panel of judges."
+      },
+      "funding": {
+        "title": "Funding Recipient, National Student Creativity Program (PKM-KC)",
+        "period": "February 2024 – September 2024",
+        "description": "Secured national R&D funding by designing and proposing an innovative system for post-stroke rehabilitation using Virtual Reality (VR) and IoT."
+      },
+      "english": {
+        "title": "Certificate of English Proficiency (CEFR B2 Equivalent)",
+        "period": "November 2022 – December 2022",
+        "description": "Issued by the State University of Malang with a PBT-equivalent score of 487."
+      }
+    }
+  },
+  "Quote": {
+    "text1": "There are no limits to what you can accomplish",
+    "text2": "except the limits you place on your own thinking."
+  },
+  "ProjectsPage": {
+    "title": "My Projects",
+    "description": "List of my projects that I have done and currently working on.",
+    "scrollDown": "Scroll Down",
+    "featuredPortfolio": "Featured Portfolio",
+    "viewInArchive": "View In Archive",
+    "moreButton": "More",
+    "previewButton": "Preview",
+    "categories": {
+      "website": "Website",
+      "scientific": "Scientific Research & Data",
+      "mobile": "Mobile Application"
+    },
+    "dashboardEkraf": {
+      "title": "Dashboard Ekraf : Southeast Sulawesi Creative Economy Platform",
+      "description": "Architected and developed a comprehensive backend system for Southeast Sulawesi's creative economy platform using AdonisJS and PostgreSQL. Built secure RESTful APIs and implemented automated data processing workflows to support digital transformation initiatives for local creative businesses.",
+      "keyResponsibilities": "Key development responsibilities included",
+      "responsibility1": "Custom questionnaire module with dynamic form generation and validation for collecting business data from creative economy actors.",
+      "responsibility2": "Automated reporting dashboard that transforms raw survey data into comprehensive stakeholder reports with data visualization.",
+      "responsibility3": "User management system with role-based access control for administrators, surveyors, and business owners.",
+      "responsibility4": "Real-time analytics dashboard providing insights on survey completion rates, response patterns, and business distribution."
+    }
   }
 }

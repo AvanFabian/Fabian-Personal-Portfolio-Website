@@ -11,6 +11,7 @@ import Quote from "./components/quote/quote.jsx";
 import Skills from "./components/skills/skills.jsx";
 import Experience from "./components/experience.jsx";
 import Education from "./components/education.jsx";
+import { useTranslations } from "next-intl";
 
 // images
 import Hero from "@/public/image/me4.jpg";
@@ -19,6 +20,8 @@ import Hr from "@/components/Hr";
 import About from "./components/about/about.jsx";
 
 export default function Page() {
+	const t = useTranslations('AboutPage');
+	
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -51,15 +54,11 @@ export default function Page() {
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
 						<h1 className="md:bg-white bg-transparent lg:bg-transparent bg-opacity-50 md:px-0 text-black text-5xl md:text-8xl font-bold">
-							About Me
+							{t('title')}
 						</h1>
 						<Hr />
 						<p className="title text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5 ">
-							A brief introduction about me and{" "}
-							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
-								{" "}
-								my interest.
-							</span>
+							{t('description')}
 						</p>
 						<motion.div
 							initial={{ opacity: 0 }}
@@ -72,7 +71,7 @@ export default function Page() {
 								});
 							}}
 							className="mb-3">
-							<Button variation="primary">Scroll Down</Button>
+							<Button variation="primary">{t('scrollDown')}</Button>
 						</motion.div>
 					</div>
 				</div>

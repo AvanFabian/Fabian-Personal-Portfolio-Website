@@ -1,6 +1,8 @@
 // Quote.js
+"use client";
 import "./style.css";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useIntersectionObserver } from "./useIntersectionObserver";
 
 function Wrapper({ children }) {
@@ -28,10 +30,9 @@ function Wrapper({ children }) {
 }
 
 export default function Quote() {
-	const text1 = '"There are no limits to what you can accomplish'.split(" ");
-	const text2 = 'except the limits you place on your own thinking."'.split(
-		" "
-	);
+	const t = useTranslations('Quote');
+	const text1 = t('text1').split(" ");
+	const text2 = t('text2').split(" ");
 	const [ref, isIntersecting] = useIntersectionObserver();
 
 	return (

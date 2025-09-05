@@ -1,7 +1,11 @@
+"use client";
 import Hr from "@/components/Hr";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 function Title() {
+	const t = useTranslations('Experience');
+	
 	return (
 		<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 			<div className="flex justify-center items-center flex-col my-5 self-start">
@@ -21,7 +25,7 @@ function Title() {
 
 						type: "spring",
 					}}>
-					Profesional Experience
+					{t('title')}
 				</motion.h1>
 			</div>
 		</div>
