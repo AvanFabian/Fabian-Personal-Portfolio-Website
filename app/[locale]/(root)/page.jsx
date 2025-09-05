@@ -102,11 +102,11 @@ const MyPage = () => {
 												target="_blank"
 												rel="noopener noreferrer"
 												download>
-												Download CV
+												{t('downloadCV')}
 											</a>
 										</Button>
 										<Button variation="secondary">
-											<a href="#contact">Contact Me</a>
+											<a href="#contact">{t('contactMe')}</a>
 										</Button>
 									</motion.div>
 								</motion.div>
@@ -170,7 +170,7 @@ const MyPage = () => {
 											delay: 0.1,
 											type: "spring",
 										}}>
-										About Me
+										{t('aboutMe')}
 									</motion.h1>
 									<Hr />
 									<motion.p
@@ -181,7 +181,7 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										A brief introduction about me and my
+										{t('aboutDescription')}
 										interest.
 									</motion.p>
 									<motion.div
@@ -193,8 +193,8 @@ const MyPage = () => {
 										}}>
 										<Button variation="primary">
 											<Link href={`/${locale}/about`}>
-											Learn More
-										</Link>
+												{t('learnMore')}
+											</Link>
 										</Button>
 									</motion.div>
 								</div>
@@ -239,7 +239,7 @@ const MyPage = () => {
 											delay: 0.1,
 											type: "spring",
 										}}>
-										My Portfolio
+										{t('portfolioTitle')}
 									</motion.h1>
 									<Hr />
 									<motion.p
@@ -250,7 +250,7 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										A glimpse into my journey in IT and research.
+										{t('portfolioDescription')}
 									</motion.p>
 									<motion.div
 										initial={{ y: 40, opacity: 0 }}
@@ -261,8 +261,8 @@ const MyPage = () => {
 										}}>
 										<Button variation="primary">
 											<Link href={`/${locale}/projects`}>
-											Learn More
-										</Link>
+												{t('learnMore')}
+											</Link>
 										</Button>
 									</motion.div>
 								</div>

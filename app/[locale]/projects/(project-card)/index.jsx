@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+
 export default function projectCard({ project, index, activeCategory }) {
+	const t = useTranslations('ProjectsPage.projects');
+	const tProjects = useTranslations('ProjectsPage');
 	console.log(project.category[0], activeCategory);
 	console.log(project.category.includes(activeCategory));
 	return (
@@ -27,17 +31,22 @@ export default function projectCard({ project, index, activeCategory }) {
 							layout="fill"
 							objectFit="cover"
 							className="bg-slate-950 opacity-10  group-hover/tes:opacity-100 transition-all ease duration-500"
-							// placeholder removed for Next.js 15+ compatibility
+						// placeholder removed for Next.js 15+ compatibility
 						/>
 						<div className="absolute top-0 left-0 bg-gray-600 px-4 py-2">
 							<h4 className="text-white">{project.year}</h4>
 						</div>
 						<div className="transition-all ease duration-500 opacity-100 content text-center group-hover/tes:opacity-0 z-10">
-							<h1 className="text-3xl font-bold mb-3">{project.title}</h1>
+							<h1 className="text-3xl font-bold mb-3">
+								{project.title.includes('.') ? t(project.title) : project.title}
+							</h1>
 							<p>
-								{project.desc[0].length > 125
-									? `${project.desc[0].slice(0, 125)}...`
-									: project.desc[0]}
+								{(() => {
+									const translatedDesc = t(project.desc[0]);
+									return translatedDesc.length > 125
+										? `${translatedDesc.slice(0, 125)}...`
+										: translatedDesc;
+								})()}
 							</p>
 							<div className="flex justify-center items-center flex-row mt-5 flex-wrap">
 								{project.tech.map((t, index) => (

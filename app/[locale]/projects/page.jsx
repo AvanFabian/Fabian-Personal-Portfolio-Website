@@ -30,10 +30,11 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 // Category object will be handled inside the component to use translations
 
 export default function Page() {
-	const t = useTranslations('ProjectsPage');
+	const t = useTranslations("ProjectsPage");
+	const tCommon = useTranslations("Common");
 	const [activeCategory, setActiveCategory] = useState(1);
 	const [expandedCaseStudy, setExpandedCaseStudy] = useState(null);
-	
+
 	const category = {
 		1: t('categories.website'),
 		2: t('categories.scientific'),
@@ -369,19 +370,19 @@ export default function Page() {
 							Neurehab: A Nationally-Funded Student Research Project (PKM-KC)
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							Neurehab is a Karsa Cipta (KC) research and development project that successfully obtained national funding from the Ministry of Education, Culture, Research, and Technology through the Student Creativity Program (PKM). This project focuses on the design and development of an integrated post-stroke rehabilitation system that combines Virtual Reality (VR), Internet of Things (IoT), and mobile applications. The project was further developed and won a Silver Medal at the 37th PIMNAS.
+							{t('neurehab.description')}
 						</p>{" "}
 						<div className="text-gray-600 text-justify title text-lg mt-1">
-							<p className="mb-2">As the  Researcher & Developer, I was responsible for:</p>
+							<p className="mb-2">{t('neurehab.roleTitle')}</p>
 							<ol className="space-y-2 ml-4" style={{ listStyleType: 'decimal', paddingLeft: '1rem' }}>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Research</strong> & Proposal Development.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>System Architecture</strong> & Prototyping.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}>Integration & <strong>Final Presentation</strong></li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>{t('neurehab.responsibilities.research')}</strong></li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>{t('neurehab.responsibilities.architecture')}</strong></li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>{t('neurehab.responsibilities.integration')}</strong></li>
 							</ol>
 						</div>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/neurehab">More</Link>
+								<Link href="projects/neurehab">{t('more')}</Link>
 							</Button>
 							<Button variation="secondary">
 								<Link
@@ -487,19 +488,18 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							Mother : Pregnancy Wellness & Fitness Monitoring App
+							{t('mother.title')}
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							A comprehensive pregnancy wellness mobile application built with Flutter and Laravel, designed to support urban pregnant women
-							in managing their health journey while addressing obesity-related risks during pregnancy.
+							{t('mother.description')}
 						</p>{" "}
 						<div className="text-gray-600 text-justify title text-lg mt-1">
-							<p className="mb-2">Key technical implementations included:</p>
+							<p className="mb-2">{t('mother.keyImplementations')}</p>
 							<ol className="space-y-2 ml-4" style={{ listStyleType: 'decimal', paddingLeft: '1rem' }}>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Laravel backend API</strong> with secure authentication and data encryption for handling sensitive health information.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Flutter mobile interface</strong> with intuitive forms for daily health logging, weight tracking, and appointment scheduling.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Personalized dashboard</strong> featuring progress charts, health insights, and customized recommendations based on user data.</li>
-								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Notification system</strong> for medication reminders, appointment alerts, and milestone celebrations throughout pregnancy.</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Laravel backend API</strong> {t('mother.implementations.backend')}</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Flutter mobile interface</strong> {t('mother.implementations.mobile')}</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Personalized dashboard</strong> {t('mother.implementations.dashboard')}</li>
+								<li style={{ listStyleType: 'decimal', display: 'list-item' }}><strong>Notification system</strong> {t('mother.implementations.notifications')}</li>
 							</ol>
 						</div>{" "}
 						<div className="mt-3">
@@ -535,7 +535,7 @@ export default function Page() {
 								delay: 0.7,
 								type: "spring",
 							}}>
-							My Portfolio Gallery
+							{tCommon('myPortfolioGallery')}
 						</motion.h1>
 					</div>
 				</div>

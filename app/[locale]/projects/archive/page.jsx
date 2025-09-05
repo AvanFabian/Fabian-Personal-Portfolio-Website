@@ -8,13 +8,18 @@ import FixedButon from "@/components/FixedButton";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import Projects from "@/json/data.json"
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 
-export default function Page () {
+export default function Page() {
+	const tCommon = useTranslations('Common');
+	const params = useParams();
+	const locale = params.locale;
 	const projects = Projects.Projects
-  return (
+	return (
 		<>
 			<main className="overflow-hidden">
-				<FixedButon href="/projects">
+				<FixedButon href={`/${locale}/projects`}>
 					<FontAwesomeIcon
 						icon={faChevronLeft}
 						className="text-black pr-10"
@@ -78,7 +83,7 @@ export default function Page () {
 								<tr className=" hover:shadow-md  transition-all ease duration-500">
 									<th className="text-start">Year</th>
 									<th className="text-start">Title</th>
-									<th className="text-start">Technology</th>
+									<th className="text-start">{tCommon('technology')}</th>
 									<th className="text-start">Link</th>
 								</tr>
 							</thead>
@@ -126,5 +131,5 @@ export default function Page () {
 				</div>
 			</main>
 		</>
-  );
+	);
 }

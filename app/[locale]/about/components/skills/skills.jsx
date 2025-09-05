@@ -28,8 +28,10 @@ function Wrapper({ children }) {
 }
 
 export default function Skills() {
-	const t = useTranslations('Skills');
-	
+	const t = useTranslations('AboutPage');
+	const tCommon = useTranslations('Common');
+	const tSkills = useTranslations('Skills');
+
 	return (
 		<>
 			<Wrapper>
@@ -46,32 +48,32 @@ export default function Skills() {
 						{/* Skill 1: Backend Development */}
 						<div className="flex flex-col items-center text-center gap-2">
 							<ServerIcon className="w-12 h-12" />
-							<div className="font-medium">Backend Development</div>
+							<div className="font-medium">{tSkills('backendDevelopment')}</div>
 						</div>
 						{/* Skill 2: Full-Stack Development */}
 						<div className="flex flex-col items-center text-center gap-2">
 							<LayersIcon className="w-12 h-12" />
-							<div className="font-medium">Full-Stack Development</div>
+							<div className="font-medium">{tSkills('fullStackDevelopment')}</div>
 						</div>
 						{/* Skill 3: Mobile App Development */}
 						<div className="flex flex-col items-center text-center gap-2">
 							<SmartphoneIcon className="w-12 h-12" />
-							<div className="font-medium">Mobile App Development</div>
+							<div className="font-medium">{tSkills('mobileAppDevelopment')}</div>
 						</div>
 						{/* Skill 4: Machine Learning */}
 						<div className="flex flex-col items-center text-center gap-2">
 							<BrainCircuitIcon className="w-12 h-12" />
-							<div className="font-medium">Generative AI</div>
+							<div className="font-medium">{tSkills('generativeAI')}</div>
 						</div>
 						{/* Skill 5: Virtual Reality & IoT */}
 						<div className="flex flex-col items-center text-center gap-2">
 							<VrHeadsetIcon className="w-12 h-12" />
-							<div className="font-medium">Virtual Reality & IoT</div>
+							<div className="font-medium">{tSkills('virtualRealityIoT')}</div>
 						</div>
 						{/* Skill 6: Identity & Access Management */}
 						<div className="flex flex-col items-center text-center gap-2">
 							<ShieldCheckIcon className="w-12 h-12" />
-							<div className="font-medium">Identity & Access Management</div>
+							<div className="font-medium">{tSkills('identityAccessManagement')}</div>
 						</div>
 						{/* Anda bisa menambahkan 2 lagi jika mau, misal: Database Design & Systems Integration */}
 					</div>
@@ -79,11 +81,11 @@ export default function Skills() {
 			</Wrapper>
 			<div className="mx-auto container gap-4 p-10 grid grid-cols-1 md:grid-cols-2 mt-10 mb-24">
 				<div className="flex flex-col justify-start items-center">
-					<h2 className="text-3xl font-bold text-center md:text-left mb-12">Technologies & Toolkit</h2>
+					<h2 className="text-3xl font-bold text-center md:text-left mb-12">{tCommon('technologiesToolkit')}</h2>
 					<Stack />
 				</div>
 				<div className="flex flex-col justify-start items-center">
-					<h3 className="text-3xl font-bold text-center md:text-left mb-12">My Go-To Tools</h3>
+					<h3 className="text-3xl font-bold text-center md:text-left mb-12">{tSkills('myGoToTools')}</h3>
 					<Tools />
 				</div>
 			</div>

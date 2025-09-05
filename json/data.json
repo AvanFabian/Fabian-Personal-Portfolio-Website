@@ -4,8 +4,8 @@
       "show": true,
       "title": "Dashboard Ekraf",
       "desc": [
-        "Architected and developed the backend system for a digital platform to support creative economy actors, focusing on a custom questionnaire and data recapitulation module.",
-        "Implemented a secure RESTful API using AdonisJS and designed a normalized PostgreSQL schema, which automated data processing and improved data accuracy for stakeholders."
+        "dashboardEkraf.desc1",
+        "dashboardEkraf.desc2"
       ],
       "year": "2025",
       "preview": "",
@@ -34,8 +34,8 @@
       "show": true,
       "title": "Sincosmile",
       "desc": [
-        "Architected and developed the platform's core features, including the automated scoring engine and a Role-Based Access Control system to manage user permissions.",
-        "Leveraged Supabase as a Backend-as-a-Service to accelerate development, and optimized PostgreSQL queries, resulting in a significant improvement in data retrieval efficiency for the assessment feature."
+        "sincosmile.desc1",
+        "sincosmile.desc2"
       ],
       "year": "2025",
       "preview": "",
@@ -62,8 +62,8 @@
       "show": true,
       "title": "Mother Apps",
       "desc": [
-        "Architected and developed the entire end-to-end system, featuring a cross-platform mobile application in Flutter and a robust RESTful API in Laravel.",
-        "Engineered a custom business logic engine on the backend for dynamic calorie calculation and exercise tracking, tailored to individual user health conditions to ensure data accuracy and safety."
+        "motherApp.desc1",
+        "motherApp.desc2"
       ],
       "year": "2025",
       "preview": "",
@@ -90,10 +90,10 @@
     },
     {
       "show": true,
-      "title": "Denkmeister",
+      "title": "denkmeister.title",
       "desc": [
-        "Developed a cross-platform mobile application from concept to completion using Flutter, focusing on an offline-first architecture to ensure seamless user access without an internet connection.",
-        "Implemented an efficient local data structure using JSON Assets and managed the application's state with Provider resulting in a responsive and stable user experience."
+        "denkmeister.desc1",
+        "denkmeister.desc2"
       ],
       "year": "2025",
       "preview": "",
@@ -120,8 +120,8 @@
       "show": true,
       "title": "Neurehab",
       "desc": [
-        "Develop integrated system combining an immersive Virtual Reality (VR) simulation, an IoT-enabled exoskeleton, and a Kotlin-based mobile app for patient monitoring.",
-        "Engineered the communication protocol between Unity 3D, Arduino microcontrollers, and the mobile app to create a low-latency, real-time feedback loop, enabling accurate monitoring and gamified physical therapy."
+        "neurehab.desc1",
+        "neurehab.desc2"
       ],
       "year": "2025",
       "preview": "",
@@ -146,15 +146,16 @@
       ],
       "slug": "neurehab",
       "category": [
-        2,3
+        2,
+        3
       ]
     },
     {
       "show": true,
-      "title": "BUNYA: Buat Senyawa",
+      "title": "bunya.title",
       "desc": [
-        "BUNYA is an award-winning educational game. As a 3rd Place Winner at the Electrical & Informatics Engineering Student Research Festival held by Universitas Negeri Malang, this project teaches players about chemical elements, compounds, and laboratory equipment by blending engaging fantasy elements with real-world scientific principles."
-      
+        "bunya.desc1",
+        "bunya.desc2"
       ],
       "year": "2024",
       "preview": "",
@@ -179,10 +180,10 @@
     },
     {
       "show": true,
-      "title": "Credit Risk Prediction & Scoring System",
+      "title": "creditRisk.title",
       "desc": [
-        "Developed an end-to-end machine learning model to predict credit risk, achieving 85% accuracy in identifying high-risk loan applications.",
-        "Engineered predictive features from historical lending data and utilized XGBoost and Scikit-learn to build and evaluate the classification model, forming the core of the scoring system."
+        "creditRisk.desc1",
+        "creditRisk.desc2"
       ],
       "year": "2024",
       "preview": "",
@@ -209,7 +210,7 @@
       "show": true,
       "title": "RumahSaladFaqiha: MSME F&B Information System",
       "desc": [
-        "Designed and developed a web application to digitize core business operations such as order management, customer data and inventory tracking. resulting in productivity boost for the business owner."
+        "rumahSalad.desc1"
       ],
       "year": "2024",
       "preview": "",
@@ -232,8 +233,8 @@
       "show": true,
       "title": "JelajahNusantara",
       "desc": [
-        "An immersive educational platform celebrating Indonesian cultural heritage.",
-        "Developed with Laravel, featuring interactive elements and rich content delivery for an engaging user experience in cultural learning."
+        "jelajahNusantara.desc1",
+        "jelajahNusantara.desc2"
       ],
       "year": "2023",
       "preview": "",

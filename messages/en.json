@@ -5,13 +5,20 @@
     "projects": "Projects"
   },
   "Hero": {
-    "title": "Hi, I'm [Your Name]",
+    "title": "Hi, I'm Avan Fabian Daniswara",
     "subtitle": "A passionate developer building web applications.",
     "button": "View My Work"
   },
   "HomePage": {
     "title": "IT Specialist",
-    "description": "A versatile IT Specialist with expertise spanning full-stack development, data analysis, and scientific writing. I have designed and optimized backend systems, built cross-platform applications, and developed predictive machine learning models. Beyond engineering, I actively engage in research and academic publication, leveraging data-driven insights to solve real-world problems. I am seeking opportunities to contribute to impactful projects where I can integrate technical innovation with analytical and scholarly excellence."
+    "description": "A versatile IT Specialist with expertise spanning full-stack development, data analysis, and scientific writing. I have designed and optimized backend systems, built cross-platform applications, and developed predictive machine learning models. Beyond engineering, I actively engage in research and academic publication, leveraging data-driven insights to solve real-world problems. I am seeking opportunities to contribute to impactful projects where I can integrate technical innovation with analytical and scholarly excellence.",
+    "portfolioTitle": "My Portfolio",
+    "portfolioDescription": "A glimpse into my journey in IT and research.",
+    "downloadCV": "Download CV",
+    "contactMe": "Contact Me",
+    "aboutMe": "About Me",
+    "aboutDescription": "A brief introduction about me and my",
+    "learnMore": "Learn More"
   },
   "AboutPage": {
     "title": "About Me",
@@ -130,6 +137,96 @@
       "responsibility2": "Automated reporting dashboard that transforms raw survey data into comprehensive stakeholder reports with data visualization.",
       "responsibility3": "User management system with role-based access control for administrators, surveyors, and business owners.",
       "responsibility4": "Real-time analytics dashboard providing insights on survey completion rates, response patterns, and business distribution."
+    },
+    "projects": {
+      "dashboardEkraf": {
+        "title": "Dashboard Ekraf",
+        "desc1": "Architected and developed the backend system for a digital platform to support creative economy actors, focusing on a custom questionnaire and data recapitulation module.",
+        "desc2": "Implemented a secure RESTful API using AdonisJS and designed a normalized PostgreSQL schema, which automated data processing and improved data accuracy for stakeholders."
+      },
+      "sincosmile": {
+        "title": "Sincosmile",
+        "desc1": "Architected and developed the platform's core features, including the automated scoring engine and a Role-Based Access Control system to manage user permissions.",
+        "desc2": "Leveraged Supabase as a Backend-as-a-Service to accelerate development, and optimized PostgreSQL queries, resulting in a significant improvement in data retrieval efficiency for the assessment feature."
+      },
+      "motherApp": {
+        "title": "Mother App",
+        "desc1": "Developed a comprehensive mobile application for maternal health monitoring using Flutter, featuring real-time health tracking and educational resources.",
+        "desc2": "Implemented secure data synchronization and offline capabilities to ensure continuous access to critical health information for expectant mothers."
+      },
+      "neurehab": {
+        "title": "NeuroRehab VR",
+        "desc1": "Designed and developed an innovative Virtual Reality system for post-stroke rehabilitation, integrating IoT sensors for real-time patient monitoring.",
+        "desc2": "Successfully secured national R&D funding by proposing a comprehensive solution that combines immersive VR therapy with data-driven rehabilitation protocols."
+      },
+      "rumahSalad": {
+        "title": "Rumah Salad Faqiha",
+        "desc1": "Designed and developed a web application to digitize core business operations such as order management, customer data and inventory tracking.",
+        "desc2": "Resulting in productivity boost for the business owner through streamlined digital processes and automated workflow management."
+      },
+      "jelajahNusantara": {
+        "title": "JelajahNusantara",
+        "desc1": "An immersive educational platform celebrating Indonesian cultural heritage.",
+        "desc2": "Developed with Laravel, featuring interactive elements and rich content delivery for an engaging user experience in cultural learning."
+      },
+      "denkmeister": {
+        "title": "Denkmeister",
+        "desc1": "Developed a cross-platform mobile application from concept to completion using Flutter, focusing on an offline-first architecture to ensure seamless user access without an internet connection.",
+        "desc2": "Implemented an efficient local data structure using JSON Assets and managed the application's state with Provider resulting in a responsive and stable user experience."
+      },
+      "bunya": {
+        "title": "BUNYA: Buat Senyawa",
+        "desc1": "BUNYA is an award-winning educational game. As a 3rd Place Winner at the Electrical & Informatics Engineering Student Research Festival held by Universitas Negeri Malang.",
+        "desc2": "This project teaches players about chemical elements, compounds, and laboratory equipment by blending engaging fantasy elements with real-world scientific principles."
+      },
+      "creditRisk": {
+        "title": "Credit Risk Prediction & Scoring System",
+        "desc1": "Developed an end-to-end machine learning model to predict credit risk, achieving 85% accuracy in identifying high-risk loan applications.",
+        "desc2": "Engineered predictive features from historical lending data and utilized XGBoost and Scikit-learn to build and evaluate the classification model, forming the core of the scoring system."
+      }
+    },
+    "more": "More",
+    "preview": "Preview",
+    "neurehab": {
+      "description": "Neurehab is a Karsa Cipta (KC) research and development project that successfully obtained national funding from the Ministry of Education, Culture, Research, and Technology through the Student Creativity Program (PKM). This project focuses on the design and development of an integrated post-stroke rehabilitation system that combines Virtual Reality (VR), Internet of Things (IoT), and mobile applications. The project was further developed and won a Silver Medal at the 37th PIMNAS.",
+      "roleTitle": "As the Researcher & Developer, I was responsible for:",
+      "responsibilities": {
+        "research": "Research & Proposal Development.",
+        "architecture": "System Architecture & Prototyping.",
+        "integration": "Integration & Final Presentation"
+      }
+    },
+    "mother": {
+      "title": "Mother : Pregnancy Wellness & Fitness Monitoring App",
+      "description": "A comprehensive pregnancy wellness mobile application built with Flutter and Laravel, designed to support urban pregnant women in managing their health journey while addressing obesity-related risks during pregnancy.",
+      "keyImplementations": "Key technical implementations included:",
+      "implementations": {
+        "backend": "Laravel backend API with secure authentication and data encryption for handling sensitive health information.",
+        "mobile": "Flutter mobile interface with intuitive forms for daily health logging, weight tracking, and appointment scheduling.",
+        "dashboard": "Personalized dashboard featuring progress charts, health insights, and customized recommendations based on user data.",
+        "notifications": "Notification system for medication reminders, appointment alerts, and milestone celebrations throughout pregnancy."
+      }
     }
+  },
+  "NotFound": {
+    "pageNotFound": "Page not found",
+    "goBack": "Go Back"
+  },
+  "Skills": {
+    "backendDevelopment": "Backend Development",
+    "fullStackDevelopment": "Full-Stack Development",
+    "mobileAppDevelopment": "Mobile App Development",
+    "generativeAI": "Generative AI",
+    "virtualRealityIoT": "Virtual Reality & IoT",
+    "identityAccessManagement": "Identity & Access Management",
+    "myGoToTools": "My Go-To Tools"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "nowPlaying": "Now playing",
+    "currentlyOffline": "Currently offline",
+    "technology": "Technology",
+    "technologiesToolkit": "Technologies & Toolkit",
+    "myPortfolioGallery": "My Portfolio Gallery"
   }
 }

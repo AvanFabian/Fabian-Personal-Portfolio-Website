@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, use } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import jsonData from "@/json/data.json";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -54,7 +55,9 @@ function ScrollDownButton() {
 }
 
 
-function Page({ params }) {
+export default function Page({ params }) {
+	const t = useTranslations('ProjectsPage');
+	const tCommon = useTranslations('Common');
 	const resolvedParams = use(params);
 	const [data, setData] = useState(null);
 	useEffect(() => {
@@ -123,7 +126,7 @@ function Page({ params }) {
 						</div>
 						<div>
 							<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
-								Technology
+								{tCommon('technology')}
 							</h2>
 							<p className="text-2xl font-normal text-neutral-900">
 								{data.tech.join(", ")}
@@ -147,7 +150,7 @@ function Page({ params }) {
 										href={data.preview}
 										target="_blank"
 										rel="noopener noreferrer">
-										Preview{" "}
+										{t('preview')}{" "}
 										<FontAwesomeIcon
 											icon={faArrowUpRightFromSquare}
 											className="ml-3"
@@ -245,5 +248,3 @@ function Page({ params }) {
 		</div>
 	);
 }
-
-export default Page;

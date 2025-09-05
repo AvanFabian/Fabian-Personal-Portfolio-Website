@@ -5,13 +5,20 @@
     "projects": "Proyek"
   },
   "Hero": {
-    "title": "Hai, saya [Your Name]",
+    "title": "Hai, saya Avan Fabian Daniswara",
     "subtitle": "Seorang developer yang bersemangat membangun aplikasi web.",
     "button": "Lihat Karya Saya"
   },
   "HomePage": {
     "title": "Spesialis IT",
-    "description": "Seorang Spesialis IT yang serbaguna dengan keahlian yang mencakup pengembangan full-stack, analisis data, dan penulisan ilmiah. Saya telah merancang dan mengoptimalkan sistem backend, membangun aplikasi lintas platform, dan mengembangkan model machine learning prediktif. Selain teknik, saya aktif terlibat dalam penelitian dan publikasi akademik, memanfaatkan wawasan berbasis data untuk memecahkan masalah dunia nyata. Saya mencari kesempatan untuk berkontribusi pada proyek-proyek berdampak di mana saya dapat mengintegrasikan inovasi teknis dengan keunggulan analitis dan ilmiah."
+    "description": "Seorang Spesialis IT yang serbaguna dengan keahlian yang mencakup pengembangan full-stack, analisis data, dan penulisan ilmiah. Saya telah merancang dan mengoptimalkan sistem backend, membangun aplikasi lintas platform, dan mengembangkan model machine learning prediktif. Selain teknik, saya aktif terlibat dalam penelitian dan publikasi akademik, memanfaatkan wawasan berbasis data untuk memecahkan masalah dunia nyata. Saya mencari peluang untuk berkontribusi pada proyek-proyek berdampak di mana saya dapat mengintegrasikan inovasi teknis dengan keunggulan analitis dan akademis.",
+    "portfolioTitle": "Portofolio Saya",
+    "portfolioDescription": "Sekilas perjalanan saya di bidang IT dan penelitian.",
+    "downloadCV": "Unduh CV",
+    "contactMe": "Hubungi Saya",
+    "aboutMe": "Tentang Saya",
+    "aboutDescription": "Pengenalan singkat tentang saya dan",
+    "learnMore": "Pelajari Lebih Lanjut"
   },
   "AboutPage": {
     "title": "Tentang Saya",
@@ -130,6 +137,96 @@
       "responsibility2": "Dashboard pelaporan otomatis yang mengubah data survei mentah menjadi laporan stakeholder komprehensif dengan visualisasi data.",
       "responsibility3": "Sistem manajemen pengguna dengan kontrol akses berbasis peran untuk administrator, surveyor, dan pemilik bisnis.",
       "responsibility4": "Dashboard analitik real-time yang memberikan wawasan tentang tingkat penyelesaian survei, pola respons, dan distribusi bisnis."
+    },
+    "projects": {
+      "dashboardEkraf": {
+        "title": "Dashboard Ekraf",
+        "desc1": "Merancang dan mengembangkan sistem backend untuk platform digital yang mendukung pelaku ekonomi kreatif, dengan fokus pada modul kuesioner khusus dan rekapitulasi data.",
+        "desc2": "Mengimplementasikan RESTful API yang aman menggunakan AdonisJS dan merancang skema PostgreSQL yang dinormalisasi, yang mengotomatisasi pemrosesan data dan meningkatkan akurasi data untuk stakeholder."
+      },
+      "sincosmile": {
+        "title": "Sincosmile",
+        "desc1": "Merancang dan mengembangkan fitur inti platform, termasuk mesin penilaian otomatis dan sistem Role-Based Access Control untuk mengelola izin pengguna.",
+        "desc2": "Memanfaatkan Supabase sebagai Backend-as-a-Service untuk mempercepat pengembangan, dan mengoptimalkan query PostgreSQL, menghasilkan peningkatan signifikan dalam efisiensi pengambilan data untuk fitur penilaian."
+      },
+      "motherApp": {
+        "title": "Mother App",
+        "desc1": "Mengembangkan aplikasi mobile komprehensif untuk pemantauan kesehatan ibu menggunakan Flutter, dengan fitur pelacakan kesehatan real-time dan sumber daya edukasi.",
+        "desc2": "Mengimplementasikan sinkronisasi data yang aman dan kemampuan offline untuk memastikan akses berkelanjutan ke informasi kesehatan penting bagi ibu hamil."
+      },
+      "neurehab": {
+        "title": "NeuroRehab VR",
+        "desc1": "Merancang dan mengembangkan sistem Virtual Reality inovatif untuk rehabilitasi pasca stroke, mengintegrasikan sensor IoT untuk pemantauan pasien real-time.",
+        "desc2": "Berhasil mengamankan pendanaan R&D nasional dengan mengusulkan solusi komprehensif yang menggabungkan terapi VR imersif dengan protokol rehabilitasi berbasis data."
+      },
+      "rumahSalad": {
+        "title": "Rumah Salad Faqiha",
+        "desc1": "Merancang dan mengembangkan aplikasi web untuk mendigitalkan operasi bisnis inti seperti manajemen pesanan, data pelanggan, dan pelacakan inventori.",
+        "desc2": "Menghasilkan peningkatan produktivitas bagi pemilik bisnis melalui proses digital yang efisien dan manajemen alur kerja otomatis."
+      },
+      "jelajahNusantara": {
+        "title": "JelajahNusantara",
+        "desc1": "JelajahNusantara adalah platform perjalanan komprehensif yang dirancang untuk menampilkan kekayaan warisan budaya dan keindahan alam Indonesia. Aplikasi web full-stack ini berfungsi sebagai gerbang digital bagi wisatawan untuk menjelajahi destinasi Indonesia yang autentik, dari pusat perkotaan yang ramai hingga lanskap pedesaan yang tenang.",
+        "desc2": "Platform ini menampilkan antarmuka intuitif yang memungkinkan pengguna menemukan permata tersembunyi, merencanakan perjalanan mereka, dan terhubung dengan komunitas lokal. Dibangun dengan teknologi web modern, JelajahNusantara menekankan pengalaman pengguna sambil mempromosikan praktik pariwisata berkelanjutan di seluruh nusantara Indonesia."
+      },
+      "denkmeister": {
+        "title": "Denkmeister",
+        "desc1": "Mengembangkan aplikasi mobile lintas platform dari konsep hingga penyelesaian menggunakan Flutter, dengan fokus pada arsitektur offline-first untuk memastikan akses pengguna yang lancar tanpa koneksi internet.",
+        "desc2": "Mengimplementasikan struktur data lokal yang efisien menggunakan JSON Assets dan mengelola state aplikasi dengan Provider, menghasilkan pengalaman pengguna yang responsif dan stabil."
+      },
+      "bunya": {
+        "title": "BUNYA: Buat Senyawa",
+        "desc1": "BUNYA adalah game edukasi pemenang penghargaan. Sebagai Juara 3 di Festival Riset Mahasiswa Teknik Elektro & Informatika yang diselenggarakan oleh Universitas Negeri Malang.",
+        "desc2": "Proyek ini mengajarkan pemain tentang unsur kimia, senyawa, dan peralatan laboratorium dengan memadukan elemen fantasi yang menarik dengan prinsip-prinsip ilmiah dunia nyata."
+      },
+      "creditRisk": {
+        "title": "Sistem Prediksi & Penilaian Risiko Kredit",
+        "desc1": "Mengembangkan model machine learning end-to-end untuk memprediksi risiko kredit, mencapai akurasi 85% dalam mengidentifikasi aplikasi pinjaman berisiko tinggi.",
+        "desc2": "Merancang fitur prediktif dari data pinjaman historis dan menggunakan XGBoost dan Scikit-learn untuk membangun dan mengevaluasi model klasifikasi, membentuk inti dari sistem penilaian."
+      }
+    },
+    "more": "Selengkapnya",
+    "preview": "Pratinjau",
+    "neurehab": {
+      "description": "Neurehab adalah proyek penelitian dan pengembangan Karsa Cipta (KC) yang berhasil memperoleh pendanaan nasional dari Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi melalui Program Kreativitas Mahasiswa (PKM). Proyek ini berfokus pada desain dan pengembangan sistem rehabilitasi pasca-stroke terintegrasi yang menggabungkan Virtual Reality (VR), Internet of Things (IoT), dan aplikasi mobile. Proyek ini kemudian dikembangkan lebih lanjut dan meraih Medali Perak di PIMNAS ke-37.",
+      "roleTitle": "Sebagai Peneliti & Pengembang, saya bertanggung jawab untuk:",
+      "responsibilities": {
+        "research": "Penelitian & Pengembangan Proposal.",
+        "architecture": "Arsitektur Sistem & Prototyping.",
+        "integration": "Integrasi & Presentasi Akhir"
+      }
+    },
+    "mother": {
+      "title": "Mother : Aplikasi Pemantauan Kesehatan & Kebugaran Kehamilan",
+      "description": "Aplikasi mobile kesehatan kehamilan komprehensif yang dibangun dengan Flutter dan Laravel, dirancang untuk mendukung ibu hamil perkotaan dalam mengelola perjalanan kesehatan mereka sambil mengatasi risiko terkait obesitas selama kehamilan.",
+      "keyImplementations": "Implementasi teknis utama meliputi:",
+      "implementations": {
+        "backend": "API backend Laravel dengan autentikasi aman dan enkripsi data untuk menangani informasi kesehatan sensitif.",
+        "mobile": "Antarmuka mobile Flutter dengan formulir intuitif untuk pencatatan kesehatan harian, pelacakan berat badan, dan penjadwalan janji temu.",
+        "dashboard": "Dashboard personal dengan grafik kemajuan, wawasan kesehatan, dan rekomendasi yang disesuaikan berdasarkan data pengguna.",
+        "notifications": "Sistem notifikasi untuk pengingat obat, peringatan janji temu, dan perayaan pencapaian selama kehamilan."
+      }
     }
+  },
+  "NotFound": {
+    "pageNotFound": "Halaman tidak ditemukan",
+    "goBack": "Kembali"
+  },
+  "Skills": {
+    "backendDevelopment": "Pengembangan Backend",
+    "fullStackDevelopment": "Pengembangan Full-Stack",
+    "mobileAppDevelopment": "Pengembangan Aplikasi Mobile",
+    "generativeAI": "AI Generatif",
+    "virtualRealityIoT": "Virtual Reality & IoT",
+    "identityAccessManagement": "Manajemen Identitas & Akses",
+    "myGoToTools": "Perangkat Andalan Saya"
+  },
+  "Common": {
+    "loading": "Memuat...",
+    "nowPlaying": "Sedang diputar",
+    "currentlyOffline": "Sedang offline",
+    "technology": "Teknologi",
+    "technologiesToolkit": "Teknologi & Perangkat",
+    "myPortfolioGallery": "Galeri Portofolio Saya"
   }
 }

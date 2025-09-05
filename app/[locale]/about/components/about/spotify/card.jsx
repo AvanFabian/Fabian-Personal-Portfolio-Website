@@ -5,8 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Card = () => {
+	const t = useTranslations('Common');
 	const [loading, setLoading] = useState(true);
 	const [result, setResult] = useState({});
 
@@ -48,10 +50,10 @@ useEffect(() => {
 							className="text-black text-5xl me-5 md:me-1 xl:me-8"
 						/>
 						<p className="font-semibold me-5 md:me-1 xl:me-7">
-							{result.isPlaying
-								? "Now playing"
-								: "Currently offline"}
-						</p>
+						{result.isPlaying
+							? t('nowPlaying')
+							: t('currentlyOffline')}
+					</p>
 						{result.isPlaying && <PlayingAnimation />}
 					</div>
 					{result.isPlaying && (
