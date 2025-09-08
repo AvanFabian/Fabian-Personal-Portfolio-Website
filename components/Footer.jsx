@@ -1,11 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 
 export default function Footer() {
+	const t = useTranslations('Footer');
 	return (
 		<div className="flex justify-center items-center flex-col mt-5 overflow-hidden">
 			<div className="flex justify-center items-center flex-col mt-5 self-center min-h-[50vh] border-b-2 min-w-[80vw] ">
@@ -23,7 +25,7 @@ export default function Footer() {
 						transition={{
 							delay: 0.2,
 						}}>
-						Want something like this?
+						{t('wantSomethingLikeThis')}
 					</motion.h2>
 					<motion.h1
 						className="text-5xl md:text-7xl font-medium mt-3  hover:underline whitespace-nowrap leading-none"
@@ -38,7 +40,7 @@ export default function Footer() {
 						transition={{
 							delay: 0.5,
 						}}>
-						Get In Touch{" "}
+						{t('getInTouch')}{" "}
 						<FontAwesomeIcon
 							icon={faArrowAltCircleRight}
 							className="text-5xl ml-2 "
@@ -48,9 +50,9 @@ export default function Footer() {
 			</div>
 			<footer className="flex justify-center items-center flex-col my-5 self-start]">
 				<p className="text-gray-800 text-sm">
-					&copy;{new Date().getFullYear()} -{" "}
-					<span className="text-gray-700 text-lg">Fabian</span>
-				</p>
+				&copy;{new Date().getFullYear()} -{" "}
+				<span className="text-gray-700 text-lg">{t('copyright')}</span>
+			</p>
 			</footer>
 		</div>
 	);

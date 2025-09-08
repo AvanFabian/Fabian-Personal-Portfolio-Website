@@ -37,9 +37,14 @@
     "backendDevelopment": "Backend Development",
     "fullStackDevelopment": "Full-Stack Development",
     "mobileDevelopment": "Mobile Development",
+    "mobileAppDevelopment": "Mobile App Development",
     "machineLearning": "Machine Learning & AI",
+    "generativeAI": "Generative AI",
     "vrDevelopment": "VR Development",
-    "cybersecurity": "Cybersecurity"
+    "virtualRealityIoT": "Virtual Reality & IoT",
+    "cybersecurity": "Cybersecurity",
+    "identityAccessManagement": "Identity & Access Management",
+    "myGoToTools": "My Go-To Tools"
   },
   "Experience": {
     "title": "Professional Experience",
@@ -212,14 +217,11 @@
     "pageNotFound": "Page not found",
     "goBack": "Go Back"
   },
-  "Skills": {
-    "backendDevelopment": "Backend Development",
-    "fullStackDevelopment": "Full-Stack Development",
-    "mobileAppDevelopment": "Mobile App Development",
-    "generativeAI": "Generative AI",
-    "virtualRealityIoT": "Virtual Reality & IoT",
-    "identityAccessManagement": "Identity & Access Management",
-    "myGoToTools": "My Go-To Tools"
+
+  "Footer": {
+    "wantSomethingLikeThis": "Want something like this?",
+    "getInTouch": "Get In Touch",
+    "copyright": "Fabian"
   },
   "Common": {
     "loading": "Loading...",

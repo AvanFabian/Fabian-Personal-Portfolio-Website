@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-export default function projectCard({ project, index, activeCategory }) {
+export default function ProjectCard({ project, index, activeCategory }) {
 	const t = useTranslations('ProjectsPage.projects');
-	const tProjects = useTranslations('ProjectsPage');
+
 	console.log(project.category[0], activeCategory);
 	console.log(project.category.includes(activeCategory));
 	return (

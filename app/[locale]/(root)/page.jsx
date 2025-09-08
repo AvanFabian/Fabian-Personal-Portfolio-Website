@@ -22,6 +22,17 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 // import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
+/**
+ * Homepage Component - Full-page scrolling portfolio website
+ * 
+ * Structure:
+ * 1. Hero/Home Section - Introduction, name, title, profile image
+ * 2. About Section - Personal description with background image
+ * 3. Projects/Portfolio Section - Showcase of work with CTA to projects page
+ * 4. Contact Section - Contact information and social media links
+ * 
+ * Uses ReactFullpage for smooth section transitions and Framer Motion for animations
+ */
 const MyPage = () => {
 	const t = useTranslations('HomePage');
 	const locale = useLocale();
@@ -40,8 +51,10 @@ const MyPage = () => {
 			<ReactFullpage
 				render={({ state, fullpageApi }) => (
 					<ReactFullpage.Wrapper>
+						{/* ===== HERO/HOME SECTION ===== */}
 						<div className="section">
 							<div className="mx-auto container grid grid-cols-1 md:grid-cols-3 gap-4 p-10 overflow-hidden md:px-20">
+								{/* Left side - Main content (name, title, description, buttons) */}
 								<motion.div
 									className="col-span-2 flex flex-col justify-center items-center md:items-start text-center md:text-start"
 									initial={{ x: -100, opacity: 0 }}
@@ -49,6 +62,7 @@ const MyPage = () => {
 									transition={{
 										type: "spring",
 									}}>
+									{/* Mobile profile image */}
 									<div className="block md:hidden col-span-1 mx-auto my-10">
 										<div className="bg-slate-500 rounded-full h-60 w-60 grayscale hover:grayscale-0 transition-all ease duration-300">
 											<Image
@@ -110,6 +124,7 @@ const MyPage = () => {
 										</Button>
 									</motion.div>
 								</motion.div>
+								{/* Right side - Desktop profile image */}
 								<motion.div
 									className="hidden md:flex col-span-1 mx-auto justify-center items-center "
 									initial={{ x: 100, opacity: 0 }}
@@ -131,8 +146,10 @@ const MyPage = () => {
 								</motion.div>
 							</div>
 						</div>
+						{/* ===== ABOUT SECTION ===== */}
 						<div className="section">
 							<div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
+								{/* Background image - positioned on the right */}
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 									<motion.div
 										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
@@ -161,6 +178,7 @@ const MyPage = () => {
 										/>
 									</motion.div>
 								</div>
+								{/* About content - positioned on the left */}
 								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
 									<motion.h1
 										className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold"
@@ -182,7 +200,6 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										{t('aboutDescription')}
-										interest.
 									</motion.p>
 									<motion.div
 										initial={{ y: 40, opacity: 0 }}
@@ -200,8 +217,10 @@ const MyPage = () => {
 								</div>
 							</div>
 						</div>
+						{/* ===== PROJECTS/PORTFOLIO SECTION ===== */}
 						<div className="section">
 							<div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
+								{/* Background image - projects showcase */}
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 									<motion.div
 										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
@@ -230,6 +249,7 @@ const MyPage = () => {
 										/>
 									</motion.div>
 								</div>
+								{/* Projects content - title, description, and CTA button */}
 								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
 									<motion.h1
 										className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold"
@@ -268,8 +288,10 @@ const MyPage = () => {
 								</div>
 							</div>
 						</div>
+						{/* ===== CONTACT SECTION ===== */}
 						<div className="section">
 							<div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
+								{/* Background image - setup/workspace */}
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 									<motion.div
 										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
@@ -298,6 +320,7 @@ const MyPage = () => {
 										/>
 									</motion.div>
 								</div>
+								{/* Contact content - title, description, email, and social icons */}
 								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden">
 									<motion.h1
 										className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold mb-3"
@@ -335,8 +358,9 @@ const MyPage = () => {
 											avanfabiand@gmail.com
 										</a>
 									</motion.p>
-									{/* icons */}
+									{/* Social media icons - Email, GitHub, Instagram, LinkedIn, WhatsApp */}
 									<div className="flex justify-center items-center space-x-4">
+										{/* Email icon */}
 										<motion.a
 											href="mailto:avanfabiand@gmail.com?subject=Hello&body=Hello Fabian,"
 											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
@@ -352,6 +376,7 @@ const MyPage = () => {
 											/>
 										</motion.a>
 
+										{/* GitHub icon */}
 										<motion.a
 											href="https://github.com/AvanFabian"
 											target="_blank"
@@ -368,6 +393,7 @@ const MyPage = () => {
 												className="text-3xl"
 											/>
 										</motion.a>
+										{/* Instagram icon */}
 										<motion.a
 											href="https://www.instagram.com/avanfabian/"
 											target="_blank"
@@ -384,6 +410,7 @@ const MyPage = () => {
 												className="text-3xl"
 											/>
 										</motion.a>
+										{/* LinkedIn icon */}
 										<motion.a
 											href="https://www.linkedin.com/in/avandaniswara/"
 											target="_blank"
@@ -400,6 +427,7 @@ const MyPage = () => {
 												className="text-3xl"
 											/>
 										</motion.a>
+										{/* WhatsApp icon */}
 										<motion.a
 											href="https://wa.me/6281234566046"
 											target="_blank"

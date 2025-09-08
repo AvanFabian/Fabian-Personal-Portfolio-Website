@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => switchLocale('en')}
         disabled={locale === 'en'}
-        className="px-2 py-1 text-sm font-medium text-black hover:text-gray-600 disabled:opacity-50 disabled:text-gray-800 transition-colors"
+        className="px-2 py-1 text-sm font-medium text-black hover:text-gray-600 disabled:opacity-100 disabled:text-black disabled:font-bold transition-colors"
       >
         EN
       </button>
@@ -29,7 +29,7 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => switchLocale('id')}
         disabled={locale === 'id'}
-        className="px-2 py-1 text-sm font-medium text-black hover:text-gray-600 disabled:opacity-50 disabled:text-gray-800 transition-colors"
+        className="px-2 py-1 text-sm font-medium text-black hover:text-gray-600 disabled:opacity-100 disabled:text-black disabled:font-bold transition-colors"
       >
         ID
       </button>

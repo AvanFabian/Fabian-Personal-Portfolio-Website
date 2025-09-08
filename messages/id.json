@@ -17,7 +17,7 @@
     "downloadCV": "Unduh CV",
     "contactMe": "Hubungi Saya",
     "aboutMe": "Tentang Saya",
-    "aboutDescription": "Pengenalan singkat tentang saya dan",
+    "aboutDescription": "Pengenalan singkat tentang saya dan minat saya",
     "learnMore": "Pelajari Lebih Lanjut"
   },
   "AboutPage": {
@@ -37,9 +37,14 @@
     "backendDevelopment": "Pengembangan Backend",
     "fullStackDevelopment": "Pengembangan Full-Stack",
     "mobileDevelopment": "Pengembangan Mobile",
+    "mobileAppDevelopment": "Pengembangan Aplikasi Mobile",
     "machineLearning": "Machine Learning & AI",
+    "generativeAI": "AI Generatif",
     "vrDevelopment": "Pengembangan VR",
-    "cybersecurity": "Keamanan Siber"
+    "virtualRealityIoT": "Virtual Reality & IoT",
+    "cybersecurity": "Keamanan Siber",
+    "identityAccessManagement": "Manajemen Identitas & Akses",
+    "myGoToTools": "Perangkat Andalan Saya"
   },
   "Experience": {
     "title": "Pengalaman Profesional",
@@ -212,14 +217,11 @@
     "pageNotFound": "Halaman tidak ditemukan",
     "goBack": "Kembali"
   },
-  "Skills": {
-    "backendDevelopment": "Pengembangan Backend",
-    "fullStackDevelopment": "Pengembangan Full-Stack",
-    "mobileAppDevelopment": "Pengembangan Aplikasi Mobile",
-    "generativeAI": "AI Generatif",
-    "virtualRealityIoT": "Virtual Reality & IoT",
-    "identityAccessManagement": "Manajemen Identitas & Akses",
-    "myGoToTools": "Perangkat Andalan Saya"
+
+  "Footer": {
+    "wantSomethingLikeThis": "Ingin sesuatu seperti ini?",
+    "getInTouch": "Hubungi Saya",
+    "copyright": "Fabian"
   },
   "Common": {
     "loading": "Memuat...",
