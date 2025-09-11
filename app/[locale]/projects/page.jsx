@@ -26,6 +26,7 @@ import Projects from "@/json/data.json";
 import FixedButon from "@/components/FixedButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import StructuredData from "@/components/StructuredData";
 
 // Category object will be handled inside the component to use translations
 
@@ -48,6 +49,7 @@ export default function Page() {
 	}, []);
 	return (
 		<>
+			<StructuredData type="portfolio" locale="en" />
 			<main className="overflow-hidden">
 				<FixedButon href="/#projects">
 					<FontAwesomeIcon
@@ -97,7 +99,7 @@ export default function Page() {
 				<div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
 						<Hr variant="long"></Hr>
-						<h1 className="text-3xl font-bold mt-3">{t('featuredPortfolio')}</h1>
+						<h2 className="text-3xl font-bold mt-3">{t('featuredPortfolio')}</h2>
 					</div>
 				</div>
 

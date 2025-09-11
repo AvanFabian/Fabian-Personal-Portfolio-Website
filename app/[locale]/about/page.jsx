@@ -18,6 +18,7 @@ import Hero from "@/public/image/me4.jpg";
 
 import Hr from "@/components/Hr";
 import About from "./components/about/about.jsx";
+import StructuredData from "@/components/StructuredData";
 
 export default function Page() {
 	const t = useTranslations('AboutPage');
@@ -28,6 +29,7 @@ export default function Page() {
 
 	return (
 		<>
+			<StructuredData type="person" locale="en" />
 			<main className="overflow-hidden">
 				<FixedButton href="/#about">
 					<FontAwesomeIcon

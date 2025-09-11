@@ -7,41 +7,96 @@ import "../nprogress.css";
 import { Analytics } from "@vercel/analytics/react";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import StructuredData from '@/components/StructuredData';
 
 export const metadata = {
 	metadataBase: new URL("https://www.fabiandaniswara.my.id"),
-	title: "Fabian | Portofolio",
+	title: {
+		default: "Avan Fabian Daniswara | Full-Stack Developer & IT Specialist",
+		template: "%s | Avan Fabian Daniswara"
+	},
 	description:
-		"My name is Fabian, I'm a web developer and I'm passionate about it. I'm currently studying at State University of Malang.",
+		"Avan Fabian Daniswara - Full-Stack Developer specializing in web development, mobile apps, VR/AR, and machine learning. Experienced in Next.js, Flutter, Unity 3D, and backend technologies.",
 	author: "Avan Fabian Daniswara",
-	siteUrl: "https://www.fabiandaniswara.my.id",
-	applicationName: "Fabian",
+	creator: "Avan Fabian Daniswara",
+	publisher: "Avan Fabian Daniswara",
+	applicationName: "Avan Fabian Portfolio",
+	generator: "Next.js",
+	referrer: "origin-when-cross-origin",
 	keywords: [
-		"fabian",
-		"fabian fabian",
-		"fabian",
-		"avan fabiandaniswara",
-		"avan fabian daniswara",
-		"greatchief",
-		"fabian porto",
-		"fabian um",
+		"Avan Fabian Daniswara",
+		"Full-Stack Developer",
+		"Web Developer",
+		"Mobile App Developer",
+		"Next.js Developer",
+		"Flutter Developer",
+		"React Developer",
+		"Backend Developer",
+		"Frontend Developer",
+		"JavaScript Developer",
+		"TypeScript Developer",
+		"Node.js Developer",
+		"Machine Learning",
+		"VR Development",
+		"Unity 3D",
+		"Portfolio",
+		"Indonesia Developer",
+		"Malang Developer",
+		"University of Malang",
+		"IT Specialist"
 	],
+	authors: [{ name: "Avan Fabian Daniswara", url: "https://www.fabiandaniswara.my.id" }],
+	colorScheme: "light",
+	themeColor: "#ffffff",
+	viewport: "width=device-width, initial-scale=1",
+	robotsIndex: true,
+	robotsFollow: true,
+	googlebot: "index,follow",
+	verification: {
+		// Add your verification codes here when available
+		// google: "your-google-verification-code",
+		// yandex: "your-yandex-verification-code",
+		// bing: "your-bing-verification-code"
+	},
+	alternates: {
+		canonical: "https://www.fabiandaniswara.my.id",
+		languages: {
+			'en': 'https://www.fabiandaniswara.my.id/en',
+			'id': 'https://www.fabiandaniswara.my.id/id'
+		}
+	},
 	openGraph: {
 		type: "website",
 		url: "https://www.fabiandaniswara.my.id",
-		title: "Fabian | Portofolio",
-		site_name: "Fabian | Portofolio",
-		description: "My name is Fabian, This is my portofolio website.",
-		width: 1200,
-		height: 630,
+		title: "Avan Fabian Daniswara | Full-Stack Developer & IT Specialist",
+		description: "Full-Stack Developer specializing in web development, mobile apps, VR/AR, and machine learning. View my portfolio of innovative projects and technical expertise.",
+		siteName: "Avan Fabian Portfolio",
+		locale: "en_US",
 		images: [
 			{
 				url: "/og-image-rev.png",
-				alt: "Fabian Portofolio",
-			},
-		],
-		site_name: "Fabian | Portofolio",
+				width: 1200,
+				height: 630,
+				alt: "Avan Fabian Daniswara - Full-Stack Developer Portfolio",
+				type: "image/png"
+			}
+		]
 	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Avan Fabian Daniswara | Full-Stack Developer & IT Specialist",
+		description: "Full-Stack Developer specializing in web development, mobile apps, VR/AR, and machine learning. View my portfolio of innovative projects.",
+		images: ["/og-image-rev.png"],
+		creator: "@avanfabian",
+		site: "@avanfabian"
+	},
+	icons: {
+		icon: "/favicon.ico",
+		shortcut: "/favicon.ico",
+		apple: "/apple-touch-icon.png"
+	},
+	manifest: "/site.webmanifest",
+	category: "technology"
 };
 
 // import Chat from "@/components/Chat";
@@ -56,6 +111,7 @@ export default async function RootLayout({
 	return (
 		<html lang={locale || 'en'}>
 			<body>
+				<StructuredData type="website" locale={locale} />
 				<NextIntlClientProvider messages={messages}>
 					<Navbar />
 					{children}

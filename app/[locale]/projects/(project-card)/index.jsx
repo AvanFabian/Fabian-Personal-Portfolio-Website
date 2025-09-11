@@ -37,9 +37,9 @@ export default function ProjectCard({ project, index, activeCategory }) {
 							<h4 className="text-white">{project.year}</h4>
 						</div>
 						<div className="transition-all ease duration-500 opacity-100 content text-center group-hover/tes:opacity-0 z-10">
-							<h1 className="text-3xl font-bold mb-3">
+							<h3 className="text-3xl font-bold mb-3">
 								{project.title.includes('.') ? t(project.title) : project.title}
-							</h1>
+					</h3>
 							<p>
 								{(() => {
 									const translatedDesc = t(project.desc[0]);
