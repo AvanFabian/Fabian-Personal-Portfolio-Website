@@ -104,9 +104,9 @@ export default function Page() {
 				{/* Project 1 */}
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
-						<div className="images relative w-full  aspect-square">
+						<div className="images relative w-full aspect-square">
 							{/* Image 1 */}
-							<div className="absolute top-8 right-36 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute top-4 md:top-8 right-4 md:right-36 h-[45%] md:h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -132,7 +132,7 @@ export default function Page() {
 								</motion.div>
 							</div>
 							{/* Image 2 */}
-							<div className="absolute top-40 left-20 h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute top-32 md:top-40 left-4 md:left-20 h-[50%] md:h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -151,7 +151,7 @@ export default function Page() {
 								</motion.div>
 							</div>
 							{/* Image 3 */}
-							<div className="absolute bottom-6 right-20 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute bottom-4 md:bottom-6 right-4 md:right-20 h-[40%] md:h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -226,9 +226,9 @@ export default function Page() {
 				{/* Project 2 */}
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
-						<div className="images relative w-full  aspect-square">
+						<div className="images relative w-full aspect-square">
 							{/* Image 1 */}
-							<div className="absolute top-8 right-36 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute top-4 md:top-8 right-4 md:right-36 h-[45%] md:h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -254,7 +254,7 @@ export default function Page() {
 								</motion.div>
 							</div>
 							{/* Image 2.1 Portrait */}
-							<div className="absolute top-24 right-2 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute top-16 md:top-24 right-1 md:right-2 h-[70%] md:h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -280,7 +280,7 @@ export default function Page() {
 								</motion.div>
 							</div>
 							{/* Image 2.2 Portrait */}
-							<div className="absolute bottom-2 left-2 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute bottom-1 md:bottom-2 left-1 md:left-2 h-[70%] md:h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -306,7 +306,7 @@ export default function Page() {
 								</motion.div>
 							</div>
 							{/* Image 2 */}
-							<div className="absolute top-40 left-10 h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute top-32 md:top-40 left-4 md:left-10 h-[50%] md:h-[40%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -325,7 +325,7 @@ export default function Page() {
 								</motion.div>
 							</div>
 							{/* Image 3 */}
-							<div className="absolute bottom-6 right-20 h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute bottom-4 md:bottom-6 right-4 md:right-20 h-[40%] md:h-[32%] aspect-[16/9] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -399,9 +399,9 @@ export default function Page() {
 				{/* Project 3 */}
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
-						<div className="images relative w-full  aspect-square">
+						<div className="images relative w-full aspect-square">
 							{/* Image 1 */}
-							<div className="absolute top-28 left-24 h-[60%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute top-16 md:top-28 left-8 md:left-24 h-[75%] md:h-[60%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -420,7 +420,7 @@ export default function Page() {
 								</motion.div>
 							</div>
 							{/* Image 2 */}
-							<div className="absolute top-8 right-36 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute top-4 md:top-8 right-8 md:right-36 h-[70%] md:h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -446,7 +446,7 @@ export default function Page() {
 								</motion.div>
 							</div>
 							{/* Image 3 */}
-							<div className="absolute bottom-6 right-20 h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10 hover:z-20">
+							<div className="absolute bottom-4 md:bottom-6 right-4 md:right-20 h-[70%] md:h-[55%] aspect-[9/16] grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-110 md:hover:scale-150 z-10 hover:z-20">
 								<motion.div
 									initial={{
 										opacity: 0,

@@ -96,7 +96,7 @@ export default function Page({ params }) {
 
 	// Resolve dynamic route parameters
 	const resolvedParams = use(params);
-	
+
 	// State to store project data (null = loading, "404" = not found, object = found)
 	const [data, setData] = useState(null);
 	// Find project data based on slug parameter
@@ -118,8 +118,8 @@ export default function Page({ params }) {
 				<NotFound />
 			</>
 		);
-	} 
-	
+	}
+
 	// Render loading skeleton while data is being fetched
 	else if (!data) {
 		return (
@@ -255,8 +255,8 @@ export default function Page({ params }) {
 				</div>
 			</div>
 			{/* ===== PROJECT IMAGES GALLERY ===== */}
-			<div className="mx-auto grid grid-cols-1 p-5 md:p-20 w-full">
-				<div className="w-full h-auto text-center flex flex-col justify-center ">
+			<div className="mx-auto grid grid-cols-1 p-3 md:p-20 w-full">
+				<div className="w-full h-auto text-center flex flex-col justify-center px-2 md:px-0">
 					{/* Debug: Log images data */}
 					{/* {console.log('Project data:', data)}
 					{console.log('Images array:', data.images)}
@@ -268,15 +268,15 @@ export default function Page({ params }) {
 						data.images.map((image, index) => {
 							// console.log(`Rendering image ${index + 1}:`, image);
 							return (
-								<div key={index} className="mb-5 flex justify-center">
+								<div key={index} className="mb-8 md:mb-5 flex justify-center">
 									<Image
 										src={image}
 										alt={`Project Image ${index + 1}`}
-										className="h-auto max-w-full object-contain max-h-[70vh] md:max-h-[60vh]"
+										className="h-auto max-w-full object-contain max-h-[85vh] md:max-h-[60vh] w-full"
 										width={0}
 										height={0}
-										sizes="100vw"
-										style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+										sizes="(max-width: 768px) 95vw, 100vw"
+										style={{ width: 'auto', height: 'auto', maxWidth: '100%', minHeight: '300px' }}
 										onError={(e) => {
 											console.error(`Failed to load image ${index + 1}:`, image, e);
 										}}
@@ -291,21 +291,21 @@ export default function Page({ params }) {
 						<>
 							{/* Fallback when no images are available */}
 							<div className="text-center py-10">
-							<p className="text-gray-500 text-lg">
-								{data.images ?
-									'No images available for this project.' :
-									'Images data is missing.'
-								}
-							</p>
-							{/* Debug information panel for troubleshooting */}
-							<div className="mt-4 p-4 bg-gray-100 rounded text-left text-sm">
-								<p><strong>Debug Info:</strong></p>
-								<p>Project slug: {data.slug}</p>
-								<p>Images array exists: {data.images ? 'Yes' : 'No'}</p>
-								<p>Images array length: {data.images?.length || 0}</p>
-								<p>Images content: {JSON.stringify(data.images, null, 2)}</p>
+								<p className="text-gray-500 text-lg">
+									{data.images ?
+										'No images available for this project.' :
+										'Images data is missing.'
+									}
+								</p>
+								{/* Debug information panel for troubleshooting */}
+								<div className="mt-4 p-4 bg-gray-100 rounded text-left text-sm">
+									<p><strong>Debug Info:</strong></p>
+									<p>Project slug: {data.slug}</p>
+									<p>Images array exists: {data.images ? 'Yes' : 'No'}</p>
+									<p>Images array length: {data.images?.length || 0}</p>
+									<p>Images content: {JSON.stringify(data.images, null, 2)}</p>
+								</div>
 							</div>
-						</div>
 						</>
 					)}
 				</div>
