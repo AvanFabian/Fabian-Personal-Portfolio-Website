@@ -1,4 +1,4 @@
-import jsonData from '@/data.json';
+import jsonData from '@/json/data.json';
 
 /**
  * Next.js App Router Sitemap Generation
