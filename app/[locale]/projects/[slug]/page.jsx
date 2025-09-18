@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
 			: desc
 	).join(' ');
 
-	const baseUrl = 'https://www.fabiandaniswara.my.id';
+	const baseUrl = 'https://www.avandigital.id';
 	const projectUrl = `${baseUrl}/${locale}/projects/${slug}`;
 	const ogImage = projectData.thumbnail || projectData.images?.[0] || '/og-image-rev.png';
 

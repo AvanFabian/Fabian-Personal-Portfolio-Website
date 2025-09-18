@@ -10,7 +10,7 @@ import { getMessages } from 'next-intl/server';
 import StructuredData from '@/components/StructuredData';
 
 export const metadata = {
-	metadataBase: new URL("https://www.fabiandaniswara.my.id"),
+	metadataBase: new URL("https://www.avandigital.id"),
 	title: {
 		default: "Avan Fabian Daniswara | Full-Stack Developer & IT Specialist",
 		template: "%s | Avan Fabian Daniswara"
@@ -45,7 +45,7 @@ export const metadata = {
 		"University of Malang",
 		"IT Specialist"
 	],
-	authors: [{ name: "Avan Fabian Daniswara", url: "https://www.fabiandaniswara.my.id" }],
+	authors: [{ name: "Avan Fabian Daniswara", url: "https://www.avandigital.id" }],
 	colorScheme: "light",
 	themeColor: "#ffffff",
 	viewport: "width=device-width, initial-scale=1",
@@ -59,15 +59,15 @@ export const metadata = {
 		// bing: "your-bing-verification-code"
 	},
 	alternates: {
-		canonical: "https://www.fabiandaniswara.my.id",
+		canonical: "https://www.avandigital.id",
 		languages: {
-			'en': 'https://www.fabiandaniswara.my.id/en',
-			'id': 'https://www.fabiandaniswara.my.id/id'
+			'en': 'https://www.avandigital.id/en',
+			'id': 'https://www.avandigital.id/id'
 		}
 	},
 	openGraph: {
 		type: "website",
-		url: "https://www.fabiandaniswara.my.id",
+		url: "https://www.avandigital.id",
 		title: "Avan Fabian Daniswara | Full-Stack Developer & IT Specialist",
 		description: "Full-Stack Developer specializing in web development, mobile apps, VR/AR, and machine learning. View my portfolio of innovative projects and technical expertise.",
 		siteName: "Avan Fabian Portfolio",

@@ -14,14 +14,14 @@ const StructuredData = ({ type = 'website', projectData = null, locale = 'en' })
 	const websiteSchema = {
 		"@context": "https://schema.org",
 		"@type": "WebSite",
-		"name": "Fabian Nugraha - Portfolio",
+		"name": "Avan Fabian Daniswara - Portfolio",
 		"description": "Full-stack developer and UI/UX designer portfolio showcasing modern web applications and creative solutions",
-		"url": "https://fabiannugraha.vercel.app",
+		"url": "https://www.avandigital.id",
 		"author": {
 			"@type": "Person",
-			"name": "Fabian Nugraha",
+			"name": "Avan Fabian Daniswara",
 			"jobTitle": "Full-Stack Developer & UI/UX Designer",
-			"url": "https://fabiannugraha.vercel.app",
+			"url": "https://www.avandigital.id",
 			"sameAs": [
 				"https://github.com/fabianazh",
 				"https://linkedin.com/in/fabian-nugraha",
@@ -46,7 +46,7 @@ const StructuredData = ({ type = 'website', projectData = null, locale = 'en' })
 			"@type": "SearchAction",
 			"target": {
 				"@type": "EntryPoint",
-				"urlTemplate": "https://fabiannugraha.vercel.app/search?q={search_term_string}"
+				"urlTemplate": "https://www.avandigital.id/search?q={search_term_string}"
 			},
 			"query-input": "required name=search_term_string"
 		},
@@ -57,13 +57,13 @@ const StructuredData = ({ type = 'website', projectData = null, locale = 'en' })
 	const personSchema = {
 		"@context": "https://schema.org",
 		"@type": "Person",
-		"name": "Fabian Nugraha",
-		"givenName": "Fabian",
-		"familyName": "Nugraha",
+		"name": "Avan Fabian Daniswara",
+		"givenName": "Avan Fabian",
+		"familyName": "Daniswara",
 		"jobTitle": "Full-Stack Developer & UI/UX Designer",
 		"description": "Passionate full-stack developer and UI/UX designer with expertise in modern web technologies and creative problem-solving",
-		"url": "https://fabiannugraha.vercel.app",
-		"image": "https://fabiannugraha.vercel.app/images/profile.jpg",
+		"url": "https://www.avandigital.id",
+		"image": "https://www.avandigital.id/images/profile.jpg",
 		"sameAs": [
 			"https://github.com/fabianazh",
 			"https://linkedin.com/in/fabian-nugraha",
@@ -127,19 +127,19 @@ const StructuredData = ({ type = 'website', projectData = null, locale = 'en' })
 			"description": Array.isArray(project.desc) ? project.desc.join(' ') : project.desc,
 			"creator": {
 				"@type": "Person",
-				"name": "Fabian Nugraha",
-				"url": "https://fabiannugraha.vercel.app"
+				"name": "Avan Fabian Daniswara",
+				"url": "https://www.avandigital.id"
 			},
 			"dateCreated": project.year ? `${project.year}-01-01` : undefined,
-			"url": `https://fabiannugraha.vercel.app/${locale}/projects/${project.slug}`,
+			"url": `https://www.avandigital.id/${locale}/projects/${project.slug}`,
 			"image": project.images && project.images.length > 0 ? project.images[0] : undefined,
 			"keywords": project.tech ? project.tech.join(', ') : undefined,
 			"genre": "Web Development",
 			"inLanguage": locale,
 			"isPartOf": {
 				"@type": "WebSite",
-				"name": "Fabian Nugraha - Portfolio",
-				"url": "https://fabiannugraha.vercel.app"
+				"name": "Avan Fabian Daniswara - Portfolio",
+				"url": "https://www.avandigital.id"
 			},
 			"mainEntity": {
 				"@type": "SoftwareApplication",
@@ -151,7 +151,7 @@ const StructuredData = ({ type = 'website', projectData = null, locale = 'en' })
 				"programmingLanguage": project.tech || [],
 				"author": {
 					"@type": "Person",
-					"name": "Fabian Nugraha"
+					"name": "Avan Fabian Daniswara"
 				}
 			}
 		};
@@ -161,18 +161,18 @@ const StructuredData = ({ type = 'website', projectData = null, locale = 'en' })
 	const portfolioSchema = {
 		"@context": "https://schema.org",
 		"@type": "Collection",
-		"name": "Fabian Nugraha - Project Portfolio",
+		"name": "Avan Fabian Daniswara - Project Portfolio",
 		"description": "A collection of web development projects showcasing full-stack development and UI/UX design skills",
-		"url": `https://fabiannugraha.vercel.app/${locale}/projects`,
+		"url": `https://www.avandigital.id/${locale}/projects`,
 		"creator": {
 			"@type": "Person",
-			"name": "Fabian Nugraha",
-			"url": "https://fabiannugraha.vercel.app"
+			"name": "Avan Fabian Daniswara",
+			"url": "https://www.avandigital.id"
 		},
 		"hasPart": jsonData.Projects.map(project => ({
 			"@type": "CreativeWork",
 			"name": project.title,
-			"url": `https://fabiannugraha.vercel.app/${locale}/projects/${project.slug}`,
+			"url": `https://www.avandigital.id/${locale}/projects/${project.slug}`,
 			"dateCreated": project.year ? `${project.year}-01-01` : undefined,
 			"keywords": project.tech ? project.tech.join(', ') : undefined
 		})),

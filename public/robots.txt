@@ -1,5 +1,5 @@
-# Robots.txt for Fabian Nugraha Portfolio
-# Allow all web crawlers to access all content
+# Robots.txt for Avan Fabian Daniswara Portfolio
+# Allow all web crawlers to access the site
 User-agent: *
 Allow: /
 
@@ -9,8 +9,8 @@ Disallow: /_next/
 Disallow: /admin/
 Disallow: /*.json$
 
-# Crawl delay to be respectful to server resources
+# Crawl delay to be respectful to servers
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://fabiannugraha.vercel.app/sitemap.xml
+Sitemap: https://www.avandigital.id/sitemap.xml

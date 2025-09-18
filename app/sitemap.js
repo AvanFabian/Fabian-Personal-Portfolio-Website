@@ -10,7 +10,7 @@ import jsonData from '@/json/data.json';
  * - Multi-language support
  */
 export default function sitemap() {
-	const baseUrl = 'https://fabiannugraha.vercel.app';
+	const baseUrl = 'https://www.avandigital.id';
 	const currentDate = new Date().toISOString();
 	
 	// Define supported locales
