@@ -129,6 +129,8 @@
     "viewInArchive": "View In Archive",
     "moreButton": "More",
     "previewButton": "Preview",
+    "loadMore": "Load More",
+    "showingProjects": "Showing {visible} of {total} projects",
     "categories": {
       "website": "Website",
       "scientific": "Scientific Research & Data",

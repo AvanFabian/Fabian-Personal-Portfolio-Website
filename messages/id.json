@@ -129,6 +129,8 @@
     "viewInArchive": "Lihat di Arsip",
     "moreButton": "Selengkapnya",
     "previewButton": "Pratinjau",
+    "loadMore": "Muat Lebih Banyak",
+    "showingProjects": "Menampilkan {visible} dari {total} proyek",
     "categories": {
       "website": "Website",
       "scientific": "Penelitian Ilmiah & Data",

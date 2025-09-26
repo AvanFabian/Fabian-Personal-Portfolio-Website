@@ -33,20 +33,19 @@ import StructuredData from "@/components/StructuredData";
 export default function Page() {
 	const t = useTranslations("ProjectsPage");
 	const tCommon = useTranslations("Common");
-	const [activeCategory, setActiveCategory] = useState(1);
 	const [expandedCaseStudy, setExpandedCaseStudy] = useState(null);
+	const [visibleProjects, setVisibleProjects] = useState(4);
 
-	const category = {
-		1: t('categories.website'),
-		2: t('categories.scientific'),
-		3: t('categories.mobile'),
-	};
-	const projects = Projects.Projects.filter((item) => item.show === true
-	);
+	const projects = Projects.Projects.filter((item) => item.show === true);
+	const hasMoreProjects = visibleProjects < projects.length;
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+	const loadMoreProjects = () => {
+		setVisibleProjects(prev => Math.min(prev + 4, projects.length));
+	};
 	return (
 		<>
 			<StructuredData type="portfolio" locale="en" />
@@ -556,29 +555,39 @@ export default function Page() {
 						type: "spring",
 					}}
 					className="flex flex-row justify-center items-start flex-wrap gap-3 md:gap-5 my-5 ">
-					{Object.keys(category).map((key, index) => (
-						<button
-							key={index}
-							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 focus:bg-gray-300 focus:text-black focus:ring focus:ring-slate-500 ${activeCategory === key
-								? "bg-gray-300 text-black hover:bg-gray-700 hover:text-white"
-								: "bg-gray-700 text-white hover:bg-gray-300 hover:text-black"
-								}`}
-							onClick={() => setActiveCategory(key)}>
-							{category[key]}
-						</button>
-					))}
+					<div className="text-center">
+						<p className="text-gray-600 text-lg">
+							{t('showingProjects', { visible: Math.min(visibleProjects, projects.length), total: projects.length })}
+						</p>
+					</div>
 				</motion.div>
 
 				{/* projects */}
 				<div className="w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10 cursor-pointer">
-					{projects.map((project, index) => (
-						<ProjectCard
-							project={project}
-							key={index}
-							activeCategory={activeCategory}
-						/>
-					))}
+					{projects.slice(0, visibleProjects).map((project, index) => (
+					<ProjectCard
+						project={project}
+						index={index}
+						key={index}
+					/>
+				))}
 				</div>
+
+				{/* Load More Button */}
+				{hasMoreProjects && (
+					<motion.div
+						initial={{
+							opacity: 0,
+						}}
+						whileInView={{
+							opacity: 1,
+						}}
+						className="flex justify-center items-center flex-col my-5">
+						<Button variation="primary" onClick={loadMoreProjects}>
+							{t('loadMore')}
+						</Button>
+					</motion.div>
+				)}
 
 				{/* view in archive btn */}
 				<motion.div

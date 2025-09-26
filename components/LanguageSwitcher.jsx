@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
         disabled={locale === 'en'}
         className="px-2 py-1 text-sm font-medium text-black hover:text-gray-600 disabled:opacity-100 disabled:text-black disabled:font-bold transition-colors"
       >
-        EN
+        English
       </button>
       <span className="px-1 text-black">|</span>
       <button
@@ -31,7 +31,7 @@ export default function LanguageSwitcher() {
         disabled={locale === 'id'}
         className="px-2 py-1 text-sm font-medium text-black hover:text-gray-600 disabled:opacity-100 disabled:text-black disabled:font-bold transition-colors"
       >
-        ID
+        Indonesia
       </button>
     </div>
   );
