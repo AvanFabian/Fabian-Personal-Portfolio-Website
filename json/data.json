@@ -32,6 +32,35 @@
     },
     {
       "show": true,
+      "title": "Website UMKM Sate Telur Holiez",
+      "desc": [
+        "holiez.desc1",
+        "holiez.desc2"
+      ],
+      "year": "2025",
+      "preview": "https://holiez.avandigital.id/",
+      "code": "",
+      "thumbnail": "/image/projects/web/holiez/holiez-hero.webp",
+      "images": [
+        "/image/projects/web/holiez/holiez-hero.webp",
+        "/image/projects/web/holiez/holiez-menu.webp",
+        "/image/projects/web/holiez/holiez-footer.webp"
+      ],
+      "tech": [
+        "HTML5",
+        "Tailwind CSS",
+        "JavaScript",
+        "Local SEO",
+        "Google Search Console",
+        "Vercel"
+      ],
+      "slug": "sate-holiez",
+      "category": [
+        1
+      ]
+    },
+    {
+      "show": true,
       "title": "Sincosmile",
       "desc": [
         "sincosmile.desc1",

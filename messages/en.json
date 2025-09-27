@@ -131,6 +131,8 @@
     "previewButton": "Preview",
     "loadMore": "Load More",
     "showingProjects": "Showing {visible} of {total} projects",
+    "technologies": "Technologies",
+    "year": "Year",
     "categories": {
       "website": "Website",
       "scientific": "Scientific Research & Data",
@@ -190,6 +192,11 @@
         "title": "Credit Risk Prediction & Scoring System",
         "desc1": "Developed an end-to-end machine learning model to predict credit risk, achieving 85% accuracy in identifying high-risk loan applications.",
         "desc2": "Engineered predictive features from historical lending data and utilized XGBoost and Scikit-learn to build and evaluate the classification model, forming the core of the scoring system."
+      },
+      "holiez": {
+        "title": "Sate Telur Holiez UMKM Website",
+        "desc1": "Developed a modern, responsive website for Sate Telur Holiez, a local UMKM (small business), featuring an attractive menu showcase and comprehensive business information.",
+        "desc2": "Implemented local SEO optimization and integrated Google Search Console to enhance online visibility and drive customer engagement for the traditional Indonesian food business."
       }
     },
     "more": "More",

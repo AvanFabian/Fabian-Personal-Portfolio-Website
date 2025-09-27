@@ -131,6 +131,8 @@
     "previewButton": "Pratinjau",
     "loadMore": "Muat Lebih Banyak",
     "showingProjects": "Menampilkan {visible} dari {total} proyek",
+    "technologies": "Teknologi",
+    "year": "Tahun",
     "categories": {
       "website": "Website",
       "scientific": "Penelitian Ilmiah & Data",
@@ -190,6 +192,11 @@
         "title": "Sistem Prediksi & Penilaian Risiko Kredit",
         "desc1": "Mengembangkan model machine learning end-to-end untuk memprediksi risiko kredit, mencapai akurasi 85% dalam mengidentifikasi aplikasi pinjaman berisiko tinggi.",
         "desc2": "Merancang fitur prediktif dari data pinjaman historis dan menggunakan XGBoost dan Scikit-learn untuk membangun dan mengevaluasi model klasifikasi, membentuk inti dari sistem penilaian."
+      },
+      "holiez": {
+        "title": "Website UMKM Sate Telur Holiez",
+        "desc1": "Mengembangkan website modern dan responsif untuk Sate Telur Holiez, sebuah UMKM lokal, dengan tampilan menu yang menarik dan informasi bisnis yang komprehensif.",
+        "desc2": "Mengimplementasikan optimasi SEO lokal dan mengintegrasikan Google Search Console untuk meningkatkan visibilitas online dan mendorong keterlibatan pelanggan untuk bisnis makanan tradisional Indonesia."
       }
     },
     "more": "Selengkapnya",

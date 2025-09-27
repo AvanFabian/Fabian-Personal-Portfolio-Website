@@ -22,36 +22,55 @@ import StructuredData from "@/components/StructuredData";
 function ScrollDownButton() {
 	// Track whether user is at the bottom of the page
 	const [isAtBottom, setIsAtBottom] = useState(false);
+
+	// Check if user is at the bottom of the page
+	const checkScrollPosition = () => {
+		const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		const scrollHeight = document.documentElement.scrollHeight;
+		const clientHeight = document.documentElement.clientHeight;
+		
+		// Consider user at bottom if within 50px of the bottom
+		const isNearBottom = scrollTop + clientHeight >= scrollHeight - 50;
+		setIsAtBottom(isNearBottom);
+	};
+
+	// Add scroll event listener on component mount
+	useEffect(() => {
+		checkScrollPosition(); // Check initial position
+		window.addEventListener('scroll', checkScrollPosition);
+		
+		return () => {
+			window.removeEventListener('scroll', checkScrollPosition);
+		};
+	}, []);
+
 	// Handle scroll behavior - toggle between top and bottom of page
 	const handleScroll = () => {
-		const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-		if (scrollTop < document.documentElement.scrollHeight - document.documentElement.clientHeight) {
-
-			window.scrollTo({
-				top: document.documentElement.scrollHeight,
-				behavior: "smooth",
-			});
-			setIsAtBottom(true);
-
-		} else {
+		if (isAtBottom) {
+			// If at bottom, scroll to top
 			window.scrollTo({
 				top: 0,
 				behavior: "smooth",
 			});
-			setIsAtBottom(false);
+		} else {
+			// If not at bottom, scroll to bottom
+			window.scrollTo({
+				top: document.documentElement.scrollHeight,
+				behavior: "smooth",
+			});
 		}
 	};
 
 	return (
-		<FixedButon
-			className="fixed bottom-5 right-5 z-50 bg-white border border-gray-300 text-black hover:bg-gray-100 transition-colors duration-200"
+		<button
+			className="fixed bottom-5 right-5 z-50 bg-white border border-gray-300 text-black hover:bg-gray-100 transition-colors duration-200 rounded-full p-4 flex justify-center items-center"
 			onClick={handleScroll}
 		>
 			<FontAwesomeIcon
 				icon={isAtBottom ? faChevronUp : faChevronDown}
 				className="w-4 h-4"
 			/>
-		</FixedButon>
+		</button>
 	);
 }
 
@@ -150,7 +169,7 @@ export default function ProjectPageClient({ projectData }) {
 											rel="noopener noreferrer"
 											className="inline-flex items-center gap-2 hover:text-neutral-600 transition-colors"
 										>
-											{tCommon('livePreview')}
+											Open Website
 											<FontAwesomeIcon
 												icon={faArrowUpRightFromSquare}
 												className="w-4 h-4"
